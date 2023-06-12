@@ -8,14 +8,14 @@
                <nav id="navbar" class="navbar">
                   <ul>
                      <li><a class="nav-link scrollto active" href="../views/HomeView.vue">Inicio</a></li>
-                     <li><a class="nav-link scrollto" href="#portfolio">Galería</a></li>
+                     <li><a class="nav-link scrollto" href="#portfolio">Quienes somos</a></li>
                      <li class="dropdown">
-                        <a href="#"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+                        <a href="#"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                           <li><a href="#">Montaje industrial</a></li>
-                           <li><a href="#">Apoyo operacional</a></li>
-                           <li><a href="#">Mantenimiento industrial</a></li>
-                           <li><a href="#">Mecanizado en terreno</a></li>
+                           <li><a href="#">Áreas</a></li>
+                           <li><a href="#">Áreas</a></li>
+                           <li><a href="#">Áreas</a></li>
+                           <li><a href="#">Áreas</a></li>
                         </ul>
                      </li>
                      <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
@@ -41,14 +41,14 @@
    font-family: "Open Sans", sans-serif;
    }
    a {
-   color: #18d26e;
+   color: #273b60;
    transition: 0.5s;
    text-decoration: none;
    }
    a:hover,
    a:active,
    a:focus {
-   color: #18d36e;
+   color: #273b60;
    outline: none;
    text-decoration: none;
    }
@@ -68,7 +68,7 @@
    /* padding: 0; */
    }
    .logo img{
-      height: 80px;
+      height: 150px;
       padding-top: 15px;
    }
    .navbar {
@@ -108,7 +108,7 @@
    .navbar .active,
    .navbar .active:focus,
    .navbar li:hover>a {
-   color: #18d26e;
+   color: #273b60;
    }
    .navbar .dropdown ul {
    display: block;
@@ -138,7 +138,7 @@
    .navbar .dropdown ul a:hover,
    .navbar .dropdown ul .active:hover,
    .navbar .dropdown ul li:hover>a {
-   color: #18d26e;
+   color: #273b60;
    }
    .navbar .dropdown:hover>ul {
    opacity: 1;
@@ -220,7 +220,7 @@
    .navbar-mobile a:hover,
    .navbar-mobile .active,
    .navbar-mobile li:hover>a {
-   color: #18d26e;
+   color: #273b60;
    }
    .navbar-mobile .getstarted,
    .navbar-mobile .getstarted:focus {
@@ -249,7 +249,7 @@
    .navbar-mobile .dropdown ul a:hover,
    .navbar-mobile .dropdown ul .active:hover,
    .navbar-mobile .dropdown ul li:hover>a {
-   color: #18d26e;
+   color: #273b60;
    }
    .navbar-mobile .dropdown>.dropdown-active {
    display: block;
