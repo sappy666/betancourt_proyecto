@@ -4,6 +4,7 @@
   <Whatsapp />
   <TopArrow />
   <HomeView />
+  <CounterComp />
   <ServiciosView />
   <BlogView />
   <FooterComp />
@@ -13,6 +14,7 @@
 import NavBar from "@/components/NavBar.vue"
   import Whatsapp from "@/components/Whatsapp.vue"
   import TopArrow from "@/components/TopArrow.vue"
+  import CounterComp from "@/components/CounterComp.vue"
   import FooterComp from "@/components/FooterComp.vue"
   import ServiciosView from "@/views/ServiciosView.vue"
   import BlogView from "@/views/BlogView.vue"
@@ -25,6 +27,7 @@ import NavBar from "@/components/NavBar.vue"
     NavBar,
     Whatsapp,
     HomeView,
+    CounterComp,
     ServiciosView,
     TopArrow,
     BlogView,
@@ -39,6 +42,12 @@ import NavBar from "@/components/NavBar.vue"
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
+}
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
 }
 
 /* Colors */

@@ -18,6 +18,8 @@
                            <li><a href="#">Áreas</a></li>
                         </ul>
                      </li>
+                     <li><a class="nav-link scrollto" href="#contact">Casos destacados</a></li>
+                     <li><a class="nav-link scrollto" href="#contact">Noticias</a></li>
                      <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
                   </ul>
                   <i class="bi bi-list mobile-nav-toggle"></i>
