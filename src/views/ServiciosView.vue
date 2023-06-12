@@ -3,7 +3,7 @@
       <div class="container" data-aos="fade-up">
          <div class="section-header">
             <h2>Servicios</h2>
-            <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+            <p>Revisa nuestra lista de servicios, selecciona el que mas se acomode a tu necesidad</p>
          </div>
          <div class="row gy-4">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -12,7 +12,7 @@
                      <i class="fa-solid fa-mountain-city"></i>
                   </div>
                   <h3>Contratación Pública</h3>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                  <p>Nuestro equipo está conformado por un grupo de abogados e ingenieros especializados en Contratación Pública. A su vez contamos con vasta experiencia en portal mercadopublico.cl y chilecompra.cl.</p>
                   <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
@@ -23,7 +23,7 @@
                      <i class="fa-solid fa-arrow-up-from-ground-water"></i>
                   </div>
                   <h3>Asesoría en postulación</h3>
-                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                  <p>Nuestro plan te ayuda a evitar errores comunes en las licitaciones públicas, optimizando tus posibilidades de adjudicación..</p>
                   <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
@@ -34,7 +34,7 @@
                      <i class="fa-solid fa-compass-drafting"></i>
                   </div>
                   <h3>Defensa Proveedor/Contratista</h3>
-                  <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                  <p>Especializados en la defensa de contratistas y proveedores del Estado a través del Mercado Público, protegemos sus derechos en una relación comercial desigual, brindando conocimientos técnicos y jurídicos especializados.</p>
                   <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
@@ -45,7 +45,7 @@
                      <i class="fa-solid fa-trowel-bricks"></i>
                   </div>
                   <h3>Tribunal Contratación Pública</h3>
-                  <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                  <p>Estudio jurídico especializado en tramitación eficiente y exitosa ante el Tribunal de Contratación Pública. Nuestras oficinas ubicadas cerca del Tribunal garantizan un proceso judicial fluido y ágil.</p>
                   <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
@@ -56,7 +56,7 @@
                      <i class="fa-solid fa-helmet-safety"></i>
                   </div>
                   <h3>Gestión de Negocios</h3>
-                  <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                  <p>Brindamos asesoría continua a personas jurídicas y naturales, ofreciendo servicios integrales en negociación, puesta en marcha, desarrollo y cierre de negocios. Creamos contratos personalizados para satisfacer las necesidades de cada cliente. Además, proporcionamos informes con análisis jurídicos detallados sobre operaciones comerciales y más.</p>
                   <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>

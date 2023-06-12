@@ -8,9 +8,9 @@
                <nav id="navbar" class="navbar">
                   <ul>
                      <li><a class="nav-link scrollto active" href="../views/HomeView.vue">Inicio</a></li>
-                     <li><a class="nav-link scrollto" href="#portfolio">Quienes somos</a></li>
+                     <li><a class="nav-link scrollto" href="#about">Quienes somos</a></li>
                      <li class="dropdown">
-                        <a href="#"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
+                        <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                            <li><a href="#">Contratación Pública</a></li>
                            <li><a href="#">Asesoría en postulación</a></li>
@@ -21,7 +21,7 @@
                         </ul>
                      </li>
                      <li><a class="nav-link scrollto" href="#contact">Casos destacados</a></li>
-                     <li><a class="nav-link scrollto" href="#contact">Noticias</a></li>
+                     <li><a class="nav-link scrollto" href="#recent-blog-posts">Noticias</a></li>
                      <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
                   </ul>
                   <i class="bi bi-list mobile-nav-toggle"></i>
