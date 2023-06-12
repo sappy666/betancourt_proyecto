@@ -13,7 +13,7 @@
                   </div>
                   <h3>Contratación Pública</h3>
                   <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
             <!-- End Service Item -->
@@ -24,7 +24,7 @@
                   </div>
                   <h3>Asesoría en postulación</h3>
                   <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
             <!-- End Service Item -->
@@ -35,7 +35,7 @@
                   </div>
                   <h3>Defensa Proveedor/Contratista</h3>
                   <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
             <!-- End Service Item -->
@@ -46,7 +46,7 @@
                   </div>
                   <h3>Tribunal Contratación Pública</h3>
                   <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
             <!-- End Service Item -->
@@ -57,7 +57,7 @@
                   </div>
                   <h3>Gestión de Negocios</h3>
                   <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
             <!-- End Service Item -->
@@ -68,7 +68,7 @@
                   </div>
                   <h3>Derecho Laboral</h3>
                   <p>Nuestros abogados son expertos en litigación laboral ejerciendo día a día la defensa frente a los distintos Tribunales del país de los intereses de su representado.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
                </div>
             </div>
             <!-- End Service Item -->
