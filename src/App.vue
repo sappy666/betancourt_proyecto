@@ -68,8 +68,6 @@ import NavBar from "@/components/NavBar.vue"
   scroll-behavior: smooth;
 }
 
-# General
---------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
   color: var(--color-default);
