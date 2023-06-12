@@ -12,10 +12,12 @@
                      <li class="dropdown">
                         <a href="#"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                           <li><a href="#">Áreas</a></li>
-                           <li><a href="#">Áreas</a></li>
-                           <li><a href="#">Áreas</a></li>
-                           <li><a href="#">Áreas</a></li>
+                           <li><a href="#">Contratación Pública</a></li>
+                           <li><a href="#">Asesoría en postulación</a></li>
+                           <li><a href="#">Defensa Proveedor/Contratista</a></li>
+                           <li><a href="#">Tribunal Contratación Pública</a></li>
+                           <li><a href="#">Gestión de Negocios</a></li>
+                           <li><a href="#">Derecho Laboral</a></li>
                         </ul>
                      </li>
                      <li><a class="nav-link scrollto" href="#contact">Casos destacados</a></li>

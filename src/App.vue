@@ -4,9 +4,11 @@
   <Whatsapp />
   <TopArrow />
   <HomeView />
+  <NosotrosComp />
   <CounterComp />
   <ServiciosView />
   <BlogView />
+  <ContactoComp />
   <FooterComp />
 </template>
 
@@ -14,7 +16,9 @@
 import NavBar from "@/components/NavBar.vue"
   import Whatsapp from "@/components/Whatsapp.vue"
   import TopArrow from "@/components/TopArrow.vue"
+  import NosotrosComp from "@/components/NosotrosComp.vue"
   import CounterComp from "@/components/CounterComp.vue"
+  import ContactoComp from "@/components/ContactoComp.vue"
   import FooterComp from "@/components/FooterComp.vue"
   import ServiciosView from "@/views/ServiciosView.vue"
   import BlogView from "@/views/BlogView.vue"
@@ -27,10 +31,12 @@ import NavBar from "@/components/NavBar.vue"
     NavBar,
     Whatsapp,
     HomeView,
+    NosotrosComp,
     CounterComp,
     ServiciosView,
     TopArrow,
     BlogView,
+    ContactoComp,
     FooterComp
   }
   }

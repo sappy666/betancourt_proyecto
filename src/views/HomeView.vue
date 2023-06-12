@@ -13,7 +13,7 @@
       </div>
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
          <div class="carousel-item active" style="background-image: url(../assets/1.jpg)"></div>
-         <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
+         <div class="carousel-item" style="background-image: url(../assets/2.jpg)"></div>
          <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
          <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
          <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
@@ -29,8 +29,32 @@
 </template>
 <script>
    export default {
-   name: "HomeView",
+   name: "HomeView", 
+   data() {
+    return {
+      heroCarouselIndicators: '',
+      heroCarouselItems: []
+    };
+   },
+   mounted() {
+    // Código para asignar los elementos
+    let heroCarouselIndicators = '';
+    let heroCarouselItems = document.querySelectorAll('#heroCarousel .carousel-item');
+   
+    heroCarouselItems.forEach((item, index) => {
+      heroCarouselIndicators += `
+        <li
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="${index}"
+          ${index === 0 ? 'class="active"' : ''}
+        ></li>
+      `;
+    });
+   
+    this.heroCarouselIndicators = heroCarouselIndicators;
+    this.heroCarouselItems = heroCarouselItems;
    }
+   };
 </script>
 <style scoped>
    .hero {
