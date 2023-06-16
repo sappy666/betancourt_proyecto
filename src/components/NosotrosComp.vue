@@ -56,9 +56,12 @@
    h5,
    h6 {
    font-family: "Montserrat", sans-serif;
-   font-weight: 400;
+   font-weight: 700;
    margin: 0 0 20px 0;
    padding: 0;
+   }
+   h2,p,li{
+   font-family: "Montserrat", sans-serif;
    }
    /*--------------------------------------------------------------
    # About

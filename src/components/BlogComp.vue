@@ -3,7 +3,7 @@
       <div class="container" data-aos="fade-up">
          <div class=" section-header">
             <h2>Noticias</h2>
-            <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil enim accusantium dignissimos sunt, quae perferendis, voluptatibus, fugit similique ipsa quisquam? Labore maxime atque alias, cupiditate aliquid laboriosam. Nostrum, odit.</p>
          </div>
          <div class="row gy-5">
             <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -82,10 +82,13 @@
 </template>
 <script>
    export default {
-     name: "BlogView",
+     name: "BlogComp",
      }
 </script>
 <style scoped>
+   h2,p{
+   font-family: "Montserrat", sans-serif;
+   }
    .recent-blog-posts .post-item {
    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
    transition: 0.3s;

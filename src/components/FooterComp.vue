@@ -16,12 +16,11 @@
                      <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre Nosotros</a></li>
                      <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
                   </ul>
-                  <h4>Ayuda</h4>
+                  <br>
+                  <!-- <h4>Ayuda</h4>
                   <ul>
-                     <li><i class="bi bi-chevron-right"></i> <a href="#">Solicita un presupuesto</a></li>
-                     <li><i class="bi bi-chevron-right"></i> <a href="#">Nuestras políticas</a></li>
                      <li><i class="bi bi-chevron-right"></i> <a href="#">Contáctanos</a></li>
-                  </ul>
+                  </ul> -->
                </div>
                <div class="col-lg-3 col-md-6 footer-contact">
                   <h4>Contactános</h4>
@@ -38,10 +37,10 @@
                      </div> -->
                </div>
                <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Subscríbete a nuestro Newsletter</h4>
+            <h4>Newsletter</h4>
             <p>Recibe en tu correo todas las actualizaciones sobre casos destacados y publicaciones.</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" value="Subscribir">
             </form>
           </div>
             </div>
@@ -60,6 +59,9 @@
    background: #fff;
    color: #666666;
    font-family: "Open Sans", sans-serif;
+   }
+   h2,p,a{
+   font-family: "Montserrat", sans-serif;
    }
    a {
    color: #26547C;

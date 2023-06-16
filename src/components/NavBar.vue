@@ -6,24 +6,24 @@
                <!-- <h1 class="logo"><a href="../views/HomeView.vue">Solsa</a></h1> -->
                <a href="index.html" class="logo"><img src="../assets/logo.png" alt="" class="img-fluid"></a>
                <nav id="navbar" class="navbar">
-                  <ul>
-                     <li><a class="nav-link scrollto active" href="../views/HomeView.vue">Inicio</a></li>
-                     <li><a class="nav-link scrollto" href="#about">Quienes somos</a></li>
-                     <li class="dropdown">
+                  <div>
+                     <router-link class="nav-link active" to="/">Inicio</router-link>
+                     <a class="nav-link" href="#about">Quienes somos</a>
+                     <div class="dropdown">
                         <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                           <li><a href="#">Contratación Pública</a></li>
-                           <li><a href="#">Asesoría en postulación</a></li>
-                           <li><a href="#">Defensa Proveedor/Contratista</a></li>
-                           <li><a href="#">Tribunal Contratación Pública</a></li>
-                           <li><a href="#">Gestión de Negocios</a></li>
-                           <li><a href="#">Derecho Laboral</a></li>
-                        </ul>
-                     </li>
-                     <li><a class="nav-link scrollto" href="#contact">Casos destacados</a></li>
-                     <li><a class="nav-link scrollto" href="#recent-blog-posts">Noticias</a></li>
-                     <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-                  </ul>
+                        <div>
+                           <router-link class="nav-link" to="/AreasView">Contratación Pública</router-link>
+                           <router-link class="nav-link" to="/AreasView">Asesoría en postulación</router-link>
+                           <router-link class="nav-link" to="/AreasView">Defensa Proveedor/Contratista</router-link>
+                           <router-link class="nav-link" to="/AreasView">Tribunal Contratación Pública</router-link>
+                           <router-link class="nav-link" to="/AreasView">Gestión de Negocios</router-link>
+                           <router-link class="nav-link" to="/AreasView">Derecho Laboral</router-link>
+                        </div>
+                     </div>
+                     <a class="nav-link" href="#contact">Casos destacados</a>
+                     <a class="nav-link" href="#recent-blog-posts">Noticias</a>
+                     <a class="nav-link" href="#contact">Contacto</a>
+                  </div>
                   <i class="bi bi-list mobile-nav-toggle"></i>
                </nav>
                <!-- .navbar -->
@@ -78,7 +78,7 @@
    .navbar {
    padding: 0;
    }
-   .navbar ul {
+   .navbar > div {
    margin: 0;
    padding: 0;
    display: flex;
@@ -114,7 +114,7 @@
    .navbar li:hover>a {
    color: #273b60;
    }
-   .navbar .dropdown ul {
+   .navbar .dropdown  div {
    display: block;
    position: absolute;
    left: 14px;
@@ -128,45 +128,45 @@
    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
    transition: 0.3s;
    }
-   .navbar .dropdown ul li {
+   .navbar .dropdown > div :nth-child(n) {
    min-width: 200px;
    }
-   .navbar .dropdown ul a {
+   .navbar .dropdown > div :nth-child(n) {
    padding: 10px 20px;
    text-transform: none;
    color: #666666;
    }
-   .navbar .dropdown ul a i {
+   .navbar .dropdown div a i {
    font-size: 12px;
    }
-   .navbar .dropdown ul a:hover,
-   .navbar .dropdown ul .active:hover,
-   .navbar .dropdown ul li:hover>a {
+   .navbar .dropdown > div a:hover,
+   .navbar .dropdown > div .active:hover,
+   .navbar .dropdown > div :nth-child(n):hover>a {
    color: #273b60;
    }
-   .navbar .dropdown:hover>ul {
+   .navbar .dropdown:hover>div {
    opacity: 1;
    top: 100%;
    visibility: visible;
    }
-   .navbar .dropdown .dropdown ul {
+   .navbar .dropdown .dropdown div {
    top: 0;
    left: calc(100% - 30px);
    visibility: hidden;
    }
-   .navbar .dropdown .dropdown:hover>ul {
+   .navbar .dropdown .dropdown:hover>div {
    opacity: 1;
    top: 0;
    left: 100%;
    visibility: visible;
    }
    @media (max-width: 1366px) {
-   .navbar .dropdown .dropdown ul {
-   left: -90%;
-   }
-   .navbar .dropdown .dropdown:hover>ul {
-   left: -100%;
-   }
+      .navbar .dropdown .dropdown div {
+         left: -90%;
+      }
+      .navbar .dropdown .dropdown:hover>div {
+         left: -100%;
+      }
    }
    /**
    * Mobile Navigation 
@@ -183,7 +183,7 @@
    .mobile-nav-toggle {
    display: block;
    }
-   .navbar ul {
+   .navbar > div {
    display: none;
    }
    }
@@ -203,7 +203,7 @@
    top: 15px;
    right: 15px;
    }
-   .navbar-mobile ul {
+   .navbar-mobile > div {
    display: block;
    position: absolute;
    top: 55px;

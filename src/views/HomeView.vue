@@ -12,7 +12,7 @@
          </div>
       </div>
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-         <div class="carousel-item active" style="background-image: url(../assets/1.jpg)"></div>
+         <!-- <div class="carousel-item active" style="background-image: url(../assets/1.jpg)"></div>
          <div class="carousel-item" style="background-image: url(../assets/2.jpg)"></div>
          <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
          <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
@@ -22,14 +22,35 @@
          </a>
          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-         </a>
+         </a> -->
       </div>
    </section>
    <!-- End Hero Section -->
+   <NosotrosComp />
+   <CounterComp />
+   <ServiciosComp />
+   <BlogComp />
+   <ContactoComp />
+
 </template>
 <script>
+  import NosotrosComp from "@/components/NosotrosComp.vue"
+  import CounterComp from "@/components/CounterComp.vue"
+  import ServiciosComp from "@/components/ServiciosComp.vue"
+  import BlogComp from "@/components/BlogComp.vue"
+  import ContactoComp from "@/components/ContactoComp.vue"
+
+
+
    export default {
-   name: "HomeView", 
+   name: "HomeView",
+   components: {
+   NosotrosComp,
+   CounterComp,
+   ServiciosComp,
+   BlogComp,
+   ContactoComp,
+},
    data() {
     return {
       heroCarouselIndicators: '',
@@ -57,10 +78,21 @@
    };
 </script>
 <style scoped>
+   h2,p{
+   font-family: "Montserrat", sans-serif;
+   }
+
    .hero {
    overflow-x: hidden;
    padding: 0;
+   background-image: url("../assets/1.jpg");
+   background-size: cover;
    }
+
+   .hero .info{
+      backdrop-filter: blur(50px);
+   }
+
    .hero .carousel {
    width: 100%;
    min-height: 100vh;
@@ -90,9 +122,9 @@
    z-index: 2;
    }
    @media (max-width: 768px) {
-   .hero .info {
-   padding: 0 50px;
-   }
+      .hero .info {
+      padding: 0 50px;
+      }
    }
    .hero .info h2 {
    color: #fff;
@@ -134,6 +166,7 @@
    transition: 0.5s;
    margin: 10px;
    color: #fff;
+   background: var(--color-primary);
    border: 2px solid var(--color-primary);
    }
    .hero .info .btn-get-started:hover {
@@ -181,5 +214,12 @@
    .hero .carousel-control-prev:hover,
    .hero .carousel-control-next:hover {
    opacity: 0.9;
+   }
+   .btn-get-started{
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+   }
+   .btn-get-started:hover{
+background-color: #2c214c;
    }
 </style>

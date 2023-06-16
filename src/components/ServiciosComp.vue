@@ -57,8 +57,7 @@
                   </div>
                   <h3>Gestión de Negocios</h3>
                   <p>Brindamos asesoría continua a personas jurídicas y naturales, ofreciendo servicios integrales en negociación, puesta en marcha, desarrollo y cierre de negocios. Creamos contratos personalizados para satisfacer las necesidades de cada cliente. Además, proporcionamos informes con análisis jurídicos detallados sobre operaciones comerciales y más.</p>
-                  <a href="service-details.html" class="readmore stretched-link">Leer más<i class="bi bi-arrow-right"></i></a>
-               </div>
+                  <router-link class="nav-link" to="/AreasView">Leer más</router-link>               </div>
             </div>
             <!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
@@ -79,10 +78,13 @@
 </template>
 <script>
    export default {
-     name: "ServiciosView",
+     name: "ServiciosComp",
      }
 </script>
 <style scoped>
+   h2,p{
+   font-family: "Montserrat", sans-serif;
+   }
    .services .service-item {
    padding: 40px;
    background: #fff;

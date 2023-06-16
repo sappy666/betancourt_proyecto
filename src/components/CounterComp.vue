@@ -30,10 +30,13 @@
    }
 </script>
 <style scoped>
+   h2,p{
+   font-family: "Montserrat", sans-serif;
+   }
+
    body {
    background: #fff;
    color: #666666;
-   font-family: "Open Sans", sans-serif;
    }
    a {
    color: #26547C;

@@ -69,7 +69,6 @@
    body {
    background: #fff;
    color: #666666;
-   font-family: "Open Sans", sans-serif;
    }
    a {
    color: #26547C;
@@ -98,6 +97,9 @@
    margin: 0 0 20px 0;
    padding: 0;
    }
+   h2,p{
+   font-family: "Montserrat", sans-serif;
+   }
    .contact {
    padding-top: 5px;
    }
@@ -124,7 +126,17 @@
    font-weight: 600;
    margin-bottom: 5px;
    color: #37423b;
+   font-family: "Montserrat", sans-serif;
    }
+   .form-control{
+      font-family: "Montserrat", sans-serif;
+   }
+
+   button{
+      font-family: "Montserrat", sans-serif;
+
+   }
+   
    .contact .info p {
    padding: 0 0 0 60px;
    margin-bottom: 0;
