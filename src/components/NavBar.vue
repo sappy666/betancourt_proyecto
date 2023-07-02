@@ -50,25 +50,25 @@
 </script>
 <style scoped>
    body {
-   background: #fff;
-   color: #666666;
-   font-family: "Open Sans", sans-serif;
+      background: #fff;
+      color: #666666;
+      font-family: "Open Sans", sans-serif;
    }
    a {
-   color: #273b60;
-   transition: 0.5s;
-   text-decoration: none;
+      color: #273b60;
+      transition: 0.5s;
+      text-decoration: none;
    }
    a:hover,
    a:active,
    a:focus {
-   color: #273b60;
-   outline: none;
-   text-decoration: none;
+      color: #273b60;
+      outline: none;
+      text-decoration: none;
    }
    p {
-   padding: 0;
-   margin: 0 0 30px 0;
+      padding: 0;
+      margin: 0 0 30px 0;
    }
    h1,
    h2,
@@ -76,9 +76,9 @@
    h4,
    h5,
    h6 {
-   font-family: "Montserrat", sans-serif;
-   font-weight: 400;
-   margin: 0 0 20px 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      margin: 0 0 20px 0;
 
    }
 
@@ -86,32 +86,31 @@
       height: 100px;
    }
    .navbar {
-   padding: 0;
+      padding: 0;
    }
    .navbar > div {
-
-   margin: 0;
-   padding: 0;
-   display: flex;
-   list-style: none;
-   align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
    }
    .navbar li {
-   position: relative;
+      position: relative;
    }
    .navbar a,
    .navbar a:focus {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 10px 0 10px 30px;
-   font-family: "Montserrat", sans-serif;
-   font-size: 13px;
-   font-weight: 600;
-   color: #fff;
-   white-space: nowrap;
-   text-transform: uppercase;
-   transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0 10px 30px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      text-transform: uppercase;
+      transition: 0.3s;
    }
    .navbar a i,
    .navbar a:focus i {
