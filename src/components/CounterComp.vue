@@ -28,7 +28,6 @@
   export default {
   name: 'CounterComp',
   mounted() {
-    // Aquí inicias el contador cuando el componente se monta en el DOM
     this.initPureCounter();
   },
   methods: {

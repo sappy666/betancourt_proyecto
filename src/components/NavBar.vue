@@ -1,9 +1,8 @@
 <template>
    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-      <div class="container-fluid">
+      <div id="barra" class="container-fluid">
          <div class="row justify-content-center align-items-center">
             <div class="col-xl-11 d-flex align-items-center justify-content-between">
-               <!-- <h1 class="logo"><a href="../views/HomeView.vue">Solsa</a></h1> -->
                <a href="index.html" class="logo"><img src="../assets/logo.png" alt="" class="img-fluid"></a>
                <nav id="navbar" class="navbar">
                   <div>
@@ -26,7 +25,6 @@
                   </div>
                   <i class="bi bi-list mobile-nav-toggle"></i>
                </nav>
-               <!-- .navbar -->
             </div>
          </div>
       </div>
@@ -35,30 +33,42 @@
 </template>
 <script>
    export default {
-   name: 'NavBar', 
+      name: 'NavBar',
+      mounted(){
+         window.addEventListener("scroll", function() {
+            if (window.scrollY >= 50) { // Si la página se ha desplazado más de 50px
+                  document.getElementById("return-to-top").style.display = "block"; // Mostrar la flecha
+                  document.getElementById("barra").style.backgroundColor = "#273050"; // Fondo a azul
+            } 
+            else {
+                  document.getElementById("return-to-top").style.display = "none"; // Ocultar la flecha
+                  document.getElementById("barra").style.backgroundColor = "transparent"; // Fondo transparente
+            }
+         });
+      }
    }
 </script>
 <style scoped>
    body {
-   background: #fff;
-   color: #666666;
-   font-family: "Open Sans", sans-serif;
+      background: #fff;
+      color: #666666;
+      font-family: "Open Sans", sans-serif;
    }
    a {
-   color: #273b60;
-   transition: 0.5s;
-   text-decoration: none;
+      color: #273b60;
+      transition: 0.5s;
+      text-decoration: none;
    }
    a:hover,
    a:active,
    a:focus {
-   color: #273b60;
-   outline: none;
-   text-decoration: none;
+      color: #273b60;
+      outline: none;
+      text-decoration: none;
    }
    p {
-   padding: 0;
-   margin: 0 0 30px 0;
+      padding: 0;
+      margin: 0 0 30px 0;
    }
    h1,
    h2,
@@ -66,41 +76,41 @@
    h4,
    h5,
    h6 {
-   font-family: "Montserrat", sans-serif;
-   font-weight: 400;
-   margin: 0 0 20px 0;
-   /* padding: 0; */
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      margin: 0 0 20px 0;
+
    }
+
    .logo img{
-      height: 150px;
-      padding-top: 15px;
+      height: 100px;
    }
    .navbar {
-   padding: 0;
+      padding: 0;
    }
    .navbar > div {
-   margin: 0;
-   padding: 0;
-   display: flex;
-   list-style: none;
-   align-items: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
    }
    .navbar li {
-   position: relative;
+      position: relative;
    }
    .navbar a,
    .navbar a:focus {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 10px 0 10px 30px;
-   font-family: "Montserrat", sans-serif;
-   font-size: 13px;
-   font-weight: 600;
-   color: #fff;
-   white-space: nowrap;
-   text-transform: uppercase;
-   transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0 10px 30px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      text-transform: uppercase;
+      transition: 0.3s;
    }
    .navbar a i,
    .navbar a:focus i {
