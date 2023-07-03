@@ -26,16 +26,16 @@
       </div>
    </section>
    <!-- End Hero Section -->
-   <NosotrosComp />
    <CounterComp />
+   <NosotrosComp />
    <ServiciosComp />
    <ClientesComp />
    <BlogComp />
    <ContactoComp />
 </template>
 <script>
-   import NosotrosComp from "@/components/NosotrosComp.vue"
    import CounterComp from "@/components/CounterComp.vue"
+   import NosotrosComp from "@/components/NosotrosComp.vue"
    import ServiciosComp from "@/components/ServiciosComp.vue"
    import ClientesComp from "@/components/ClientesComp.vue"
    import BlogComp from "@/components/BlogComp.vue"
@@ -46,8 +46,8 @@
     export default {
     name: "HomeView",
     components: {
+   CounterComp,
     NosotrosComp,
-    CounterComp,
     ServiciosComp,
     ClientesComp,
     BlogComp,

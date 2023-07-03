@@ -3,7 +3,7 @@
       <div id="barra" class="container-fluid">
          <div class="row justify-content-center align-items-center">
             <div class="col-xl-11 d-flex align-items-center justify-content-between">
-               <a href="index.html" class="logo"><img src="../assets/logo.png" alt="" class="img-fluid"></a>
+               <a href="index.html" class="logo"><img src="../assets/logo1.png" alt="" class="img-fluid"></a>
                <nav id="navbar" class="navbar">
                   <div>
                      <router-link class="nav-link active" to="/">Inicio</router-link>
