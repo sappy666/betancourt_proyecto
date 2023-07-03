@@ -1,4 +1,5 @@
 <template>
+  <PreNavbar />
   <NavBar />
   <router-view />
   <Whatsapp />
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+import PreNavbar from "@/components/PreNavbar.vue"
 import NavBar from "@/components/NavBar.vue"
   import Whatsapp from "@/components/Whatsapp.vue"
   import TopArrow from "@/components/TopArrow.vue"
@@ -17,6 +19,7 @@ import NavBar from "@/components/NavBar.vue"
   export default {
     name: 'App',
     components: {
+    PreNavbar,
     NavBar,
     Whatsapp,
     TopArrow,

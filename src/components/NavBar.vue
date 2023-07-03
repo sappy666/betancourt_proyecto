@@ -81,7 +81,9 @@
       margin: 0 0 20px 0;
 
    }
-
+#header{
+   margin-top: 2.5rem;
+}
    .logo img{
       height: 100px;
    }

@@ -91,12 +91,13 @@
    }
    .hero .info{
    backdrop-filter: blur(5px);
+   margin-top: 2.5rem;
    }
    .hero .carousel {
    width: 100%;
    min-height: 100vh;
-   padding: 80px 0;
-   margin: 0;
+   padding: 0px 0;
+   margin: 0px;
    position: relative;
    }
    .hero .carousel-item {
