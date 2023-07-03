@@ -29,11 +29,12 @@ import NavBar from "@/components/NavBar.vue"
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Work Sans", sans-serif;
+  --font-default:  'Raleway', sans-serif;
+  --font-primary:'Raleway', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
 }
 
 :root {
@@ -61,6 +62,7 @@ body {
 }
 
 a {
+  font-family: var(--font-default);
   color: var(--color-primary);
   text-decoration: none;
 }
@@ -70,6 +72,7 @@ a:hover {
   text-decoration: none;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -79,12 +82,18 @@ h6 {
   font-family: var(--font-primary);
 }
 
+p{
+  font-weight: 300;
+  font-size: medium;
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
   padding: 80px 0;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section-bg {

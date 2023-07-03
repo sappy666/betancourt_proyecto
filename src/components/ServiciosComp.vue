@@ -82,9 +82,6 @@
      }
 </script>
 <style scoped>
-   h2,p{
-   font-family: "Montserrat", sans-serif;
-   }
    .services .service-item {
    padding: 40px;
    background: #fff;

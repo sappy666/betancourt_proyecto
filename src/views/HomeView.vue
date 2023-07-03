@@ -81,7 +81,7 @@
 </script>
 <style scoped>
    h2,p{
-   font-family: "Montserrat", sans-serif;
+      font-family: var(--font-primary);
    }
    .hero {
    overflow-x: hidden;
@@ -217,7 +217,6 @@
    }
    .btn-get-started{
    text-decoration: none;
-   font-family: "Montserrat", sans-serif;
    }
    .btn-get-started:hover{
    background-color: #2c214c;

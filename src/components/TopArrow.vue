@@ -67,7 +67,6 @@ top: 5px;
    /* Extra Things */
 body{
 background: #eee ;
-font-family: 'Open Sans', sans-serif;
 }
 h3{
 font-size: 30px; 

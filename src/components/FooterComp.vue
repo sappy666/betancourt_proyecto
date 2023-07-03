@@ -58,10 +58,6 @@
    body {
    background: #fff;
    color: #666666;
-   font-family: "Open Sans", sans-serif;
-   }
-   h2,p,a{
-   font-family: "Montserrat", sans-serif;
    }
    a {
    color: #26547C;
@@ -85,7 +81,6 @@
    h4,
    h5,
    h6 {
-   font-family: "Montserrat", sans-serif;
    font-weight: 400;
    margin: 0 0 20px 0;
    padding: 0;
@@ -108,7 +103,6 @@
    margin: 0 0 20px 0;
    padding: 2px 0 2px 10px;
    line-height: 1;
-   font-family: "Montserrat", sans-serif;
    font-weight: 700;
    letter-spacing: 3px;
    border-left: 4px solid #26547C;
@@ -117,7 +111,6 @@
    font-size: 14px;
    line-height: 24px;
    margin-bottom: 0;
-   font-family: "Montserrat", sans-serif;
    color: #eee;
    }
    #footer .footer-top .social-links a {

@@ -66,42 +66,9 @@
    }
 </script>
 <style scoped>
-   body {
-   background: #fff;
-   color: #666666;
-   }
-   a {
-   color: #26547C;
-   transition: 0.5s;
-   text-decoration: none;
-   }
-   a:hover,
-   a:active,
-   a:focus {
-   color: #26547C;
-   outline: none;
-   text-decoration: none;
-   }
-   p {
-   padding: 0;
-   margin: 0 0 30px 0;
-   }
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
-   font-family: "Montserrat", sans-serif;
-   font-weight: 400;
-   margin: 0 0 20px 0;
-   padding: 0;
-   }
-   h2,p{
-   font-family: "Montserrat", sans-serif;
-   }
    .contact {
    padding-top: 5px;
+   font-family: var(--font-primary);
    }
    .contact .info {
    width: 100%;
@@ -125,23 +92,18 @@
    font-size: 22px;
    font-weight: 600;
    margin-bottom: 5px;
-   color: #37423b;
-   font-family: "Montserrat", sans-serif;
-   }
-   .form-control{
-      font-family: "Montserrat", sans-serif;
+   color: #403d62;
    }
 
    button{
-      font-family: "Montserrat", sans-serif;
-
+      font-family: var(--font-primary);
    }
    
    .contact .info p {
    padding: 0 0 0 60px;
    margin-bottom: 0;
    font-size: 14px;
-   color: #657a6d;
+   color: #4e5b87;
    }
    .contact .info .email,
    .contact .info .phone {
@@ -163,7 +125,7 @@
    .contact .php-email-form .error-message {
    display: none;
    color: #fff;
-   background: #ed3c0d;
+   background: #c43e19;
    text-align: left;
    padding: 15px;
    font-weight: 600;

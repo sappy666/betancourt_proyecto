@@ -52,12 +52,12 @@
    body {
       background: #fff;
       color: #666666;
-      font-family: "Open Sans", sans-serif;
    }
    a {
       color: #273b60;
       transition: 0.5s;
       text-decoration: none;
+
    }
    a:hover,
    a:active,
@@ -76,7 +76,6 @@
    h4,
    h5,
    h6 {
-      font-family: "Montserrat", sans-serif;
       font-weight: 400;
       margin: 0 0 20px 0;
 
@@ -106,7 +105,6 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px 0 10px 30px;
-      font-family: "Montserrat", sans-serif;
       font-size: 13px;
       font-weight: 600;
       color: #fff;
