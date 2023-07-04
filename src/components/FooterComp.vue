@@ -4,10 +4,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-md-6 footer-info">
-                  <h3>Betancourt Abogados</h3>
-                  <p>
-                     Asesoría Integral Jurídica
-                  </p>
+                  <a href="index.html" class="logo"><img src="../assets/logo2.png" alt="" class="img-fluid"></a>
                </div>
                <div class="col-lg-3 col-md-6 footer-links">
                   <h4>Sitio</h4>
@@ -84,6 +81,9 @@
    font-weight: 400;
    margin: 0 0 20px 0;
    padding: 0;
+   }
+   .logo{
+      max-width: 50px;
    }
    #footer {
    background: #000;
