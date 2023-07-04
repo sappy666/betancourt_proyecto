@@ -86,7 +86,7 @@
    .hero {
    overflow-x: hidden;
    padding: 0;
-   background-image: url("../assets/5.jpg");
+   background-image: url("../assets/2.jpg");
    background-size: cover;
    }
    .hero .info{

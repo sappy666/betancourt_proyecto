@@ -1,33 +1,32 @@
 <template>
-   <!-- ======= Clients Section ======= -->
    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="../assets/Clientes/1.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/2.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/3.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/4.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/5.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/6.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/7.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/8.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/9.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/10.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/11.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/12.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/13.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/14.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/15.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="../assets/Clientes/16.jpg" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
+        <section class="mt-5">
+    <div class="section-header">
+            <h2>Han confiado en nosotros</h2>
+            <p>Conoce algunos de nuestros clientes</p>
+         </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/1.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/2.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/3.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/4.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/5.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/6.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/7.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/8.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/9.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/10.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/11.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/12.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/13.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/14.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/15.jpg" alt="" height="60"></div>
+          <div class="col-lg-2 col-md-3 col-6 py-2 py-lg-0"><img class="d-block mx-auto partner" src="../assets/Clientes/16.jpg" alt="" height="60"></div>
         </div>
-
       </div>
-    </section><!-- End Clients Section -->
-
+    </section>
+  </section>
 </template>
 <script>
 import Swiper from 'swiper';
@@ -76,52 +75,19 @@ export default {
 };
 </script>
 <style scoped>
-   h2,p{
-   font-family: "Montserrat", sans-serif;
-   }
 
-   body {
-   background: #fff;
-   color: #666666;
-   }
-   a {
-   color: #26547C;
-   transition: 0.5s;
-   text-decoration: none;
-   }
-   a:hover,
-   a:active,
-   a:focus {
-   color: #26547C;
-   outline: none;
-   text-decoration: none;
-   }
-   p {
-   padding: 0;
-   margin: 0 0 30px 0;
-   }
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
-   font-family: "Montserrat", sans-serif;
-   font-weight: 400;
-   margin: 0 0 20px 0;
-   padding: 0;
-   }
 .clients {
   padding-top: 20px;
 }
 
-.clients .swiper-slide img {
+.clients img {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
+  padding-top: 10px;
 }
 
-.clients .swiper-slide img:hover {
+.clients img:hover {
   filter: none;
   opacity: 1;
 }

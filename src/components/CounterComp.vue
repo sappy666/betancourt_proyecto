@@ -4,20 +4,20 @@
           <div class="row gy-4">
             <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
-                <h6 class="h1 mb-0">705</h6>
-                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Casos </p>
+                <h6 class="h1 mb-0">+50</h6>
+                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Casos de éxito</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
-                <h6 class="h1 mb-0">809</h6>
+                <h6 class="h1 mb-0">+100</h6>
                 <p class="ms-3 flex-grow-1 text-uppercase mb-0">Clientes felices </p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
-                <h6 class="h1 mb-0">354</h6>
-                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Awards recieved </p>
+                <h6 class="h1 mb-0">+15</h6>
+                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Nuevos clientes cada mes</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
