@@ -19,8 +19,8 @@
                            <router-link class="nav-link" to="/AreasView">Derecho Laboral</router-link>
                         </div>
                      </div>
-                     <a class="nav-link" href="#contact">Casos destacados</a>
-                     <a class="nav-link" href="#recent-blog-posts">Noticias</a>
+                     <router-link class="nav-link" to="/BlogView">Casos destacados</router-link>
+                     <router-link class="nav-link" to="/BlogView">Noticias</router-link>
                      <a class="nav-link" href="#contact">Contacto</a>
                   </div>
                   <i class="bi bi-list mobile-nav-toggle"></i>

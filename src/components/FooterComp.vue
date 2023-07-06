@@ -22,7 +22,7 @@
                <div class="col-lg-3 col-md-6 footer-contact">
                   <h4>Contactános</h4>
                   <p>
-                     <strong>Teléfono:</strong> +56 2 2380 0530<br>
+                     <strong>Teléfono:</strong> <br>+56 2 2380 0530<br>
                      <strong>Email:</strong> <br>contacto@betancourtabogados.cl<br>
                      asesorias@betancourtabogados.cl<br>
                   </p>
@@ -83,14 +83,13 @@
    padding: 0;
    }
    .logo{
-      max-width: 50px;
+      max-width: 20px;
    }
    #footer {
    background: #000;
    padding: 0 0 30px 0;
-   color: #eee;
-   font-size: 14px;
-   }
+   color: #959595;
+   font-size: 14px;   }
    #footer .footer-top {
    background: #111;
    padding: 60px 0 30px 0;
@@ -108,10 +107,11 @@
    border-left: 4px solid #26547C;
    }
    #footer .footer-top .footer-info p {
-   font-size: 14px;
+   font-size: 12px;
+   font-weight: 300;
    line-height: 24px;
    margin-bottom: 0;
-   color: #eee;
+   color: #c8c8c8;
    }
    #footer .footer-top .social-links a {
    display: inline-block;
@@ -186,9 +186,11 @@
    }
    #footer .footer-top .footer-contact {
    margin-bottom: 30px;
+   font-weight: 300;
    }
    #footer .footer-top .footer-contact p {
    line-height: 26px;
+   font-size: 14px;
    }
    #footer .footer-top .footer-newsletter {
    margin-bottom: 30px;

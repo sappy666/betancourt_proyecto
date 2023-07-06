@@ -2,14 +2,13 @@
    <section id="recent-blog-posts" class="recent-blog-posts">
       <div class="container" data-aos="fade-up">
          <div class=" section-header">
-            <h2>Noticias</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil enim accusantium dignissimos sunt, quae perferendis, voluptatibus, fugit similique ipsa quisquam? Labore maxime atque alias, cupiditate aliquid laboriosam. Nostrum, odit.</p>
+            <h2>Noticias</h2><p>Mantente al día con las últimas noticias, casos destacados y acontecimientos actuales para estar informado</p>
          </div>
          <div class="row gy-5">
             <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                <div class="post-item position-relative h-100">
                   <div class="post-img position-relative overflow-hidden">
-                     <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+                     <img src="../assets/1.jpg" class="img-fluid" alt="">
                      <span class="post-date">Deciembre 12</span>
                   </div>
                   <div class="post-content d-flex flex-column">
@@ -32,7 +31,7 @@
             <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                <div class="post-item position-relative h-100">
                   <div class="post-img position-relative overflow-hidden">
-                     <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+                     <img src="../assets/2.jpg" class="img-fluid" alt="">
                      <span class="post-date">Julio 17</span>
                   </div>
                   <div class="post-content d-flex flex-column">
@@ -55,7 +54,7 @@
             <div class="col-xl-4 col-md-6">
                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
                   <div class="post-img position-relative overflow-hidden">
-                     <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+                     <img src="../assets/1.jpg" class="img-fluid" alt="">
                      <span class="post-date">Septiembre 05</span>
                   </div>
                   <div class="post-content d-flex flex-column">

@@ -4,11 +4,8 @@
       <div class="section-header">
          <h2>Contacto</h2>
       </div>
-      <div data-aos="fade-up">
-         <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4396618893584!2d-70.65089072426429!3d-33.437850196867096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a2531247a7%3A0xc79a8238c44e4e85!2sSan%20Antonio%20427%2C%20oficina%20711%2C%208320121%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1686601682340!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-      </div>
-      <div class="container" data-aos="fade-up">
-         <div class="row mt-5">
+           <div class="container" data-aos="fade-up">
+         <div class="row mt-2">
             <div class="col-lg-4">
                <div class="info">
                   <div class="address">
@@ -65,7 +62,7 @@
 </template>
 <script>
    export default {
-   name: 'ContactoComp',
+   name: 'ContactoComp2',
    }
 </script>
 <style scoped>

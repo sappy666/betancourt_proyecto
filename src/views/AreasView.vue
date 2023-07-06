@@ -113,18 +113,18 @@
         </div>
      </div>
   </section>
-  <ContactoComp />
+  <ContactoComp2 />
 </template>
 <script>
    import QuoteComp from "@/components/QuoteComp.vue"
-   import ContactoComp from "@/components/ContactoComp.vue"
+   import ContactoComp2 from "@/components/ContactoComp2.vue"
 
 
   export default {
   name: "AreasView",
   components: {
    QuoteComp,
-   ContactoComp,
+   ContactoComp2,
   }, };
 </script>
 <style scoped>
