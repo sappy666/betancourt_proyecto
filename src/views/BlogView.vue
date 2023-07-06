@@ -5,7 +5,7 @@
          <div class="d-flex justify-content-between align-items-center">
             <h2>Blog</h2>
             <ol>
-               <li><a href="index.html">Inicio</a></li>
+               <li><router-link class="nav-link" to="/">Inicio</router-link></li>
                <li>Blog</li>
             </ol>
          </div>
@@ -24,7 +24,7 @@
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div>
                         <h2 class="title">
-                           <a href="blog-details.html">Recursos de Reposición</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
                         </h2>
                         <div class="content">
                            <p>
@@ -32,7 +32,7 @@
                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
-                           <a href="blog-details.html">Leer más</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
                         </div>
                      </article>
                   </div>
@@ -43,14 +43,14 @@
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div>
                         <h2 class="title">
-                           <a href="blog-details.html">Recursos de Reposición</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
                         </h2>
                         <div class="content">
                            <p>
                               Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
-                           <a href="blog-details.html">Leer más</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
                         </div>
                      </article>
                   </div>
@@ -61,14 +61,14 @@
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div>
                         <h2 class="title">
-                           <a href="blog-details.html">Recursos de Reposición</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
                         </h2>
                         <div class="content">
                            <p>
                               Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
-                           <a href="blog-details.html">Leer más</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
                         </div>
                      </article>
                   </div>
@@ -79,14 +79,14 @@
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div>
                         <h2 class="title">
-                           <a href="blog-details.html">Recursos de Reposición</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
                         </h2>
                         <div class="content">
                            <p>
                               Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
-                           <a href="blog-details.html">Leer más</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
                         </div>
                      </article>
                   </div>
@@ -97,14 +97,14 @@
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div>
                         <h2 class="title">
-                           <a href="blog-details.html">Recursos de Reposición</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
                         </h2>
                         <div class="content">
                            <p>
                               Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
-                           <a href="blog-details.html">Leer más</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
                         </div>
                      </article>
                   </div>
@@ -115,14 +115,14 @@
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div>
                         <h2 class="title">
-                           <a href="blog-details.html">Recursos de Reposición</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
                         </h2>
                         <div class="content">
                            <p>
                               Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
-                           <a href="blog-details.html">Leer más</a>
+                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
                         </div>
                      </article>
                   </div>
