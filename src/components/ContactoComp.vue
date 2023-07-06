@@ -13,18 +13,18 @@
                <div class="info">
                   <div class="address">
                      <i class="bi bi-geo-alt"></i>
-                     <h4>Ubicación:</h4>
+                     <h4>Ubicación</h4>
                      <p>San Antonio 427 oficina 711</p>
                   </div>
                   <div class="email">
                      <i class="bi bi-envelope"></i>
-                     <h4>Email:</h4>
+                     <h4>Email</h4>
                      <p>contacto@betancourtabogados.cl</p>
                      <p>asesorias@betancourtabogados.cl</p>
                   </div>
                   <div class="phone">
                      <i class="bi bi-phone"></i>
-                     <h4>Teléfonos:</h4>
+                     <h4>Teléfonos</h4>
                      <p>+56 2 2380 0530</p>
                      <p>+56 2 2633 7482</p>
                      <p>+56 2 2633 1851</p>
@@ -95,7 +95,7 @@
    font-size: 22px;
    font-weight: 600;
    margin-bottom: 5px;
-   color: #403d62;
+   color: #26547C;
    }
    button{
    font-family: var(--font-primary);
@@ -104,7 +104,7 @@
    padding: 0 0 0 60px;
    margin-bottom: 0;
    font-size: 14px;
-   color: #4e5b87;
+   color: #26547C;
    }
    .contact .info .email,
    .contact .info .phone {
@@ -176,7 +176,7 @@
    padding: 10px 12px;
    }
    .contact .php-email-form button[type=submit] {
-   background: #5f74cf;
+   background: #26547C;
    border: 0;
    padding: 10px 35px;
    color: #fff;

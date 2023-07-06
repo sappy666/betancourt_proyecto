@@ -1,16 +1,19 @@
 <template>
    <section class="hero bg-cover bg-position py-4">
-      <div class="container py-5 index-forward text-white">
+      <div class="banner container py-5 index-forward text-white">
          <h1>Nombre de entrada</h1>
          <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-none mb-0 p-0">
                <li class="breadcrumb-item ps-0">
-                  <router-link class="nav-link" to="/"><i class="fas fa-home me-2"></i>Home</router-link>
+                  <router-link class="nav-link" to="/"> <i class="bi bi-house-door"></i> Inicio</router-link>
                </li>
-               <li class="breadcrumb-item active">
+               <li class="breadcrumb-item">
                   <router-link class="nav-link" to="/BlogView">Noticias</router-link>
                </li>
-               <li>Entrada</li>
+               <li class="breadcrumb-item active">
+                  <router-link class="nav-link" to="/BlogView">Entrada</router-link>
+               </li>
+               <!-- <li class="breadcrumb-item active">Entrada</li> -->
             </ol>
          </nav>
       </div>
@@ -25,7 +28,7 @@
                   <div class="post-img">
                      <img src="../assets/2.jpg" alt="" class="img-fluid">
                   </div>
-                  <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+                  <h2 class="title">Contratación Pública</h2>
                   <div class="content">
                      <p>
                         Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
@@ -36,7 +39,7 @@
                      </p>
                      <blockquote>
                         <p>
-                           Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                           Las nuevas leyes son un paso importante hacia una justicia más transparente y eficiente en Chile. Estas reformas nos permitirán fortalecer el sistema judicial y asegurar un acceso igualitario a la justicia para todos los ciudadanos
                         </p>
                      </blockquote>
                      <p>
@@ -61,6 +64,7 @@
                      </p>
                   </div>
                   <!-- End post content -->
+                  <router-link class="nav-link py-5" to="/BlogView"><i class="bi bi-arrow-left"></i> Volver a Noticias</router-link>
                </article>
                <!-- End blog post -->
             </div>
@@ -95,12 +99,21 @@
    margin-right: auto;
    margin-left: auto;
    }
+   .banner{
+   margin-top: 4rem;
+   font-family: 'Raleway', sans-serif;
+   }
+   .hero.bg-cover{
+   /* background-color: black; */
+   background: url(../assets/fondobanner3.jpg);
+   }
+
    .breadcrumb {
-   display: flex;
-   flex-wrap: wrap;
    padding: 0 0;
-   margin-bottom: 1rem;
    list-style: none;
+   }
+   .breadcrumb-item:hover{
+      color: antiquewhite;
    }
    .breadcrumb-item + .breadcrumb-item {
    padding-left: 0.5rem;
@@ -207,35 +220,5 @@
    background-color: var(--color-secondary);
    margin-top: 20px;
    margin-bottom: 20px;
-   }
-   .blog .blog-details .meta-top {
-   margin-top: 20px;
-   color: var(--color-gray);
-   }
-   .blog .blog-details .meta-top ul {
-   display: flex;
-   flex-wrap: wrap;
-   list-style: none;
-   align-items: center;
-   padding: 0;
-   margin: 0;
-   }
-   .blog .blog-details .meta-top ul li+li {
-   padding-left: 20px;
-   }
-   .blog .blog-details .meta-top i {
-   font-size: 16px;
-   margin-right: 8px;
-   line-height: 0;
-   color: rgba(var(--color-primary-rgb), 0.8);
-   }
-   .blog .blog-details .meta-top a {
-   color: var(--color-gray);
-   font-size: 14px;
-   display: inline-block;
-   line-height: 1;
-   }
-   .hero.bg-cover{
-      background: url(../assets/3.jpg)
    }
 </style>

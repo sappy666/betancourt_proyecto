@@ -12,7 +12,7 @@
      <div class="container py-5 my-5">
         <div class="row mb-4">
            <div class="col-md-7">
-              <p class="h6 text-uppercase text-primary">Servicios</p>
+              <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
               <h1>Contratación pública</h1>
            </div>
         </div>
@@ -23,13 +23,14 @@
            <div class="col-md-6">
               <p class="text-muted">Prestamos asesoría jurídica y técnica para mejorar su postulación y defender sus intereses ante las autoridades pertinentes de ser necesario. Nuestros Servicios relacionados a las distintas etapas del proceso de Contratación Pública son los siguientes: </p>
               <p class="text-muted text-sm"> Representación ante el Tribunal de Contratación Pública Defensa Proveedor / Contratista Asesoría en Postulación</p>
-           </div>
+              <router-link class="nav-link py-3" to="/AreasView#ContactoComp2">Agenda una reunión</router-link>
+            </div>
         </div>
      </div>
      <div class="container py-5 my-5">
         <div class="row mb-4">
            <div class="col-md-7">
-              <p class="h6 text-uppercase text-primary">Servicios</p>
+              <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
               <h1>Asesoría en postulación</h1>
            </div>
         </div>
@@ -40,13 +41,14 @@
            <div class="col-md-6">
               <p class="text-muted">Prestamos asesoría jurídica y técnica para mejorar su postulación y defender sus intereses ante las autoridades pertinentes de ser necesario. Nuestros Servicios relacionados a las distintas etapas del proceso de Contratación Pública son los siguientes: </p>
               <p class="text-muted text-sm"> Representación ante el Tribunal de Contratación Pública Defensa Proveedor / Contratista Asesoría en Postulación</p>
-           </div>
+              <router-link class="nav-link py-3" to="/AreasView#contacto">Agenda una reunión</router-link>
+            </div>
         </div>
      </div>
      <div class="container py-5 my-5">
         <div class="row mb-4">
            <div class="col-md-7">
-              <p class="h6 text-uppercase text-primary">Servicios</p>
+              <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
               <h1>Defensa Proveedor/Contratista</h1>
            </div>
         </div>
@@ -64,7 +66,7 @@
   <div class="container py-5 my-5">
         <div class="row mb-4">
            <div class="col-md-7">
-              <p class="h6 text-uppercase text-primary">Servicios</p>
+              <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
               <h1>Tribunal Contratación Pública</h1>
            </div>
         </div>
@@ -81,7 +83,7 @@
      <div class="container py-5 my-5">
         <div class="row mb-4">
            <div class="col-md-7">
-              <p class="h6 text-uppercase text-primary">Servicios</p>
+              <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
               <h1>Gestión de Negocios</h1>
            </div>
         </div>
@@ -98,7 +100,7 @@
      <div class="container py-5 my-5">
         <div class="row mb-4">
            <div class="col-md-7">
-              <p class="h6 text-uppercase text-primary">Servicios</p>
+              <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
               <h1>Derecho Laboral</h1>
            </div>
         </div>

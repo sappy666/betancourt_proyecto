@@ -1,16 +1,20 @@
 <template>
    <!-- ======= Breadcrumbs ======= -->
-   <div class="breadcrumbs">
-      <div class="container">
-         <div class="d-flex justify-content-between align-items-center">
-            <h2>Blog</h2>
-            <ol>
-               <li><router-link class="nav-link" to="/">Inicio</router-link></li>
-               <li>Blog</li>
+   <section class="hero bg-cover bg-position py-4">
+      <div class="banner container py-5 index-forward text-white">
+         <h1>Nombre de entrada</h1>
+         <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-none mb-0 p-0">
+               <li class="breadcrumb-item ps-0">
+                  <router-link class="nav-link" to="/"> <i class="bi bi-house-door"></i> Inicio</router-link>
+               </li>
+               <li class="breadcrumb-item active">
+                  <router-link class="nav-link" to="/BlogView">Noticias</router-link>
+               </li>
             </ol>
-         </div>
+         </nav>
       </div>
-   </div>
+   </section>
    <!-- End Breadcrumbs -->
    <!-- ======= Blog Section ======= -->
    <section id="blog" class="blog">
@@ -47,7 +51,8 @@
                         </h2>
                         <div class="content">
                            <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
+                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
+                           </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
                            <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
@@ -65,7 +70,8 @@
                         </h2>
                         <div class="content">
                            <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
+                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
+                           </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
                            <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
@@ -83,7 +89,8 @@
                         </h2>
                         <div class="content">
                            <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
+                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
+                           </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
                            <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
@@ -101,7 +108,8 @@
                         </h2>
                         <div class="content">
                            <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
+                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
+                           </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
                            <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
@@ -119,7 +127,8 @@
                         </h2>
                         <div class="content">
                            <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            </p>
+                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
+                           </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
                            <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
@@ -152,51 +161,53 @@
    };
 </script>
 <style scoped>
-   /*--------------------------------------------------------------
-   # Breadcrumbs
-   --------------------------------------------------------------*/
-   .breadcrumbs {
-   padding: 15px 0;
-   background: rgba(47, 59, 108, 0.195);
-   min-height: 40px;
-   margin-top: 76px;
+   .hero {
+   position: relative;
    }
-   .breadcrumbs h2 {
-   font-size: 30px;
-   font-weight: 300;
-   margin: 0;
+   .bg-cover {
+   background-size: cover !important;
+   background-position: center center !important;
    }
-   .breadcrumbs ol {
-   display: flex;
-   flex-wrap: wrap;
+   .index-forward {
+   position: relative;
+   z-index: 99;
+   }
+   .bg-none {
+   background: none !important;
+   }
+   .container{
+   width: 100%;
+   padding-right: var(--bs-gutter-x, 1rem);
+   padding-left: var(--bs-gutter-x, 1rem);
+   margin-right: auto;
+   margin-left: auto;
+   }
+   .banner{
+   margin-top: 4rem;
+   font-family: 'Raleway', sans-serif;
+   }
+   .hero.bg-cover{
+   /* background-color: black; */
+   background: url(../assets/fondobanner3.jpg);
+   }
+   .breadcrumb {
+   padding: 0 0;
    list-style: none;
-   padding: 0;
-   margin: 0;
-   font-size: 14px;
    }
-   .breadcrumbs ol li+li {
-   padding-left: 10px;
+   .breadcrumb-item:hover{
+   color: antiquewhite;
    }
-   .breadcrumbs ol li+li::before {
-   display: inline-block;
-   padding-right: 10px;
-   color: var(--color-secondary-light);
-   content: "/";
+   .breadcrumb-item + .breadcrumb-item {
+   padding-left: 0.5rem;
    }
-   @media (max-width: 992px) {
-   .breadcrumbs .d-flex {
-   display: block !important;
+   .breadcrumb-item + .breadcrumb-item::before {
+   float: left;
+   padding-right: 0.5rem;
+   color: #f8f9fa;
+   content: var(--bs-breadcrumb-divider, "|") /* rtl: var(--bs-breadcrumb-divider, "|") */;
    }
-   .breadcrumbs h2 {
-   margin-bottom: 10px;
-   font-size: 24px;
-   }
-   .breadcrumbs ol {
-   display: block;
-   }
-   .breadcrumbs ol li {
-   display: inline-block;
-   }
+   .breadcrumb-item.active {
+   color: #f8f9fa;
    }
    .blog .posts-list article {
    box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
@@ -224,47 +235,20 @@
    .blog .posts-list .title a:hover {
    color: var(--color-primary);
    }
-   .blog .posts-list .meta-top {
-   margin-top: 20px;
-   color: var(--color-gray);
-   }
-   .blog .posts-list .meta-top ul {
-   display: flex;
-   flex-wrap: wrap;
-   list-style: none;
-   align-items: center;
-   padding: 0;
-   margin: 0;
-   }
-   .blog .posts-list .meta-top ul li+li {
-   padding-left: 20px;
-   }
-   .blog .posts-list .meta-top i {
-   font-size: 16px;
-   margin-right: 8px;
-   line-height: 0;
-   color: rgba(var(--color-primary-rgb), 0.8);
-   }
-   .blog .posts-list .meta-top a {
-   color: var(--color-gray);
-   font-size: 14px;
-   display: inline-block;
-   line-height: 1;
-   }
    .blog .posts-list .content {
    margin-top: 20px;
    }
    .blog .posts-list .read-more a {
    display: inline-block;
-   background: var(--color-primary);
-   color: var(--color-white);
+   background:#26547C;
+   color: whitesmoke;
    padding: 8px 30px;
    transition: 0.3s;
    font-size: 14px;
    border-radius: 4px;
    }
    .blog .posts-list .read-more a:hover {
-   background: rgba(var(--color-primary-rgb), 0.8);
+   background: #1d3b55;
    }
    /*--------------------------------------------------------------
    # Blog Details Page
@@ -319,105 +303,6 @@
    margin-top: 20px;
    margin-bottom: 20px;
    }
-   .blog .blog-details .meta-top {
-   margin-top: 20px;
-   color: var(--color-gray);
-   }
-   .blog .blog-details .meta-top ul {
-   display: flex;
-   flex-wrap: wrap;
-   list-style: none;
-   align-items: center;
-   padding: 0;
-   margin: 0;
-   }
-   .blog .blog-details .meta-top ul li+li {
-   padding-left: 20px;
-   }
-   .blog .blog-details .meta-top i {
-   font-size: 16px;
-   margin-right: 8px;
-   line-height: 0;
-   color: rgba(var(--color-primary-rgb), 0.8);
-   }
-   .blog .blog-details .meta-top a {
-   color: var(--color-gray);
-   font-size: 14px;
-   display: inline-block;
-   line-height: 1;
-   }
-   .blog .blog-details .meta-bottom {
-   padding-top: 10px;
-   border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
-   }
-   .blog .blog-details .meta-bottom i {
-   color: var(--color-secondary-light);
-   display: inline;
-   }
-   .blog .blog-details .meta-bottom a {
-   color: rgba(var(--color-secondary-rgb), 0.8);
-   transition: 0.3s;
-   }
-   .blog .blog-details .meta-bottom a:hover {
-   color: var(--color-primary);
-   }
-   .blog .blog-details .meta-bottom .cats {
-   list-style: none;
-   display: inline;
-   padding: 0 20px 0 0;
-   font-size: 14px;
-   }
-   .blog .blog-details .meta-bottom .cats li {
-   display: inline-block;
-   }
-   .blog .blog-details .meta-bottom .tags {
-   list-style: none;
-   display: inline;
-   padding: 0;
-   font-size: 14px;
-   }
-   .blog .blog-details .meta-bottom .tags li {
-   display: inline-block;
-   }
-   .blog .blog-details .meta-bottom .tags li+li::before {
-   padding-right: 6px;
-   color: var(--color-default);
-   content: ",";
-   }
-   .blog .blog-details .meta-bottom .share {
-   font-size: 16px;
-   }
-   .blog .blog-details .meta-bottom .share i {
-   padding-left: 5px;
-   }
-   .blog .post-author {
-   padding: 20px;
-   margin-top: 30px;
-   box-shadow: 0 4px 16px rgba(var(--color-black-rgb), 0.1);
-   }
-   .blog .post-author img {
-   max-width: 120px;
-   margin-right: 20px;
-   }
-   .blog .post-author h4 {
-   font-weight: 600;
-   font-size: 22px;
-   margin-bottom: 0px;
-   padding: 0;
-   color: var(--color-secondary);
-   }
-   .blog .post-author .social-links {
-   margin: 0 10px 10px 0;
-   }
-   .blog .post-author .social-links a {
-   color: rgba(var(--color-secondary-rgb), 0.5);
-   margin-right: 5px;
-   }
-   .blog .post-author p {
-   font-style: italic;
-   color: rgba(var(--color-gray-rgb), 0.8);
-   margin-bottom: 0;
-   }
    /*--------------------------------------------------------------
    # Blog Home Pagination
    --------------------------------------------------------------*/
@@ -444,7 +329,7 @@
    }
    .blog .blog-pagination li.active,
    .blog .blog-pagination li:hover {
-   background: var(--color-primary);
+   background: #26547C;
    }
    .blog .blog-pagination li.active a,
    .blog .blog-pagination li:hover a {
