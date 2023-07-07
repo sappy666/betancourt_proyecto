@@ -35,14 +35,63 @@
                <p>
                   Añadir que el sistema de mercado público es perfectible, sin embargo funciona, y a nuestro juicio y experiencia, funciona cada vez mejor. El Estado de Chile cumple y paga.
                </p>
-               <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-check2"></i> Agenda una reunión</router-link>
+               <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
             </div>
          </div>
       </div>
       <div class="container py-5 my-5">
          <div class="row mb-4">
             <div class="col-md-7">
-               <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
+               <h1>Asesoría laboral</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <h3>Servicio de asesoría laboral permanente</h3>
+               <ul class="text-muted">
+                  <li>Disponibilidad para consultas ilimitadas, así como el estudio e informes en la materia</li>
+                  <li>Remuneraciones y beneficios: tratamiento laboral, previsional y tributario</li>
+                  <li>Redacción y/o revisión de contratos y anexos</li>
+                  <li>Desvinculación de trabajadores: revisión de causales de término, redacción de cartas de despido y finiquitos</li>
+                  <li>Redacción y revisión del Reglamento interno de orden higiene y seguridad</li>
+                  <li>Revisión y análisis en materia de jornadas laborales, registro de asistencia, turnos y otros</li>
+                  <li>Asesoría sobre constitución, reglamento y funcionamiento del Comité paritario de Higiene y Seguridad</li>
+                  <li>Cumplimiento de derechos fundamentales, como respeto de privacidad y no discriminación</li>
+                  <li>Representación ante la Dirección del Trabajo</li>
+                  <li>Actualización permanente en normativa laboral legal</li>
+                  <li>Investigación ante denuncias por acoso laboral y acoso sexual</li>
+                  <li>Prescripción de deudas previsionales</li>
+               </ul>
+               <h3 class="py-2">Representación Judicial</h3>
+               <ul class="text-muted">
+                  <li>Defensa judicial frente a demandas por diversas causales, por ejemplo: tutela laboral, despidos indirectos, injustificados, accidentes laborales y enfermedades profesionales, desafueros, prácticas antisindicales, etc.</li>
+                  <li>Revisión activa y permanente de los Tribunales Laborales y de Cobranza Laboral y Previsional</li>
+               </ul>
+            </div>
+            <div class="col-md-6">
+               <h3>Asesoría en Procesos de Negociación Colectiva y materias sindicales</h3>
+               <ul class="text-muted">
+                  <li>Acompañamiento durante todo el proceso de negociación de instrumentos colectivos del trabajo</li>
+                  <li>Determinación de la estrategia de negociación más conveniente para la empresa</li>
+                  <li>Redacción del instrumento colectivo</li>
+               </ul>
+               <h3 class="py-2">Otras materias</h3>
+               <ol class="text-muted">
+                  <li>Constitución y modificación de sociedades</li>
+                  <li>Emisión de informes para la Gerencia General y el Directorio de la Empresa</li>
+                  <li>Mantenimiento de los libros societarios, como el Libro de Directorio, de Juntas de Accionistas (Ordinarias y Extraordinarias) y Registros de Accionistas</li>
+                  <li>Concurrencia de un abogado a Sesiones de Directorio y Juntas de Accionistas</li>
+                  <li>Redacción de poderes</li>
+                  <li>Estudio, revisión y redacción de todo tipo de contratos comerciales</li>
+                  <li>Apoyo en las negociaciones legales y comerciales relacionadas con el giro de la empresa</li>
+               </ol>
+               <router-link class="nav-link py-3 ps-3" to="/AreasView#contacto"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
+            </div>
+         </div>
+      </div>
+      <!-- <div class="container py-5 my-5">
+         <div class="row mb-4">
+            <div class="col-md-7">
                <h1>Asesoría en postulación</h1>
             </div>
          </div>
@@ -56,7 +105,7 @@
                <router-link class="nav-link py-3" to="/AreasView#contacto">Agenda una reunión</router-link>
             </div>
          </div>
-      </div>
+         </div> -->
       <div class="container py-5 my-5">
          <div class="row mb-4">
             <div class="col-md-7">
@@ -216,5 +265,10 @@
    font-size: 18px;
    line-height: 24px;
    }
+   }
+   
+   li{
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
    }
 </style>
