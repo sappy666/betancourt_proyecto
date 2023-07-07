@@ -22,7 +22,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
-                <h6 class="h1 mb-0">10</h6>
+                <h6 class="h1 mb-0">+13</h6>
                 <p class="ms-3 flex-grow-1 text-uppercase mb-0">Años de experiencia </p>
               </div>
             </div>

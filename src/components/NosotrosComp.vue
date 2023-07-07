@@ -9,8 +9,16 @@
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                <h3>Nosotros</h3>
                <p class="texto-nosotros">
-                  <b>Descubre</b> en nuestro <b>estudio jurídico</b> las soluciones legales más eficientes, respaldadas por un equipo multidisciplinario compuesto por abogados e ingenieros altamente capacitados. Nos enorgullece ofrecer una <b>asesoría empresarial personalizada</b> y destacarnos por nuestro sobresaliente desempeño profesional.<br><br>
-                  Puedes confiar plenamente en nosotros para obtener soluciones legales confiables y altamente efectivas. En nuestro estudio jurídico, te ofrecemos una <b>defensa legal óptima</b> en situaciones legales específicas, brindándote soluciones <b>justas</b> y acordes a tus intereses. Valoramos la <b>comunicación cercana y permanente</b> con nuestros clientes, manteniéndolos <b>informados en todo momento</b> sobre los avances en sus casos. Confía en nuestro compromiso de proporcionarte una representación legal de calidad y estar a tu lado en cada paso del proceso. 
+                  Somos un estudio jurídico fundado hace <b>más de 13 años</b> conformado por abogados
+                  especialistas, donde la excelencia legal se encuentra con la modernidad y el compromiso
+                  con nuestros clientes, brindando soluciones jurídicas integrales y personalizadas.
+                  Valoramos y honramos la confianza que depositan en nuestros servicios legales,
+                  construyendo relaciones sólidas y duraderas. <b> Nuestro enfoque se basa en una
+                  comunicación cercana y transparente con los clientes</b>, permitiéndonos comprender a
+                  fondo sus necesidades y objetivos, para así brindarles asesoramiento legal estratégico
+                  orientadas a soluciones innovadoras y adaptadas a sus circunstancias particulares.
+                  Estamos confiados en que podemos ser un partner estratégico para su empresa y
+                  ayudarlo a incrementar sus ingresos.
                </p>
                <!-- <ul>
                   <li><i class="bi bi-check-circle"></i> Defensa legal óptima en situaciones legales específicas.</li>
@@ -63,8 +71,7 @@
    # About
    --------------------------------------------------------------*/
    section{
-      background-color: #dadfe567;
-
+   background-color: #dadfe567;
    }
    .about .content h3 {
    font-weight: 600;
@@ -103,7 +110,8 @@
    }
    }
    .texto-nosotros{
-      text-align: justify;
-      margin-right: 3rem;
+   text-align: justify;
+   margin-right: 3rem;
+   padding-top: 5rem   
    }
 </style>
