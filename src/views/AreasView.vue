@@ -13,7 +13,7 @@
          <div class="row mb-4">
             <div class="col-md-7">
                <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
-               <h1>Contratación pública</h1>
+               <h2>Contratación pública</h2>
             </div>
          </div>
          <div class="row">
@@ -42,7 +42,7 @@
       <div class="container py-5 my-5">
          <div class="row mb-4">
             <div class="col-md-7">
-               <h1>Asesoría laboral</h1>
+               <h2>Asesoría laboral</h2>
             </div>
          </div>
          <div class="row">
@@ -92,7 +92,7 @@
       <!-- <div class="container py-5 my-5">
          <div class="row mb-4">
             <div class="col-md-7">
-               <h1>Asesoría en postulación</h1>
+               <h2>Asesoría en postulación</h2>
             </div>
          </div>
          <div class="row">
@@ -110,7 +110,7 @@
          <div class="row mb-4">
             <div class="col-md-7">
                <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
-               <h1>Defensa Proveedor/Contratista</h1>
+               <h2>Defensa Proveedor/Contratista</h2>
             </div>
          </div>
          <div class="row">
@@ -128,7 +128,7 @@
          <div class="row mb-4">
             <div class="col-md-7">
                <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
-               <h1>Tribunal Contratación Pública</h1>
+               <h2>Tribunal Contratación Pública</h2>
             </div>
          </div>
          <div class="row">
@@ -145,7 +145,7 @@
          <div class="row mb-4">
             <div class="col-md-7">
                <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
-               <h1>Gestión de Negocios</h1>
+               <h2>Gestión de Negocios</h2>
             </div>
          </div>
          <div class="row">
@@ -162,7 +162,7 @@
          <div class="row mb-4">
             <div class="col-md-7">
                <!-- <p class="h6 text-uppercase text-primary">Servicios</p> -->
-               <h1>Derecho Laboral</h1>
+               <h2>Derecho Laboral</h2>
             </div>
          </div>
          <div class="row">

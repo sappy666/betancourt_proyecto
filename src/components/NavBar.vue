@@ -7,7 +7,7 @@
                <nav id="navbar" class="navbar">
                   <div>
                      <router-link class="nav-link active" to="/">Inicio</router-link>
-                     <a class="nav-link" href="#about">Quienes somos</a>
+                     <router-link class="nav-link" to="/#about">Quienes somos</router-link>
                      <div class="dropdown">
                         <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
                         <div>
@@ -21,7 +21,7 @@
                      </div>
                      <router-link class="nav-link" to="/BlogView">Casos destacados</router-link>
                      <router-link class="nav-link" to="/BlogView">Noticias</router-link>
-                     <a class="nav-link" href="#contact">Contacto</a>
+                     <router-link class="nav-link" to="/#contact">Contacto</router-link>
                   </div>
                   <i class="bi bi-list mobile-nav-toggle"></i>
                </nav>
@@ -38,21 +38,21 @@
          window.addEventListener("scroll", function() {
             if (window.scrollY >= 50) { // Si la página se ha desplazado más de 50px
                   document.getElementById("return-to-top").style.display = "block"; // Mostrar la flecha
-                  document.getElementById("barra").style.backgroundColor = "#273050"; // Fondo a azul
+                  // document.getElementById("barra").style.backgroundColor = "#273050"; // Fondo a azul
+                  document.getElementById("barra").style.backgroundColor = "#000000"; // Fondo a negro
+                  document.getElementById("barra").style.transform = 'translateY(-41px)';
             } 
             else {
                   document.getElementById("return-to-top").style.display = "none"; // Ocultar la flecha
                   document.getElementById("barra").style.backgroundColor = "transparent"; // Fondo transparente
+                  document.getElementById("barra").style.transform = 'translateY(0)';
             }
          });
       }
    }
 </script>
 <style scoped>
-   body {
-      background: #fff;
-      color: #666666;
-   }
+
    a {
       color: #273b60;
       transition: 0.5s;
@@ -70,18 +70,12 @@
       padding: 0;
       margin: 0 0 30px 0;
    }
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
-      font-weight: 400;
-      margin: 0 0 20px 0;
 
-   }
 #header{
    margin-top: 2.5rem;
+}
+#barra{
+transition: all 150ms ease-in;
 }
    .logo img{
       height: 100px;
@@ -123,6 +117,7 @@
    .navbar .active:focus,
    .navbar li:hover>a {
    color: #273b60;
+   font-weight: 600;
    }
    .navbar .dropdown  div {
    display: block;

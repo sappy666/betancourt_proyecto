@@ -17,15 +17,15 @@ name: 'AreasView',
 component: AreasView
 },
 {
-    path: '/BlogView',
-    name: 'BlogView',
-    component: BlogView
-    },
-    {
-        path: '/BlogdetalleView',
-        name: 'BlogdetalleView',
-        component: BlogdetalleView
-        },
+path: '/BlogView',
+name: 'BlogView',
+component: BlogView
+},
+{
+path: '/BlogdetalleView',
+name: 'BlogdetalleView',
+component: BlogdetalleView
+},
     
 { 
 path: '/:pathMatch(.*)*',

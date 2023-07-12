@@ -85,9 +85,7 @@
      }
 </script>
 <style scoped>
-   h2,p{
-   font-family: "Montserrat", sans-serif;
-   }
+
    .recent-blog-posts .post-item {
    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
    transition: 0.3s;

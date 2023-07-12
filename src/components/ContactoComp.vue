@@ -13,21 +13,28 @@
                <div class="info">
                   <div class="address">
                      <i class="bi bi-geo-alt"></i>
-                     <h4>Ubicación</h4>
+                     <h3>Ubicación</h3>
                      <p>San Antonio 427 oficina 711</p>
                   </div>
                   <div class="email">
                      <i class="bi bi-envelope"></i>
-                     <h4>Email</h4>
+                     <h3>Email</h3>
                      <p>contacto@betancourtabogados.cl</p>
                      <p>asesorias@betancourtabogados.cl</p>
                   </div>
                   <div class="phone">
                      <i class="bi bi-phone"></i>
-                     <h4>Teléfonos</h4>
+                     <h3>Teléfonos</h3>
                      <p>+56 2 2380 0530</p>
                      <p>+56 2 2633 7482</p>
                      <p>+56 2 2633 1851</p>
+                  </div>
+                  <div class="linkedin">
+                     <a href="https://www.linkedin.com/company/betancourtabogados/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        <h3>Linkedin</h3>
+                        <p>Betancourt Abogados</p> 
+                     </a>
                   </div>
                </div>
             </div>
@@ -69,9 +76,22 @@
    }
 </script>
 <style scoped>
+   a{
+      transition: 0.5s;   
+      margin: 0;
+   }
+   a,
+   a:hover,
+   a:active,
+   a:focus{
+      color: #26547C;
+      outline: none;
+      text-decoration: none;
+   }
    .contact {
    padding-top: 5px;
    font-family: var(--font-primary);
+   scroll-margin: 40px;
    }
    .contact .info {
    width: 100%;
@@ -90,12 +110,12 @@
    border-radius: 50px;
    transition: all 0.3s ease-in-out;
    }
-   .contact .info h4 {
-   padding: 0 0 0 60px;
-   font-size: 22px;
-   font-weight: 600;
-   margin-bottom: 5px;
-   color: #26547C;
+   .contact .info h3 {
+      padding: 0 0 0 60px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #26547C;
    }
    button{
    font-family: var(--font-primary);
@@ -106,15 +126,21 @@
    font-size: 14px;
    color: #26547C;
    }
+   .contact .info .address{
+      cursor: default;
+   }
    .contact .info .email,
-   .contact .info .phone {
-   margin-top: 40px;
+   .contact .info .phone,
+   .contact .info .linkedin {
+    margin-top: 40px;
+    cursor:default;
    }
    .contact .info .email:hover i,
    .contact .info .address:hover i,
-   .contact .info .phone:hover i {
-   background: #26547C;
-   color: #fff;
+   .contact .info .phone:hover i,
+   .contact .info .linkedin:hover i {
+      background: #26547C;
+      color: #fff;
    }
    .contact .php-email-form {
    width: 100%;

@@ -1,15 +1,17 @@
 <template>
    <!-- ======= About Section ======= -->
    <section id="about" class="about">
+      <div class="section-header">
+         <h2>Nosotros</h2>
+      </div>
       <div class="container" data-aos="fade-up">
          <div class="row">
             <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
                <img src="../assets/1.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-               <h3>Nosotros</h3>
                <p class="texto-nosotros">
-                  Somos un estudio jurídico fundado hace <b>más de 13 años</b> conformado por abogados
+                  Somos un estudio jurídico especializado en contratación pública fundado hace <b>más de 13 años</b> conformado por abogados
                   especialistas, donde la excelencia legal se encuentra con la modernidad y el compromiso
                   con nuestros clientes, brindando soluciones jurídicas integrales y personalizadas.
                   Valoramos y honramos la confianza que depositan en nuestros servicios legales,
@@ -37,10 +39,7 @@
    }
 </script>
 <style scoped>
-   body {
-   background: #fff;
-   color: #666666;
-   }
+
    a {
    color: #26547C;
    transition: 0.5s;
@@ -57,25 +56,8 @@
    padding: 0;
    margin: 0 0 30px 0;
    }
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
-   font-weight: 700;
-   margin: 0 0 20px 0;
-   padding: 0;
-   }
-   /*--------------------------------------------------------------
-   # About
-   --------------------------------------------------------------*/
-   section{
-   background-color: #dadfe567;
-   }
-   .about .content h3 {
-   font-weight: 600;
-   font-size: 26px;
+   #about{
+      scroll-margin: 20px;
    }
    .about .content ul {
    list-style: none;
@@ -111,7 +93,6 @@
    }
    .texto-nosotros{
    text-align: justify;
-   margin-right: 3rem;
-   padding-top: 5rem   
+   margin:0 1.5rem;
    }
 </style>

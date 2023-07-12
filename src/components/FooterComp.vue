@@ -4,14 +4,15 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-md-6 footer-info">
-                  <a href="index.html" class="logo"><img src="../assets/logo2.png" alt="" class="img-fluid"></a>
+                  <router-link to="/" class="logo"><img src="../assets/logo2.png" alt="" class=""></router-link>
+                  <!-- <a href="index.html" class="logo"><img src="../assets/logo2.png" alt="" class=""></a> -->
                </div>
                <div class="col-lg-3 col-md-6 footer-links">
                   <h4>Sitio</h4>
                   <ul>
-                     <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
-                     <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre Nosotros</a></li>
-                     <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
+                     <li><i class="bi bi-chevron-right"></i><router-link to="/">Inicio</router-link></li>
+                     <li><i class="bi bi-chevron-right"></i><router-link to="/#about">Sobre Nosotros</router-link></li>
+                     <li><i class="bi bi-chevron-right"></i><router-link to="/#services">Servicios</router-link></li>
                   </ul>
                   <br>
                   <!-- <h4>Ayuda</h4>
@@ -26,12 +27,13 @@
                      <strong>Email:</strong> <br>contacto@betancourtabogados.cl<br>
                      asesorias@betancourtabogados.cl<br>
                   </p>
-                  <!-- <div class="social-links">
-                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <div class="social-links">
+                     <a href="https://www.linkedin.com/company/betancourtabogados/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                     <a href="https://wa.me/56993170366" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                     <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                     </div> -->
+                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+                  </div>
                </div>
                <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Newsletter</h4>
@@ -52,25 +54,22 @@
    }
 </script>
 <style scoped>
-   body {
-   background: #fff;
-   color: #666666;
-   }
+
    a {
-   color: #26547C;
-   transition: 0.5s;
-   text-decoration: none;
+      color: #26547C;
+      transition: 0.5s;
+      text-decoration: none;
    }
    a:hover,
    a:active,
    a:focus {
-   color: #26547C;
-   outline: none;
-   text-decoration: none;
+      color: #26547C;
+      outline: none;
+      text-decoration: none;
    }
    p {
-   padding: 0;
-   margin: 0 0 30px 0;
+      padding: 0;
+      margin: 0 0 30px 0;
    }
    h1,
    h2,
@@ -78,18 +77,19 @@
    h4,
    h5,
    h6 {
-   font-weight: 400;
-   margin: 0 0 20px 0;
-   padding: 0;
+      font-weight: 400;
+      margin: 0 0 20px 0;
+      padding: 0;
    }
-   .logo{
-      max-width: 20px;
+   .logo img{
+      width: 150px;
    }
    #footer {
-   background: #000;
-   padding: 0 0 30px 0;
-   color: #959595;
-   font-size: 14px;   }
+      background: #000;
+      padding: 0 0 30px 0;
+      color: #959595;
+      font-size: 14px;  
+    }
    #footer .footer-top {
    background: #111;
    padding: 60px 0 30px 0;
@@ -97,22 +97,7 @@
    #footer .footer-top .footer-info {
    margin-bottom: 30px;
    }
-   #footer .footer-top .footer-info h3 {
-   font-size: 34px;
-   margin: 0 0 20px 0;
-   padding: 2px 0 2px 10px;
-   line-height: 1;
-   font-weight: 700;
-   letter-spacing: 3px;
-   border-left: 4px solid #26547C;
-   }
-   #footer .footer-top .footer-info p {
-   font-size: 12px;
-   font-weight: 300;
-   line-height: 24px;
-   margin-bottom: 0;
-   color: #c8c8c8;
-   }
+
    #footer .footer-top .social-links a {
    display: inline-block;
    background: #333;
@@ -145,19 +130,19 @@
    }
    #footer .footer-top h4::before,
    #footer .footer-top h4::after {
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   height: 2px;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
    }
    #footer .footer-top h4::before {
-   right: 0;
-   background: #555;
+      right: 0;
+      background: #555;
    }
    #footer .footer-top h4::after {
-   background: #26547C;
-   width: 60px;
+      background: #26547C;
+      width: 60px;
    }
    #footer .footer-top .footer-links {
    margin-bottom: 30px;
@@ -168,29 +153,29 @@
    margin: 0;
    }
    #footer .footer-top .footer-links ul i {
-   padding-right: 8px;
-   color: #ddd;
+      padding-right: 8px;
+      color: #ddd;
    }
    #footer .footer-top .footer-links ul li {
-   border-bottom: 1px solid #333;
-   padding: 10px 0;
+      border-bottom: 1px solid #333;
+      padding: 10px 0;
    }
    #footer .footer-top .footer-links ul li:first-child {
-   padding-top: 0;
+      padding-top: 0;
    }
    #footer .footer-top .footer-links ul a {
-   color: #eee;
+      color: #eee;
    }
    #footer .footer-top .footer-links ul a:hover {
-   color: #26547C;
+      color: #26547C;
    }
    #footer .footer-top .footer-contact {
-   margin-bottom: 30px;
-   font-weight: 300;
+      margin-bottom: 30px;
+      font-weight: 300;
    }
    #footer .footer-top .footer-contact p {
-   line-height: 26px;
-   font-size: 14px;
+      line-height: 26px;
+      font-size: 14px;
    }
    #footer .footer-top .footer-newsletter {
    margin-bottom: 30px;
@@ -201,14 +186,14 @@
    width: 65%;
    }
    #footer .footer-top .footer-newsletter input[type=submit] {
-   background: #26547C;
-   border: 0;
-   width: 35%;
-   padding: 6px 0;
-   text-align: center;
-   color: #fff;
-   transition: 0.3s;
-   cursor: pointer;
+      background: #26547C;
+      border: 0;
+      width: 35%;
+      padding: 6px 0;
+      text-align: center;
+      color: #fff;
+      transition: 0.3s;
+      cursor: pointer;
    }
    #footer .footer-top .footer-newsletter input[type=submit]:hover {
    background: #26547C;

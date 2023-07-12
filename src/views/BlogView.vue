@@ -19,9 +19,9 @@
    <!-- ======= Blog Section ======= -->
    <section id="blog" class="blog">
       <div class="container" data-aos="fade-up">
-         <div class="row g-5">
-            <div class="col-lg-8">
-               <div class="row gy-4 posts-list">
+         <div class="row g-5 justify-content-center">
+            <div class="col-lg-10">
+               <div class="row gy-4 posts-list justify-content-center">
                   <div class="col-lg-6">
                      <article class="d-flex flex-column">
                         <div class="post-img">
@@ -147,8 +147,7 @@
                </div>
                <!-- End blog pagination -->
             </div>
-            <div class="col-lg-4">
-            </div>
+
          </div>
       </div>
    </section>

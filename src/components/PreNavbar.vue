@@ -19,9 +19,9 @@
  </header>
 </template>
 <script>
-   export default {
-     name: "PreNavbar",
-     }
+  export default {
+    name: "PreNavbar",
+  }
 </script>
 <style scoped>
 .top-bar{
@@ -36,18 +36,5 @@ a:hover {
   color: #a0a6b1;
   text-decoration: none;
 }
-   .top-bar [class*='col'].bg-primary {
-  position: relative;
-}
 
-.top-bar [class*='col'].bg-primary::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 20rem;
-  height: 100%;
-  top: 0;
-  left: -20rem;
-  background: #2b90d9;
-}
 </style>

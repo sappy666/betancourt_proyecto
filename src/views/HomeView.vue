@@ -4,9 +4,9 @@
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-6 text-center">
-                  <h2 data-aos="fade-down">Betancourt <span>Abogados</span></h2>
-                  <p data-aos="fade-up">Somos un estudio jurídico formado por abogados e ingenieros, todos profesionales altamente calificados que buscan proporcionar soluciones eficientes y efectivas.</p>
-                  <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Conócenos</a>
+                  <h2>Betancourt <span>Abogados</span></h2>
+                  <p>Somos un estudio jurídico formado por abogados e ingenieros, todos profesionales altamente calificados que buscan proporcionar soluciones eficientes y efectivas.</p>
+                  <a href="#about" class="btn-get-started">Conócenos</a>
                </div>
             </div>
          </div>
@@ -59,30 +59,43 @@
        heroCarouselItems: []
      };
     },
-    mounted() {
-     // Código para asignar los elementos
-     let heroCarouselIndicators = '';
-     let heroCarouselItems = document.querySelectorAll('#heroCarousel .carousel-item');
+   //  mounted() {
+   //   // Código para asignar los elementos
+   //   let heroCarouselIndicators = '';
+   //   let heroCarouselItems = document.querySelectorAll('#heroCarousel .carousel-item');
     
-     heroCarouselItems.forEach((item, index) => {
-       heroCarouselIndicators += `
-         <li
-           data-bs-target="#heroCarousel"
-           data-bs-slide-to="${index}"
-           ${index === 0 ? 'class="active"' : ''}
-         ></li>
-       `;
-     });
+   //   heroCarouselItems.forEach((item, index) => {
+   //     heroCarouselIndicators += `
+   //       <li
+   //         data-bs-target="#heroCarousel"
+   //         data-bs-slide-to="${index}"
+   //         ${index === 0 ? 'class="active"' : ''}
+   //       ></li>
+   //     `;
+   //   });
     
-     this.heroCarouselIndicators = heroCarouselIndicators;
-     this.heroCarouselItems = heroCarouselItems;
-    }
+   //   this.heroCarouselIndicators = heroCarouselIndicators;
+   //   this.heroCarouselItems = heroCarouselItems;
+   //  }
+   
+  updated() {
+      var section=this.$router.currentRoute.value.hash.replace("#", "");
+      if (section)
+        this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+  },
+  mounted(){
+      var section=this.$router.currentRoute.value.hash.replace("#", "");
+      if (section)
+        this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+  }
     };
 </script>
 <style scoped>
+
    h2,p{
       font-family: var(--font-primary);
    }
+   
    .hero {
    overflow-x: hidden;
    padding: 0;

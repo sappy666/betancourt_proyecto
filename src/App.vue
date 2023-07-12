@@ -10,48 +10,45 @@
 <script>
 import PreNavbar from "@/components/PreNavbar.vue"
 import NavBar from "@/components/NavBar.vue"
-  import Whatsapp from "@/components/Whatsapp.vue"
-  import TopArrow from "@/components/TopArrow.vue"
-  import FooterComp from "@/components/FooterComp.vue"
-  // import HomeView from "@/views/HomeView.vue"
+import Whatsapp from "@/components/Whatsapp.vue"
+import TopArrow from "@/components/TopArrow.vue"
+import FooterComp from "@/components/FooterComp.vue"
+// import router from "./router"
+// import HomeView from "@/views/HomeView.vue"
 
-    
-  export default {
-    name: 'App',
-    components: {
+  
+export default {
+  name: 'App',
+  components: {
     PreNavbar,
     NavBar,
     Whatsapp,
     TopArrow,
     FooterComp
+  },
+  mounted(){
+    window.addEventListener('scroll',()=>{
+      this.$router.push('/');
+    });
   }
-  }
+}
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Fonts */
-:root {
-  --font-default:  'Raleway', sans-serif;
-  --font-primary:'Raleway', sans-serif;
-  --font-secondary: 'Raleway', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;
   --animate-repeat: 1;
-}
 
-/* Colors */
-:root {
   --color-default: #364d59;
   --color-primary: #273b60;
   --color-secondary: #52565e;
-}
 
-/* Smooth scroll behavior */
-:root {
+  --font-default:  'Raleway', sans-serif;
+  --font-primary:'Raleway', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
   scroll-behavior: smooth;
 }
 
