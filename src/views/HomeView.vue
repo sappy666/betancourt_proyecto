@@ -4,7 +4,9 @@
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-6 text-center">
-                  <h2>Betancourt <span>Abogados</span></h2>
+                  <img src="../assets/nombre.png" alt="" srcset="" width="700px">
+                  <!-- <h2>Betancourt <span>Abogados</span></h2> -->
+                  <br><br>
                   <p>Somos un estudio jurídico formado por abogados e ingenieros, todos profesionales altamente calificados que buscan proporcionar soluciones eficientes y efectivas.</p>
                   <a href="#about" class="btn-get-started">Conócenos</a>
                </div>
@@ -99,11 +101,11 @@
    .hero {
    overflow-x: hidden;
    padding: 0;
-   background-image: url("../assets/fondobanner3.jpg");
+   background-image: url("../assets/fondobanner4.jpg");
    background-size: cover;
    }
    .hero .info{
-   backdrop-filter: blur(5px);
+   /* backdrop-filter: blur(5px); */
    margin-top: 2.5rem;
    }
    .hero .carousel {
@@ -122,12 +124,6 @@
    overflow: hidden;
    z-index: 1;
    transition-duration: 0.4s;
-   }
-   .hero .carousel-item::before {
-   content: "";
-   background-color: rgba(0, 0, 0, 0.7);
-   position: absolute;
-   inset: 0;
    }
    .hero .info {
    position: absolute;
@@ -162,6 +158,8 @@
    @media (max-width: 768px) {
    .hero .info h2 {
    font-size: 36px;
+   text-shadow: 
+   rgba(0, 0, 0, .2);
    }
    }
    .hero .info p {
@@ -181,57 +179,16 @@
    color: #fff;
    background: var(--color-primary);
    border: 2px solid var(--color-primary);
+   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+   cursor: pointer;
    }
    .hero .info .btn-get-started:hover {
-   background: var(--color-primary);
+   background: #26547C;
+   border: 2px solid #26547C;
+
    }
-   .hero .carousel-control-prev {
-   justify-content: start;
-   }
-   @media (min-width: 640px) {
-   .hero .carousel-control-prev {
-   padding-left: 15px;
-   }
-   }
-   .hero .carousel-control-next {
-   justify-content: end;
-   }
-   @media (min-width: 640px) {
-   .hero .carousel-control-next {
-   padding-right: 15px;
-   }
-   }
-   .hero .carousel-control-next-icon,
-   .hero .carousel-control-prev-icon {
-   background: none;
-   font-size: 26px;
-   line-height: 0;
-   background: rgba(255, 255, 255, 0.2);
-   color: rgba(255, 255, 255, 0.6);
-   border-radius: 50px;
-   width: 54px;
-   height: 54px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   }
-   .hero .carousel-control-prev,
-   .hero .carousel-control-next {
-   z-index: 3;
-   transition: 0.3s;
-   }
-   .hero .carousel-control-prev:focus,
-   .hero .carousel-control-next:focus {
-   opacity: 0.5;
-   }
-   .hero .carousel-control-prev:hover,
-   .hero .carousel-control-next:hover {
-   opacity: 0.9;
-   }
+  
    .btn-get-started{
    text-decoration: none;
-   }
-   .btn-get-started:hover{
-   background-color: #2c214c;
    }
 </style>
