@@ -19,7 +19,7 @@
                            <router-link class="nav-link" to="/AreasView">Derecho Laboral</router-link>
                         </div>
                      </div>
-                     <router-link class="nav-link" to="/BlogView">Casos destacados</router-link>
+                     <!-- <router-link class="nav-link" to="/BlogView">Casos destacados</router-link> -->
                      <router-link class="nav-link" to="/BlogView">Noticias</router-link>
                      <router-link class="nav-link" to="/#contact">Contacto</router-link>
                      <router-link class="nav-link" to="/#contact">EN</router-link>
