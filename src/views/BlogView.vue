@@ -2,7 +2,7 @@
    <!-- ======= Breadcrumbs ======= -->
    <section class="hero bg-cover bg-position py-4">
       <div class="banner container py-5 index-forward text-white">
-         <h1>Nombre de entrada</h1>
+         <h1>Noticias</h1>
          <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-none mb-0 p-0">
                <li class="breadcrumb-item ps-0">
@@ -187,7 +187,7 @@
    }
    .hero.bg-cover{
    /* background-color: black; */
-   background: url(../assets/fondobanner3.jpg);
+   background: url(../assets/fondobanner4.jpg);
    }
    .breadcrumb {
    padding: 0 0;

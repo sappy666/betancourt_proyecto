@@ -23,8 +23,8 @@
                <div class="col-lg-3 col-md-6 footer-contact">
                   <h4>Contactános</h4>
                   <p>
-                     <strong>Teléfono:</strong> <br>+56 2 2380 0530<br>
-                     <strong>Email:</strong> <br>contacto@betancourtabogados.cl<br>
+                     <strong><i class="bi bi-telephone-fill"></i> Teléfono:</strong> <br> +56 2 2380 0530<br>
+                     <strong><i class="bi bi-envelope-fill"></i> Correos:</strong> <br> contacto@betancourtabogados.cl<br>
                      asesorias@betancourtabogados.cl<br>
                   </p>
                   <div class="social-links">

@@ -165,6 +165,7 @@
    .hero .info p {
    color: rgba(255, 255, 255, 0.8);
    font-size: 18px;
+   padding-top: 2rem;
    }
    .hero .info .btn-get-started {
    font-family: var(--font-primary);

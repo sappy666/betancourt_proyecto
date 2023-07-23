@@ -105,7 +105,7 @@
    }
    .hero.bg-cover{
    /* background-color: black; */
-   background: url(../assets/fondobanner3.jpg);
+   background: url(../assets/fondobanner4.jpg);
    }
 
    .breadcrumb {
