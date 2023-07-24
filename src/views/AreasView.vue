@@ -4,7 +4,7 @@
       <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
          <h1>Conoce nuestras<br>Áreas de práctica</h1>
          <h2>Conoce nuestras áreas de trabajo</h2>
-         <a href="courses.html" class="btn-get-started">Contáctanos</a>
+         <a href="#contact" class="btn-get-started">Contáctanos</a>
       </div>
    </section>
    <!-- End Hero -->
@@ -281,8 +281,8 @@
    color: #fff;
    }
    #hero .btn-get-started:hover {
-   background: #5fcf80;
-   border: 2px solid #5fcf80;
+   background: #26547C;
+   border: 2px solid #26547C;
    }
    @media (min-width: 1024px) {
    #hero {

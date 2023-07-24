@@ -26,9 +26,9 @@
                   <div class="icon">
                      <img src="../assets/iconos/socialize.png" alt="" srcset="">
                   </div>
-                  <h2>Asesoría en postulación</h2>
+                  <h2>Asesoría Laboral</h2>
                   <div>
-                     <p>Nuestro plan te ayuda a evitar errores comunes en las licitaciones públicas, optimizando tus posibilidades de adjudicación..</p>
+                     <p>La asesoría laboral, a través de sus trabajadores, se encarga de realizar las gestiones en materia laboral de una empresa, además de asesorar a los directivos de estas para que cumplan con la normativa vigente en esta materia.</p>
                   </div>
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
@@ -41,15 +41,15 @@
                   <div class="icon">
                      <img src="../assets/iconos/law.png" alt="" srcset="">
                   </div>
-                  <h2>Defensa Proveedor/Contratista</h2>
-                  <p>Especializados en la defensa de contratistas y proveedores del Estado a través del Mercado Público, protegemos sus derechos en una relación comercial desigual, brindando conocimientos técnicos y jurídicos especializados.</p>
+                  <h2>Cobranza Administrativa</h2>
+                  <p>La cobranza administrativa es la cartera de clientes que están por vencer y que no ha tenido gestión anterior. Conlleva mayor actividad que la cobranza preventiva. Porque en este caso se debe efectuar la cobranza vía telefónica.</p>
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
             </div>
             <!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                <div class="service-item position-relative">
                   <div class="icon">
                      <img src="../assets/iconos/gavel.png" alt="" srcset="">
@@ -60,9 +60,9 @@
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
-            </div>
+            </div> -->
             <!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                <div class="service-item position-relative">
                   <div class="icon">
                      <img src="../assets/iconos/diagram.png" alt="" srcset="">
@@ -73,9 +73,9 @@
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
-            </div>
+            </div> -->
             <!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                <div class="service-item position-relative">
                   <div class="icon">
                      <img src="../assets/iconos/construction-and-tools.png" alt="" srcset="">
@@ -86,7 +86,7 @@
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
-            </div>
+            </div> -->
             <!-- End Service Item -->
          </div>
       </div>
