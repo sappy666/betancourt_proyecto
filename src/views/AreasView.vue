@@ -10,7 +10,7 @@
    <!-- End Hero -->
    <section class="pt-5">
       <div class="container shadow section-sm rounded pt-5">
-         <div class="row">
+         <div class="row servicios">
             <!-- sidebar -->
             <div class="col-lg-3">
                <ul class="sidenav">
@@ -61,7 +61,7 @@
                         <p>
                            Añadir que el sistema de mercado público es perfectible, sin embargo funciona, y a nuestro juicio y experiencia, funciona cada vez mejor. El Estado de Chile cumple y paga.
                         </p>
-                        <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
+                        <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
                      </div>
                   </div>
                </div>
@@ -151,41 +151,70 @@
    // import QuoteComp from "@/components/QuoteComp.vue"
    import ContactoComp2 from "@/components/ContactoComp2.vue"
    
-   export default {
-    name: "AreasView", 
-    components: {
-   ContactoComp2,
+export default {
+   name: "AreasView", 
+   components: {
+      ContactoComp2,
    },
    created(){
       window.scrollTo({top: 0, behavior: "instant"});
    },
-    mounted(){
-        const servicios = document.querySelectorAll("div.servicio"); 
-        const btnsMain = document.querySelectorAll(".sidelist.main");
-        btnsMain.forEach((e)=>{
-            e.addEventListener("click", ()=>{
-                btnsMain.forEach((btn)=>{
-                    btn.classList.remove("active");
-                });
-                e.classList.add("active");
-                servicios.forEach((s)=>{
-                    s.classList.remove("active");
-                });
-                let idMostrar = "";
-                let lista = e.id.split("-");
-                for(let i=1; i<lista.length; i++){
-                    idMostrar += lista[i];
-                    if(i != lista.length-1){
-                        idMostrar += "-";
-                    }
-                }
-                document.getElementById(idMostrar).classList.add("active");
+   mounted(){
+      // Seleccionar area a mostrar en contenedor
+      const servicios = document.querySelectorAll("div.servicio"); 
+      const btnsMain = document.querySelectorAll(".sidelist.main");
+      btnsMain.forEach((e)=>{
+         e.addEventListener("click", ()=>{
+            btnsMain.forEach((btn)=>{
+               btn.classList.remove("active");
             });
-        });
-    }
+            e.classList.add("active");
+            servicios.forEach((s)=>{
+               s.classList.remove("active");
+            });
+            let idMostrar = "";
+            let lista = e.id.split("-");
+            for(let i=1; i<lista.length; i++){
+               idMostrar += lista[i];
+               if(i != lista.length-1){
+                  idMostrar += "-";
+               }
+            }
+            document.getElementById(idMostrar).classList.add("active");
+         });
+      });
+
+      // Seleccion de area por navbar
+      
+      let section = this.$router.currentRoute.value.hash.replace("#", "");
+      if (section){
+         // btnsMain.forEach((btn)=>{
+         //    btn.classList.remove("active");
+         // });
+         btnsMain.forEach((btn)=>{
+               btn.classList.remove("active");
+            });
+         servicios.forEach((s)=>{
+               s.classList.remove("active");
+            });
+
+         document.getElementById(section).classList.add("active");
+         document.getElementById("btn-"+section).classList.add("active");
+         this.$nextTick(()=> window.document.getElementById("servicios-content").scrollIntoView());
       }
+   }
+}
 </script>
 <style scoped>
+   .row.servicios{
+      min-height: 70rem;
+      margin-top: 2rem;
+   }
+   #servicios-content{
+      scroll-margin: 9rem;
+      margin-inline: auto;
+      padding: 0;
+   }
    .servicio{
       opacity: 0;
       transition: 1s opacity;
@@ -235,20 +264,19 @@
    # Hero Section
    --------------------------------------------------------------*/
    #hero {
-   width: 100%;
-   height: 80vh;
-   background: url("../assets/1.jpg") top center;
-   background-size: cover;
-   position: relative;
+      height: 50vh;
+      background: url("../assets/1.jpg") top center;
+      background-size: cover;
+      position: relative;
    }
    #hero:before {
-   content: "";
-   background: rgba(0, 0, 0, 0.4);
-   position: absolute;
-   bottom: 0;
-   top: 0;
-   left: 0;
-   right: 0;
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
    }
    #hero .container {
    padding-top: 72px;
@@ -294,17 +322,17 @@
    }
    }
    @media (max-width: 768px) {
-   #hero {
-   height: 100vh;
-   }
-   #hero h1 {
-   font-size: 28px;
-   line-height: 36px;
-   }
-   #hero h2 {
-   font-size: 18px;
-   line-height: 24px;
-   }
+      #hero {
+         height: 100vh;
+      }
+      #hero h1 {
+         font-size: 28px;
+         line-height: 36px;
+      }
+      #hero h2 {
+         font-size: 18px;
+         line-height: 24px;
+      }
    }
    li{
    font-family: "Raleway", sans-serif;

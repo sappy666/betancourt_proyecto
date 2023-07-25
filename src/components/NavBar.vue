@@ -11,9 +11,9 @@
                      <div class="dropdown">
                         <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
                         <div>
-                           <router-link class="nav-link" to="/AreasView">Contratación Pública</router-link>
-                           <router-link class="nav-link" to="/AreasView">Asesoría Laboral</router-link>
-                           <router-link class="nav-link" to="/AreasView">Cobranza Administrativa</router-link>
+                           <router-link class="nav-link" to="/AreasView#contratacion">Contratación Pública</router-link>
+                           <router-link class="nav-link" to="/AreasView#asesoria">Asesoría Laboral</router-link>
+                           <router-link class="nav-link" to="/AreasView#cobranza">Cobranza Administrativa</router-link>
                            <!-- <router-link class="nav-link" to="/AreasView">Tribunal Contratación Pública</router-link> -->
                            <!-- <router-link class="nav-link" to="/AreasView">Gestión de Negocios</router-link> -->
                            <!-- <router-link class="nav-link" to="/AreasView">Derecho Laboral</router-link> -->
@@ -22,7 +22,7 @@
                      <!-- <router-link class="nav-link" to="/BlogView">Casos destacados</router-link> -->
                      <router-link class="nav-link" to="/BlogView">Noticias</router-link>
                      <router-link class="nav-link" to="/#contact">Contacto</router-link>
-                     <router-link class="nav-link" to="/#contact">EN</router-link>
+                     <router-link class="nav-link" to="/">EN</router-link>
                   </div>
                   <i class="bi bi-list mobile-nav-toggle"></i>
                </nav>
@@ -36,6 +36,7 @@
    export default {
       name: 'NavBar',
       mounted(){
+         // Modificar navbar hacer scroll
          window.addEventListener("scroll", function() {
             if (window.scrollY >= 50) { // Si la página se ha desplazado más de 50px
                   document.getElementById("return-to-top").style.display = "block"; // Mostrar la flecha
@@ -49,6 +50,41 @@
                   document.getElementById("barra").style.transform = 'translateY(0)';
             }
          });
+         // Seleccionar link activo
+         const btnsLink = document.querySelectorAll("a");
+        
+         btnsLink[3].addEventListener("click", ()=>{
+            btnsLink.forEach((e)=>{
+               e.classList.remove("active");
+            });
+            btnsLink[3].classList.add("active");
+         });
+
+         btnsLink[6].addEventListener("click",()=>{
+            btnsLink.forEach((e)=>{
+               e.classList.remove("active");
+            });
+            btnsLink[5].classList.add("active");
+         });
+         btnsLink[7].addEventListener("click",()=>{
+            btnsLink.forEach((e)=>{
+               e.classList.remove("active");
+            });
+            btnsLink[5].classList.add("active");
+         });
+         btnsLink[8].addEventListener("click",()=>{
+            btnsLink.forEach((e)=>{
+               e.classList.remove("active");
+            });
+            btnsLink[5].classList.add("active");
+         });
+         btnsLink[9].addEventListener("click",()=>{
+            btnsLink.forEach((e)=>{
+               e.classList.remove("active");
+            });
+            btnsLink[9].classList.add("active");
+         });
+
       }
    }
 </script>

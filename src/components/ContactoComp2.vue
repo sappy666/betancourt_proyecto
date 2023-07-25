@@ -69,6 +69,7 @@
    .contact {
    padding-top: 5px;
    font-family: var(--font-primary);
+   scroll-margin: 5rem;
    }
    .contact .info {
    width: 100%;
