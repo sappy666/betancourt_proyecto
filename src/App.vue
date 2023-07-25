@@ -26,11 +26,11 @@ export default {
     TopArrow,
     FooterComp
   },
-  // mounted(){
-  //   window.addEventListener('scroll',()=>{
-  //     this.$router.push('/');
-  //   });
-  // }
+  mounted(){
+    window.addEventListener('scroll',()=>{
+      this.$router.push(this.$router.currentRoute.value.path);
+    });
+  }
 }
 </script>
 

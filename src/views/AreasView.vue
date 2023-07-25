@@ -15,26 +15,27 @@
             <div class="col-lg-3">
                <ul class="sidenav">
                   <li class="sidelist main active" id="btn-contratacion">
-                     <a href="#">Contratación pública</a>
+                     <a href="#servicios-content">Contratación pública</a>
                   </li>
                   <li class="sidelist main" id="btn-asesoria">
-                     <a href="#">Asesoría Laboral</a>
+                     <a href="#servicios-content">Asesoría Laboral</a>
                   </li>
                   <li class="sidelist main" id="btn-cobranza">
-                     <a href="#">Cobranza Administrativa</a>
+                     <a href="#servicios-content">Cobranza Administrativa</a>
                   </li>
                   <!-- <li class="sidelist main" id="btn-reparacion-equipos">
-                     <a href="#">Contratación pública</a>
+                     <a href="#servicios-content">Contratación pública</a>
                      </li> -->
                   <!-- <li class="sidelist main" id="btn-proyectos">
-                     <a href="#">Contratación pública</a>
+                     <a href="#servicios-content">Contratación pública</a>
                      </li> -->
                   <!-- <li class="sidelist main" id="btn-ferreteria">
-                     <a href="#">Contratación pública</a>
+                     <a href="#servicios-content">Contratación pública</a>
                      </li> -->
                </ul>
             </div>
-            <div class="col-lg-8">
+
+            <div id="servicios-content" class="col-lg-8">
                <div class="px-lg-5 px-4 servicio active" id="contratacion">
                   <div class="row mb-4">
                      <div class="col-md-7">
@@ -154,7 +155,10 @@
     name: "AreasView", 
     components: {
    ContactoComp2,
-   },  
+   },
+   created(){
+      window.scrollTo({top: 0, behavior: "instant"});
+   },
     mounted(){
         const servicios = document.querySelectorAll("div.servicio"); 
         const btnsMain = document.querySelectorAll(".sidelist.main");
@@ -183,18 +187,18 @@
 </script>
 <style scoped>
    .servicio{
-   opacity: 0;
-   transition: 1s opacity;
-   height: 0;
+      opacity: 0;
+      transition: 1s opacity;
+      height: 0;
    }
    .servicio.active{
-   opacity: 1;
-   height: 1;
+      opacity: 1;
+      height: 1;
    }
    /* sidenav */
    .sidenav {
-   border-right: 1px solid #E2E2E2;
-   padding-right: 20px;
+      border-right: 1px solid #E2E2E2;
+      padding-right: 20px;
    }
    .sidenav ul {
    padding-left: 10px;

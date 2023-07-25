@@ -6,10 +6,10 @@
          <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-none mb-0 p-0">
                <li class="breadcrumb-item ps-0">
-                  <router-link class="nav-link" to="/"> <i class="bi bi-house-door"></i> Inicio</router-link>
+                  <router-link  to="/"> <i class="bi bi-house-door"></i> Inicio</router-link>
                </li>
                <li class="breadcrumb-item active">
-                  <router-link class="nav-link" to="/BlogView">Noticias</router-link>
+                  <router-link to="/BlogView">Noticias</router-link>
                </li>
             </ol>
          </nav>
@@ -156,55 +156,45 @@
 </template>
 <script>
    export default {
-   name: "BlogView",
+      name: "BlogView",
    };
 </script>
 <style scoped>
-   .hero {
-   position: relative;
-   }
    .bg-cover {
-   background-size: cover !important;
-   background-position: center center !important;
+      background-size: cover !important;
    }
    .index-forward {
-   position: relative;
-   z-index: 99;
-   }
-   .bg-none {
-   background: none !important;
+      position: relative;
+      z-index: 99;
    }
    .container{
-   width: 100%;
-   padding-right: var(--bs-gutter-x, 1rem);
-   padding-left: var(--bs-gutter-x, 1rem);
-   margin-right: auto;
-   margin-left: auto;
+      padding-right: var(--bs-gutter-x, 1rem);
+      padding-left: var(--bs-gutter-x, 1rem);
    }
    .banner{
-   margin-top: 4rem;
-   font-family: 'Raleway', sans-serif;
+      margin-top: 4rem;
+      font-family: 'Raleway', sans-serif;
    }
    .hero.bg-cover{
-   /* background-color: black; */
    background: url(../assets/fondobanner4.jpg);
    }
    .breadcrumb {
    padding: 0 0;
    list-style: none;
    }
+   .breadcrumb a{
+      color: antiquewhite;
+      text-decoration: none;
+   }
    .breadcrumb-item:hover{
    color: antiquewhite;
    }
-   .breadcrumb-item + .breadcrumb-item {
-   padding-left: 0.5rem;
-   }
+  
    .breadcrumb-item + .breadcrumb-item::before {
-   float: left;
-   padding-right: 0.5rem;
    color: #f8f9fa;
-   content: var(--bs-breadcrumb-divider, "|") /* rtl: var(--bs-breadcrumb-divider, "|") */;
+   content: "|";
    }
+
    .breadcrumb-item.active {
    color: #f8f9fa;
    }

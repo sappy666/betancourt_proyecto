@@ -6,25 +6,11 @@
                <div class="col-lg-6 text-center">
                   <img src="../assets/nombre.png" alt="" srcset="" width="700px">
                   <!-- <h2>Betancourt <span>Abogados</span></h2> -->
-                  <br><br>
                   <p>Somos un estudio jurídico formado por abogados e ingenieros, todos profesionales altamente calificados que buscan proporcionar soluciones eficientes y efectivas.</p>
                   <a href="#about" class="btn-get-started">Conócenos</a>
                </div>
             </div>
          </div>
-      </div>
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-         <!-- <div class="carousel-item active" style="background-image: url(../assets/1.jpg)"></div>
-            <div class="carousel-item" style="background-image: url(../assets/2.jpg)"></div>
-            <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
-            <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
-            <div class="carousel-item" style="background-image: url(../assets/1.jpg)"></div>
-            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-            </a> -->
       </div>
    </section>
    <!-- End Hero Section -->
@@ -36,61 +22,42 @@
    <ContactoComp />
 </template>
 <script>
-   import CounterComp from "@/components/CounterComp.vue"
-   import NosotrosComp from "@/components/NosotrosComp.vue"
-   import ServiciosComp from "@/components/ServiciosComp.vue"
-   import ClientesComp from "@/components/ClientesComp.vue"
-   import BlogComp from "@/components/BlogComp.vue"
-   import ContactoComp from "@/components/ContactoComp.vue"
+import CounterComp from "@/components/CounterComp.vue"
+import NosotrosComp from "@/components/NosotrosComp.vue"
+import ServiciosComp from "@/components/ServiciosComp.vue"
+import ClientesComp from "@/components/ClientesComp.vue"
+import BlogComp from "@/components/BlogComp.vue"
+import ContactoComp from "@/components/ContactoComp.vue"
    
    
    
-    export default {
-    name: "HomeView",
-    components: {
-   CounterComp,
-    NosotrosComp,
-    ServiciosComp,
-    ClientesComp,
-    BlogComp,
-    ContactoComp,
+export default {
+   name: "HomeView",
+   components: {
+      CounterComp,
+      NosotrosComp,
+      ServiciosComp,
+      ClientesComp,
+      BlogComp,
+      ContactoComp,
    },
-    data() {
-     return {
-       heroCarouselIndicators: '',
-       heroCarouselItems: []
-     };
-    },
-   //  mounted() {
-   //   // Código para asignar los elementos
-   //   let heroCarouselIndicators = '';
-   //   let heroCarouselItems = document.querySelectorAll('#heroCarousel .carousel-item');
-    
-   //   heroCarouselItems.forEach((item, index) => {
-   //     heroCarouselIndicators += `
-   //       <li
-   //         data-bs-target="#heroCarousel"
-   //         data-bs-slide-to="${index}"
-   //         ${index === 0 ? 'class="active"' : ''}
-   //       ></li>
-   //     `;
-   //   });
-    
-   //   this.heroCarouselIndicators = heroCarouselIndicators;
-   //   this.heroCarouselItems = heroCarouselItems;
-   //  }
-   
-  updated() {
+   data() {
+      return {
+         heroCarouselIndicators: '',
+         heroCarouselItems: []
+      };
+   },
+   updated() {
       var section=this.$router.currentRoute.value.hash.replace("#", "");
       if (section)
-        this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
-  },
-  mounted(){
+      this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+   },
+   mounted(){
       var section=this.$router.currentRoute.value.hash.replace("#", "");
       if (section)
-        this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
-  }
-    };
+      this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+   }
+};
 </script>
 <style scoped>
 
@@ -100,7 +67,6 @@
    
    .hero {
    overflow-x: hidden;
-   padding: 0;
    background-image: url("../assets/fondobanner4.jpg");
    background-size: cover;
    }
@@ -108,23 +74,14 @@
    /* backdrop-filter: blur(5px); */
    margin-top: 2.5rem;
    }
-   .hero .carousel {
-   width: 100%;
-   min-height: 100vh;
-   padding: 0px 0;
-   margin: 0px;
-   position: relative;
+   .hero{
+      width: 100%;
+      min-height: 100vh;
+      padding: 0px 0;
+      margin: 0px;
+      position: relative;
    }
-   .hero .carousel-item {
-   position: absolute;
-   inset: 0;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   overflow: hidden;
-   z-index: 1;
-   transition-duration: 0.4s;
-   }
+
    .hero .info {
    position: absolute;
    inset: 0;
