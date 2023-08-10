@@ -17,25 +17,23 @@
                   <li class="sidelist main active" id="btn-contratacion">
                      <a href="#servicios-content">Contratación pública</a>
                   </li>
-                  <li class="sidelist main" id="btn-asesoria">
-                     <a href="#servicios-content">Asesoría Laboral</a>
-                  </li>
                   <li class="sidelist main" id="btn-cobranza">
                      <a href="#servicios-content">Cobranza Administrativa</a>
                   </li>
-                  <!-- <li class="sidelist main" id="btn-reparacion-equipos">
-                     <a href="#servicios-content">Contratación pública</a>
+                  <li class="sidelist main" id="btn-reclamacion">
+                     <a href="#servicios-content">Reclamación y defensa de adjudicación</a>
+                     </li>
+                  <!-- <li class="sidelist main" id="btn-adjudicacion">
+                     <a href="#servicios-content">Asesoría en la adjudicación</a>
                      </li> -->
-                  <!-- <li class="sidelist main" id="btn-proyectos">
-                     <a href="#servicios-content">Contratación pública</a>
-                     </li> -->
-                  <!-- <li class="sidelist main" id="btn-ferreteria">
-                     <a href="#servicios-content">Contratación pública</a>
-                     </li> -->
+                  <li class="sidelist main" id="btn-estrategica">
+                     <a href="#servicios-content">Asesoría Estratégica</a>
+                     </li>
                </ul>
             </div>
 
             <div id="servicios-content" class="col-lg-8">
+               <!-- --------------------Contratacion------------------------------>
                <div class="px-lg-5 px-4 servicio active" id="contratacion">
                   <div class="row mb-4">
                      <div class="col-md-7">
@@ -45,11 +43,11 @@
                   <div class="row">
                      <div class="col-md-6">
                         <p class="text-muted">
-                           La contratación pública es el proceso mediante la cual el Estado de Chile adquiere los bienes y servicios que requiere para su funcionamiento y la satisfacción de sus necesidades, planes y programas. El Estado es el comprador y los privados los vendedores. Esta labor, la desarrolla a través de 4 modalidades: Licitaciones públicas, Convenio Marco, Trato Directo y Licitaciones Privadas.
-                        </p>
-                        <p>
-                           El lugar de encuentro de esta oferta y demanda es <strong>Mercado Público</strong>. Ecosistema que se desarrolla en una plataforma digital que es, hoy por hoy, el lugar donde más transacciones comerciales -tanto en cantidad o volumen de operaciones, como en cuantía- se realizan en el mercado nacional. En el año 2022 se llevaron a cabo 1.809.592 operaciones por $15.023 millones USD.
-                        </p>
+                        La contratación pública es el proceso mediante la cual el Estado de Chile adquiere los bienes y servicios que requiere para su funcionamiento y la satisfacción de sus necesidades, planes y programas.</p>
+                        <p>El Estado es el comprador y los privados los vendedores. Esta labor, la desarrolla a través de 4 modalidades: </p>
+                        <p>Licitaciones públicas, Convenio Marco, Trato Directo y Licitaciones Privadas. </p>
+                        <p>El lugar de encuentro de esta oferta y demanda es Mercado Público. Ecosistema que se desarrolla en una plataforma digital que es, hoy por hoy, el lugar donde más transacciones comerciales -tanto en cantidad o volumen de operaciones, como en cuantía- se realizan en el mercado nacional.</p>
+                        <p>En el año 2022 se llevaron a cabo 1.809.592 operaciones por $15.023 millones USD.</p>
                      </div>
                      <div class="col-md-6">
                         <p class="text-muted">
@@ -65,56 +63,34 @@
                      </div>
                   </div>
                </div>
-               <div class="px-lg-5 px-4 servicio" id="asesoria">
+               <!-- --------------------Reclamación y defensa----------------------------->
+               <div class="px-lg-5 px-4 servicio" id="reclamacion">
                   <div class="row mb-4">
                      <div class="col-md-7">
-                        <h2>Asesoría laboral</h2>
+                        <h2>Reclamación y defensa de adjudicación</h2>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <h3>Servicio de asesoría laboral permanente</h3>
-                        <ul class="text-muted">
-                           <li>Disponibilidad para consultas ilimitadas, así como el estudio e informes en la materia</li>
-                           <li>Remuneraciones y beneficios: tratamiento laboral, previsional y tributario</li>
-                           <li>Redacción y/o revisión de contratos y anexos</li>
-                           <li>Desvinculación de trabajadores: revisión de causales de término, redacción de cartas de despido y finiquitos</li>
-                           <li>Redacción y revisión del Reglamento interno de orden higiene y seguridad</li>
-                           <li>Revisión y análisis en materia de jornadas laborales, registro de asistencia, turnos y otros</li>
-                           <li>Asesoría sobre constitución, reglamento y funcionamiento del Comité paritario de Higiene y Seguridad</li>
-                           <li>Cumplimiento de derechos fundamentales, como respeto de privacidad y no discriminación</li>
-                           <li>Representación ante la Dirección del Trabajo</li>
-                           <li>Actualización permanente en normativa laboral legal</li>
-                           <li>Investigación ante denuncias por acoso laboral y acoso sexual</li>
-                           <li>Prescripción de deudas previsionales</li>
-                        </ul>
-                        <h3 class="py-2">Representación Judicial</h3>
-                        <ul class="text-muted">
-                           <li>Defensa judicial frente a demandas por diversas causales, por ejemplo: tutela laboral, despidos indirectos, injustificados, accidentes laborales y enfermedades profesionales, desafueros, prácticas antisindicales, etc.</li>
-                           <li>Revisión activa y permanente de los Tribunales Laborales y de Cobranza Laboral y Previsional</li>
-                        </ul>
+                        <p class="text-muted">
+                           Una vez dictado el acto adjudicatorio, y según sea el caso podemos:
+                        </p>
+                        <p>
+                           Reclamar contra el acto adjudicatorio por irregularidades en el proceso de evaluación.
+                        </p>
+                        <p>
+                           Deducir acción de impugnación ante el Tribunal de Compras Públicas cuando existan ilegalidades y/o arbitrariedades que vulneren los principios que inspiran nuestra legislación.
+                        </p>
                      </div>
                      <div class="col-md-6">
-                        <h3>Asesoría en Procesos de Negociación Colectiva y materias sindicales</h3>
-                        <ul class="text-muted">
-                           <li>Acompañamiento durante todo el proceso de negociación de instrumentos colectivos del trabajo</li>
-                           <li>Determinación de la estrategia de negociación más conveniente para la empresa</li>
-                           <li>Redacción del instrumento colectivo</li>
-                        </ul>
-                        <h3 class="py-2">Otras materias</h3>
-                        <ol class="text-muted">
-                           <li>Constitución y modificación de sociedades</li>
-                           <li>Emisión de informes para la Gerencia General y el Directorio de la Empresa</li>
-                           <li>Mantenimiento de los libros societarios, como el Libro de Directorio, de Juntas de Accionistas (Ordinarias y Extraordinarias) y Registros de Accionistas</li>
-                           <li>Concurrencia de un abogado a Sesiones de Directorio y Juntas de Accionistas</li>
-                           <li>Redacción de poderes</li>
-                           <li>Estudio, revisión y redacción de todo tipo de contratos comerciales</li>
-                           <li>Apoyo en las negociaciones legales y comerciales relacionadas con el giro de la empresa</li>
-                        </ol>
-                        <router-link class="nav-link py-3 ps-3" to="/AreasView#contacto"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
+                        <p class="text-muted">
+                        Puede suceder que nuestro cliente sea adjudicado y otro oferente reclame contra esta adjudicación inciandose un procedimiento de invalidación, nos hacemos parte en la instancia de audiencia previa con el objetivo de que dichos reclamos sean desestimados y así consolidar la adjudicación de nuestro cliente. 
+                        </p>
+                        <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
                      </div>
                   </div>
                </div>
+              <!-- -----------------------Cobranza Administrativa-------------------------------->
                <div class="px-lg-5 px-4 servicio" id="cobranza">
                   <div class="row mb-4">
                      <div class="col-md-7">
@@ -138,6 +114,55 @@
                            El sistema se sustenta en principios de derecho público que buscan resguardar la igualdad de los oferentes, la libre competencia, la transparencia, como ejes fundamentales del mercado, con el objeto de promover una mayor participación de personas jurídicas nacionales y extranjeras en este mercado.
                         </p>
                         <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
+                     </div>
+                  </div>
+               </div>
+               <!-- -------------------Asesoría en la adjudicación (o Ejecución)------------------>
+               <!-- <div class="px-lg-5 px-4 servicio" id="adjudicación">
+                  <div class="row mb-4">
+                     <div class="col-md-7">
+                        <h2>Asesoría en la Ejecución</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p class="text-muted">
+                        Sabemos que tener la capacidad de responder oportunamente a cualquier eventualidad que se suscite durante la ejecución del contrato es trascendental para minimizar las repercusiones negativas que a su empresa le pueden significar. </p>
+                        <p>Por esto, acompañamos a nuestros clientes en: </p>
+                        <p>Negociaciones con el mandante.</p>
+                        <p>Defensa de multas.</p>
+                     </div>
+                     <div class="col-md-6">
+                        <p class="text-muted">
+                         Término anticipado de contrato.</p>
+                        <p>Aumento o disminución de obra.</p>
+                        <p>Etc.</p>
+                        <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
+                     </div>
+                  </div>
+               </div> -->
+                <!-- -------------------Asesoría Estrategica---------------------------------->
+               <div class="px-lg-5 px-4 servicio" id="estrategica">
+                  <div class="row mb-4">
+                     <div class="col-md-7">
+                        <h2>Asesoría Estratégica</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p class="text-muted">
+                        Nuestro objetivo es proporcionar a nuestros clientes soluciones que se ajusten a sus necesidades concretas, por lo cual, sumado a lo anterior, ofrecemos: </p>
+                        <p>Análisis de mercado en cuanto al rubro y competidores.</p>
+                        <p>Alianzas con otras empresas para ampliar el rango de participación en <strong>Mercado Público.</strong></p>
+                      
+                     </div>
+                     <div class="col-md-6">
+                        <p class="text-muted">
+                        Asesoría en la obtención de garantías.</p>
+                        <p>Desarrollo de planificación estratégica de crecimiento en <strong>Mercado Público.</strong></p>
+                        <p>Constitución de UTP con otros clientes/empresas</p>
+                        <p>Etc.</p>
+                        <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
                      </div>
                   </div>
                </div>

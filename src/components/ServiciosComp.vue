@@ -11,30 +11,18 @@
                   <div class="icon">
                      <img src="../assets/iconos/library.png" alt="" srcset="">
                   </div>
-                  <h2>Contratación Pública</h2>
-                  <div>
-                     <p>Nuestro equipo está conformado por un grupo de abogados e ingenieros especializados en Contratación Pública. A su vez contamos con vasta experiencia en portal mercadopublico.cl y chilecompra.cl.</p>
+                  <h2>Asesoría en Contratación Pública</h2>
+                  <div> 
+                     <p>Maximizamos tus posibilidades de acceder de nuevos negocios con nuestra asesoría para la participación en <strong>Mercado Público</strong></p>
+                     <!-- <p>Nuestro equipo está conformado por un grupo de abogados e ingenieros especializados en Contratación Pública. A su vez contamos con vasta experiencia en portal mercadopublico.cl y chilecompra.cl.</p>
+                     -->
                   </div>
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
             </div>
-            <!-- End Service Item -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-               <div class="service-item position-relative">
-                  <div class="icon">
-                     <img src="../assets/iconos/socialize.png" alt="" srcset="">
-                  </div>
-                  <h2>Asesoría Laboral</h2>
-                  <div>
-                     <p>La asesoría laboral, a través de sus trabajadores, se encarga de realizar las gestiones en materia laboral de una empresa, además de asesorar a los directivos de estas para que cumplan con la normativa vigente en esta materia.</p>
-                  </div>
-                  <div class="mt-auto">
-                     <router-link class="readmore" to="/AreasView">Leer más</router-link>
-                  </div>
-               </div>
-            </div>
+   
             <!-- End Service Item -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                <div class="service-item position-relative">
@@ -42,51 +30,52 @@
                      <img src="../assets/iconos/law.png" alt="" srcset="">
                   </div>
                   <h2>Cobranza Administrativa</h2>
-                  <p>La cobranza administrativa es la cartera de clientes que están por vencer y que no ha tenido gestión anterior. Conlleva mayor actividad que la cobranza preventiva. Porque en este caso se debe efectuar la cobranza vía telefónica.</p>
+                  <p>Facilitamos la recuperación de capital e intereses adeudados por los mandantes públicos a nuestros clientes sin la necesidad de judicializar los procesos de cobranza mediante un método eficiente y eficaz.</p>
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
             </div>
             <!-- End Service Item -->
-            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                <div class="service-item position-relative">
                   <div class="icon">
                      <img src="../assets/iconos/gavel.png" alt="" srcset="">
                   </div>
-                  <h2>Tribunal Contratación Pública</h2>
-                  <p>Estudio jurídico especializado en tramitación eficiente y exitosa ante el Tribunal de Contratación Pública. Nuestras oficinas ubicadas cerca del Tribunal garantizan un proceso judicial fluido y ágil.</p>
+                  <h2>Reclamación y defensa de adjudicación</h2>
+                  <p> Analizamos minuciosamente el proceso de evaluación y adjudicación para detectar cualquier ilegalidad y/o arbitrariedad que pueda ser impugnada.</p>
+                  
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
-            </div> -->
+            </div>
             <!-- End Service Item -->
-            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                <div class="service-item position-relative">
                   <div class="icon">
                      <img src="../assets/iconos/diagram.png" alt="" srcset="">
                   </div>
-                  <h2>Gestión de Negocios</h2>
-                  <p>Brindamos asesoría continua a personas jurídicas y naturales, ofreciendo servicios integrales en negociación, puesta en marcha, desarrollo y cierre de negocios. Creamos contratos personalizados para satisfacer las necesidades de cada cliente.</p>
+                  <h2>Asesoría Estratégica</h2>
+                  <p>Nos adaptamos a tus necesidades.Cuéntanos tu problema y juntos buscaremos las mejores opciones para solucionarlo.</p>
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
-            </div> -->
+            </div>
             <!-- End Service Item -->
-            <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                <div class="service-item position-relative">
                   <div class="icon">
                      <img src="../assets/iconos/construction-and-tools.png" alt="" srcset="">
                   </div>
-                  <h2>Derecho Laboral</h2>
-                  <p>Nuestros abogados son expertos en litigación laboral ejerciendo día a día la defensa frente a los distintos Tribunales del país de los intereses de su representado.</p>
+                  <h2>Asesoría en la adjudicación</h2>
+                  <p> Te asesoramos durante la ejecución del contrato, defendiéndote en la aplicación de multas, cumplimientos de estados de pago, término anticipado de contrato y cualquier otra eventualidad que se pueda traducir en un menoscabo económico para la empresa.</p>
                   <div class="mt-auto">
                      <router-link class="readmore" to="/AreasView">Leer más</router-link>
                   </div>
                </div>
-            </div> -->
+            </div>
             <!-- End Service Item -->
          </div>
       </div>

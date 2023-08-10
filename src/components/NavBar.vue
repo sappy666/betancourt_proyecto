@@ -11,12 +11,12 @@
                      <div class="dropdown">
                         <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
                         <div>
-                           <router-link class="nav-link" to="/AreasView#contratacion">Contratación Pública</router-link>
-                           <router-link class="nav-link" to="/AreasView#asesoria">Asesoría Laboral</router-link>
+                           <router-link class="nav-link" to="/AreasView#contratacion">Asesoria en Contratación Pública</router-link>
                            <router-link class="nav-link" to="/AreasView#cobranza">Cobranza Administrativa</router-link>
-                           <!-- <router-link class="nav-link" to="/AreasView">Tribunal Contratación Pública</router-link> -->
-                           <!-- <router-link class="nav-link" to="/AreasView">Gestión de Negocios</router-link> -->
-                           <!-- <router-link class="nav-link" to="/AreasView">Derecho Laboral</router-link> -->
+                           <router-link class="nav-link" to="/AreasView#reclamación">Reclamación y defensa de adjudicación</router-link>
+                           <router-link class="nav-link" to="/AreasView#estrategica">Asesoría Estratégica</router-link>
+                           <!-- <router-link class="nav-link" to="/AreasView#adjudicacion">Asesoría en la Adjudicación</router-link> -->
+                         
                         </div>
                      </div>
                      <!-- <router-link class="nav-link" to="/BlogView">Casos destacados</router-link> -->
