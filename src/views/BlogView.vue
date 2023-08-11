@@ -22,17 +22,21 @@
          <div class="row g-5 justify-content-center">
             <div class="col-lg-10">
                <div class="row gy-4 posts-list justify-content-center">
-                  <div class="col-lg-6">
+                  <div v-for="p in posts" :key="p.id" class="col-lg-6">
                      <article class="d-flex flex-column">
-                        <div class="post-img">
+                        <!-- <div class="post-img">
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div>
+                        </div> -->
                         <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
+                           <router-link class="nav-link" to="/BlogdetalleView">{{ p.title }}</router-link>
                         </h2>
+                        <div class="subtitle">
+                           <p v-if="p.client != ''">Cliente: {{p.cliente}}</p>
+                           <p v-if="p.mandante != ''">Mandante: {{p.mandante}}</p>
+                        </div>
                         <div class="content">
                            <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente. 
+                              {{ p.text }}
                            </p>
                         </div>
                         <div class="read-more mt-auto align-self-end">
@@ -40,102 +44,7 @@
                         </div>
                      </article>
                   </div>
-                  <!-- End post list item -->
-                  <div class="col-lg-6">
-                     <article class="d-flex flex-column">
-                        <div class="post-img">
-                           <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
-                        </h2>
-                        <div class="content">
-                           <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
-                           </p>
-                        </div>
-                        <div class="read-more mt-auto align-self-end">
-                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div>
-                     </article>
-                  </div>
-                  <!-- End post list item -->
-                  <div class="col-lg-6">
-                     <article class="d-flex flex-column">
-                        <div class="post-img">
-                           <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
-                        </h2>
-                        <div class="content">
-                           <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
-                           </p>
-                        </div>
-                        <div class="read-more mt-auto align-self-end">
-                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div>
-                     </article>
-                  </div>
-                  <!-- End post list item -->
-                  <div class="col-lg-6">
-                     <article class="d-flex flex-column">
-                        <div class="post-img">
-                           <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
-                        </h2>
-                        <div class="content">
-                           <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
-                           </p>
-                        </div>
-                        <div class="read-more mt-auto align-self-end">
-                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div>
-                     </article>
-                  </div>
-                  <!-- End post list item -->
-                  <div class="col-lg-6">
-                     <article class="d-flex flex-column">
-                        <div class="post-img">
-                           <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
-                        </h2>
-                        <div class="content">
-                           <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
-                           </p>
-                        </div>
-                        <div class="read-more mt-auto align-self-end">
-                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div>
-                     </article>
-                  </div>
-                  <!-- End post list item -->
-                  <div class="col-lg-6">
-                     <article class="d-flex flex-column">
-                        <div class="post-img">
-                           <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">Recursos de Reposición</router-link>
-                        </h2>
-                        <div class="content">
-                           <p>
-                              Durante el mes de octubre del año 2022 se defienden 15 multas aplicadas a nuestro cliente Textiles Zahr S.A mediante recursos de reposición al haber sido rechazados previamente los descargos evacuados directamente por ellos. Estos recursos fueron acogidos en su totalidad significándole un ahorro millonario al cliente.                            
-                           </p>
-                        </div>
-                        <div class="read-more mt-auto align-self-end">
-                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div>
-                     </article>
-                  </div>
-                  <!-- End post list item -->
+                 
                </div>
                <!-- End blog posts list -->
                <div class="blog-pagination">
@@ -157,6 +66,16 @@
 <script>
    export default {
       name: "BlogView",
+      data(){
+         return{
+            posts: []
+         }
+      },
+      async created(){
+         let promesa = await fetch("https://byvabogados.cl/api/");
+         let posts = await promesa.json();
+         this.posts = posts;
+      }
    };
 </script>
 <style scoped>

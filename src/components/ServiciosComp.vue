@@ -2,8 +2,27 @@
    <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
          <div class="section-header">
-            <h2>Servicios</h2>
+            <h2>QUÉ HACEMOS</h2>
+            <h3>Contratacion publica</h3>
             <p>Revisa nuestra lista de servicios, selecciona el que mas se acomode a tu necesidad</p>
+            <p>La contratación pública es el proceso mediante la cual el Estado
+               de Chile adquiere los bienes y servicios que requiere para su funcionamiento y la
+               satisfacción de sus necesidades, planes y programas. El Estado es el comprador y los
+               privados los vendedores. Esta labor, la desarrolla a través de 4 modalidades: Licitaciones
+               públicas, Convenio Marco, Trato Directo y Licitaciones Privadas.
+               El lugar de encuentro de esta oferta y demanda es Mercado Público. Ecosistema que se
+               desarrolla en una plataforma digital que es, hoy por hoy, el lugar donde más transacciones
+               comerciales -tanto en cantidad o volumen de operaciones, como en cuantía- se realizan
+               en el mercado nacional. En el año 2022 se llevaron a cabo 1.809.592 operaciones por
+               $15.023 millones USD.
+               Día a día, tanto inversionistas nacionales como extranjeros, concurren a Mercado Público
+               a ofrecer servicios y productos.
+               El sistema se sustenta en principios de derecho público que buscan resguardar la igualdad
+               de los oferentes, la libre competencia, la transparencia, como ejes fundamentales del
+               mercado, con el objeto de promover una mayor participación de personas jurídicas
+               nacionales y extranjeras en este mercado.
+               Añadir que el sistema de mercado público es perfectible, sin embargo funciona, y a
+               nuestro juicio y experiencia, funciona cada vez mejor. El Estado de Chile cumple y paga.</p>
          </div>
          <div class="row gy-4">
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">

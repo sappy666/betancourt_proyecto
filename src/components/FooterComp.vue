@@ -28,7 +28,7 @@
                      asesorias@betancourtabogados.cl<br>
                   </p>
                   <div class="social-links">
-                     <a href="https://www.linkedin.com/company/betancourtabogados/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                     <a href="https://www.linkedin.com/company/betancourtabogados/?viewAsMember=true" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
                      <a href="https://wa.me/56993170366" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
                      <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
