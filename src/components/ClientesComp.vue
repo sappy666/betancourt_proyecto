@@ -1,6 +1,6 @@
 <template>
    <section id="clients" class="clients">
-        <section class="mt-5">
+        <section class="">
     <div class="section-header">
             <h2>Han confiado en nosotros</h2>
             <p>Conoce algunos de nuestros clientes</p>

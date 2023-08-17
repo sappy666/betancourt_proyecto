@@ -1,67 +1,56 @@
 <template>
    <!-- ======= Hero Section ======= -->
-   <section id="hero" class="d-flex justify-content-center align-items-center">
-      <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+   <section id="hero" class="d-none d-lg-flex justify-content-center align-items-center">
+      <div class="container">
          <h1>Conoce nuestras<br>Áreas de práctica</h1>
-         <h2>Conoce nuestras áreas de trabajo</h2>
+         <!-- <h2>Conoce nuestras áreas de trabajo</h2> -->
          <a href="#contact" class="btn-get-started">Contáctanos</a>
       </div>
    </section>
    <!-- End Hero -->
-   <section class="pt-5">
+   <section id="servicios" class="pt-5">
       <div class="container shadow section-sm rounded pt-5">
          <div class="row servicios">
             <!-- sidebar -->
-            <div class="col-lg-3">
+            <div class="col col-lg-3">
                <ul class="sidenav">
                   <li class="sidelist main active" id="btn-contratacion">
-                     <a href="#servicios-content">Contratación pública</a>
+                     <a href="#servicios-content">Asesoría en compras públicas</a>
+                  </li>
+                  <li class="sidelist main" id="btn-reclamacion">
+                     <a href="#servicios-content">Reclamación y defensa de adjudicación</a>
+                  </li>
+                  <li class="sidelist main" id="btn-ejecucion">
+                     <a href="#servicios-content">Asesoría en la ejecución</a>
                   </li>
                   <li class="sidelist main" id="btn-cobranza">
                      <a href="#servicios-content">Cobranza Administrativa</a>
                   </li>
-                  <li class="sidelist main" id="btn-reclamacion">
-                     <a href="#servicios-content">Reclamación y defensa de adjudicación</a>
-                     </li>
-                  <!-- <li class="sidelist main" id="btn-adjudicacion">
-                     <a href="#servicios-content">Asesoría en la adjudicación</a>
-                     </li> -->
                   <li class="sidelist main" id="btn-estrategica">
                      <a href="#servicios-content">Asesoría Estratégica</a>
-                     </li>
+                  </li>
                </ul>
             </div>
 
-            <div id="servicios-content" class="col-lg-8">
+            <div id="servicios-content" class="col col-lg-8">
                <!-- --------------------Contratacion------------------------------>
                <div class="px-lg-5 px-4 servicio active" id="contratacion">
                   <div class="row mb-4">
-                     <div class="col-md-7">
-                        <h2>Contratación pública</h2>
+                     <div class="col">
+                        <h2>Asesoría en compras públicas</h2>
                        
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-6">
+                     <div class="col">
                         <p class="text-muted">
-                        La contratación pública es el proceso mediante la cual el Estado de Chile adquiere los bienes y servicios que requiere para su funcionamiento y la satisfacción de sus necesidades, planes y programas.</p>
-                        <p>El Estado es el comprador y los privados los vendedores. Esta labor, la desarrolla a través de 4 modalidades: </p>
-                        <p>Licitaciones públicas, Convenio Marco, Trato Directo y Licitaciones Privadas. </p>
-                        <p>El lugar de encuentro de esta oferta y demanda es Mercado Público. Ecosistema que se desarrolla en una plataforma digital que es, hoy por hoy, el lugar donde más transacciones comerciales -tanto en cantidad o volumen de operaciones, como en cuantía- se realizan en el mercado nacional.</p>
-                        <p>En el año 2022 se llevaron a cabo 1.809.592 operaciones por $15.023 millones USD.</p>
+                           Buscamos activamente nuevas
+                           oportunidades de negocios según los parámetros indicados por nuestros clientes.<br><br>
+                           Realizamos un exhaustivo análisis de las bases para detectar cualquier requisito ilegal o arbitrario e impugnarlo oportunamente.<br><br>
+                           Asesoramos a nuestros clientes en la postulación a la licitación, trabajando en conjunto en la elaboración de sus propuestas tendientes a incrementar sus opciones de adjudicación.</p>
+                           <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
                      </div>
-                     <div class="col-md-6">
-                        <p class="text-muted">
-                           Día a día, tanto inversionistas nacionales como extranjeros, concurren a <strong>Mercado Público</strong> a ofrecer servicios y productos.
-                        </p>
-                        <p>
-                           El sistema se sustenta en principios de derecho público que buscan resguardar la igualdad de los oferentes, la libre competencia, la transparencia, como ejes fundamentales del mercado, con el objeto de promover una mayor participación de personas jurídicas nacionales y extranjeras en este mercado.
-                        </p>
-                        <p>
-                           Añadir que el sistema de mercado público es perfectible, sin embargo funciona, y a nuestro juicio y experiencia, funciona cada vez mejor. El Estado de Chile cumple y paga.
-                        </p>
-                        <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
-                     </div>
+                    
                   </div>
                </div>
                <!-- --------------------Reclamación y defensa----------------------------->
@@ -72,20 +61,41 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-6">
+                     <div class="col">
                         <p class="text-muted">
                            Una vez dictado el acto adjudicatorio, y según sea el caso podemos:
                         </p>
-                        <p>
-                           Reclamar contra el acto adjudicatorio por irregularidades en el proceso de evaluación.
-                        </p>
-                        <p>
-                           Deducir acción de impugnación ante el Tribunal de Compras Públicas cuando existan ilegalidades y/o arbitrariedades que vulneren los principios que inspiran nuestra legislación.
-                        </p>
+                        <ul class="">
+                           <li class="mb-3">
+                              Reclamar contra el acto adjudicatorio por irregularidades en el proceso de evaluación.
+                           </li>
+                           <li class="mb-3">
+                              Deducir acción de impugnación ante el Tribunal de Compras Públicas cuando existan ilegalidades y/o arbitrariedades que vulneren los principios que inspiran nuestra legislación.
+                           </li>
+                           <li class="mb-3">
+                           Puede suceder que nuestro cliente sea adjudicado y otro oferente reclame contra esta adjudicación inciandose un procedimiento de invalidación, nos hacemos parte en la instancia de audiencia previa con el objetivo de que dichos reclamos sean desestimados y así consolidar la adjudicación de nuestro cliente. 
+                           </li>
+                        </ul>
+                        <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
                      </div>
-                     <div class="col-md-6">
+                  </div>
+               </div>
+               <!-- --------------------Asesoria en la ejecucion---------------------------->
+               <div class="px-lg-5 px-4 servicio" id="ejecucion">
+                  <div class="row mb-4">
+                     <div class="col-md-7">
+                        <h2>Asesoría en la ejecución</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
                         <p class="text-muted">
-                        Puede suceder que nuestro cliente sea adjudicado y otro oferente reclame contra esta adjudicación inciandose un procedimiento de invalidación, nos hacemos parte en la instancia de audiencia previa con el objetivo de que dichos reclamos sean desestimados y así consolidar la adjudicación de nuestro cliente. 
+                           Sabemos que tener la capacidad de responder
+                           oportunamente a cualquier eventualidad que se suscite durante la ejecución del
+                           contrato es trascendental para minimizar las repercusiones negativas que a su
+                           empresa le pueden significar. Por esto, acompañamos a nuestros clientes en:
+                           negociaciones con el mandante, defensa de multas, término anticipado de
+                           contrato, aumento o disminución de obra, etc.
                         </p>
                         <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
                      </div>
@@ -103,7 +113,7 @@
                         <p class="text-muted">
                            Si bien es cierto que Mercado Público otorga una plataforma de gestión de negocios con el Estado de Chile que funciona de buena manera permitiendo un seguro y ágil acceso a los proveedores para venderle al Estado bienes y servicios, y que por su parte el Estado de Chile, cumple con las obligaciones adquiridas, también es cierto que en ocasiones sea por ajustes presupuestarios, burocracia u otros motivos, pueden existir retardos en el pago de las obligaciones contraídas.
                         </p>
-                        <p>
+                        <p class="text-muted">
                            Motivo por el cual en nuestro estudio hemos desarrollado un procedimiento especializado, efectivo y de rápida tramitación para regularizar los pagos pendientes. 
                         </p>
                      </div>
@@ -111,37 +121,13 @@
                         <p class="text-muted">
                            Si ha habido retardos en los pagos, lo que corresponde es que se aplique lo prescrito por la Ley N°21.131 “Ley de Pago Oportuno”, debiendo solucionarse el capital como también los intereses que se devenguen y una comisión especial que señala la ley por la mora o simple retardo en que el Estado de Chile pudiere haber incurrido. 
                         </p>
-                        <p>
+                        <p class="text-muted">
                            El sistema se sustenta en principios de derecho público que buscan resguardar la igualdad de los oferentes, la libre competencia, la transparencia, como ejes fundamentales del mercado, con el objeto de promover una mayor participación de personas jurídicas nacionales y extranjeras en este mercado.
                         </p>
                         <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
                      </div>
                   </div>
                </div>
-               <!-- -------------------Asesoría en la adjudicación (o Ejecución)------------------>
-               <!-- <div class="px-lg-5 px-4 servicio" id="adjudicación">
-                  <div class="row mb-4">
-                     <div class="col-md-7">
-                        <h2>Asesoría en la Ejecución</h2>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-6">
-                        <p class="text-muted">
-                        Sabemos que tener la capacidad de responder oportunamente a cualquier eventualidad que se suscite durante la ejecución del contrato es trascendental para minimizar las repercusiones negativas que a su empresa le pueden significar. </p>
-                        <p>Por esto, acompañamos a nuestros clientes en: </p>
-                        <p>Negociaciones con el mandante.</p>
-                        <p>Defensa de multas.</p>
-                     </div>
-                     <div class="col-md-6">
-                        <p class="text-muted">
-                         Término anticipado de contrato.</p>
-                        <p>Aumento o disminución de obra.</p>
-                        <p>Etc.</p>
-                        <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"><i class="bi bi-envelope-check"></i> Agenda una reunión</router-link>
-                     </div>
-                  </div>
-               </div> -->
                 <!-- -------------------Asesoría Estrategica---------------------------------->
                <div class="px-lg-5 px-4 servicio" id="estrategica">
                   <div class="row mb-4">
@@ -150,20 +136,20 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-6">
+                     <div class="col">
                         <p class="text-muted">
                         Nuestro objetivo es proporcionar a nuestros clientes soluciones que se ajusten a sus necesidades concretas, por lo cual, sumado a lo anterior, ofrecemos: </p>
-                        <p>Análisis de mercado en cuanto al rubro y competidores.</p>
-                        <p>Alianzas con otras empresas para ampliar el rango de participación en <strong>Mercado Público.</strong></p>
-                      
-                     </div>
-                     <div class="col-md-6">
-                        <p class="text-muted">
-                        Asesoría en la obtención de garantías.</p>
-                        <p>Desarrollo de planificación estratégica de crecimiento en <strong>Mercado Público.</strong></p>
-                        <p>Constitución de UTP con otros clientes/empresas</p>
-                        <p>Etc.</p>
+                        <ul>
+                           <li class="mb-2">Análisis de mercado en cuanto al rubro y competidores.</li>
+                           <li class="mb-2">Alianzas con otras empresas para ampliar el rango de participación en <strong>Mercado Público.</strong></li>
+                           <li class="mb-2">
+                           Asesoría en la obtención de garantías.</li>
+                           <li class="mb-2">Desarrollo de planificación estratégica de crecimiento en <strong>Mercado Público.</strong></li>
+                           <li class="mb-2">Constitución de UTP con otros clientes/empresas.</li>
+                           <li>Etc.</li>
+                        </ul>
                         <a class="nav-link py-3" href="/#Contact"><i class="bi bi-envelope-check"></i> Agenda una reunión</a>
+                      
                      </div>
                   </div>
                </div>
@@ -189,6 +175,7 @@ export default {
       // Seleccionar area a mostrar en contenedor
       const servicios = document.querySelectorAll("div.servicio"); 
       const btnsMain = document.querySelectorAll(".sidelist.main");
+      // Control de sidebar
       btnsMain.forEach((e)=>{
          e.addEventListener("click", ()=>{
             btnsMain.forEach((btn)=>{
@@ -213,10 +200,7 @@ export default {
       // Seleccion de area por navbar
       
       let section = this.$router.currentRoute.value.hash.replace("#", "");
-      if (section){
-         // btnsMain.forEach((btn)=>{
-         //    btn.classList.remove("active");
-         // });
+      if (section && section != "servicios-content"){
          btnsMain.forEach((btn)=>{
                btn.classList.remove("active");
             });
@@ -226,20 +210,34 @@ export default {
 
          document.getElementById(section).classList.add("active");
          document.getElementById("btn-"+section).classList.add("active");
-         this.$nextTick(()=> window.document.getElementById("servicios-content").scrollIntoView());
+         this.$router.push(this.$router.currentRoute.value.path);
+      }
+   },
+   updated(){
+      const servicios = document.querySelectorAll("div.servicio"); 
+      const btnsMain = document.querySelectorAll(".sidelist.main");
+      let section = this.$router.currentRoute.value.hash.replace("#", "");
+      if (section && section != "servicios-content"){
+         btnsMain.forEach((btn)=>{
+               btn.classList.remove("active");
+            });
+         servicios.forEach((s)=>{
+               s.classList.remove("active");
+            });
+
+         document.getElementById(section).classList.add("active");
+         document.getElementById("btn-"+section).classList.add("active");
+         this.$router.push(this.$router.currentRoute.value.path);
       }
    }
 }
 </script>
 <style scoped>
    .row.servicios{
-      min-height: 70rem;
       margin-top: 2rem;
    }
    #servicios-content{
       scroll-margin: 9rem;
-      margin-inline: auto;
-      padding: 0;
    }
    .servicio{
       opacity: 0;
@@ -248,12 +246,13 @@ export default {
    }
    .servicio.active{
       opacity: 1;
-      height: 1;
+      height: auto;
    }
    /* sidenav */
    .sidenav {
       border-right: 1px solid #E2E2E2;
       padding-right: 20px;
+      min-height: 350px;
    }
    .sidenav ul {
    padding-left: 10px;
@@ -294,15 +293,6 @@ export default {
       background: url("../assets/1.jpg") top center;
       background-size: cover;
       position: relative;
-   }
-   #hero:before {
-      content: "";
-      background: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
    }
    #hero .container {
    padding-top: 72px;
@@ -360,8 +350,67 @@ export default {
          line-height: 24px;
       }
    }
-   li{
+
+   #hero .container {
+   padding-top: 72px;
+   }
+   @media (max-width: 992px) {
+   #hero .container {
+   padding-top: 62px;
+   }
+   }
+
+   #hero h1 {
+   margin: 0;
+   font-size: 48px;
+   font-weight: 700;
+   line-height: 56px;
+   color: #fff;
+   font-family: "Poppins", sans-serif;
+   font-family: var(--font-primary);
+   }
+   #hero h2 {
+   color: #fff;
+   margin: 10px 0 0 0;
+   font-size: 24px;
+   }
+   #hero .btn-get-started {
    font-family: "Raleway", sans-serif;
+   font-weight: 500;
+   font-size: 15px;
+   letter-spacing: 1px;
+   display: inline-block;
+   padding: 10px 35px;
+   border-radius: 50px;
+   transition: 0.5s;
+   margin-top: 30px;
+   border: 2px solid #fff;
+   color: #fff;
+   }
+   #hero .btn-get-started:hover {
+   background: #26547C;
+   border: 2px solid #26547C;
+   }
+   @media (min-width: 1024px) {
+   #hero {
+   background-attachment: fixed;
+   }
+   }
+   @media (max-width: 768px) {
+      #hero {
+         height: 100vh;
+      }
+      #hero h1 {
+         font-size: 28px;
+         line-height: 36px;
+      }
+      #hero h2 {
+         font-size: 18px;
+         line-height: 24px;
+      }
+   }
+   li{
+   font-family: var(--font-primary);
    font-weight: 300;
    }
 </style>

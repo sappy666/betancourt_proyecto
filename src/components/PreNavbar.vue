@@ -1,5 +1,5 @@
 <template>
- <header class="header">
+ <header class="header d-none d-md-block">
       <div class="top-bar bg-dark">
         <div class="container">
           <div class="row gx-0">

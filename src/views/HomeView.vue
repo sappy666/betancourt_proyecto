@@ -4,7 +4,7 @@
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-6 text-center">
-                  <img src="../assets/nombre.png" alt="" srcset="" width="700px">
+                  <img src="../assets/nombre.png" alt="" srcset="">
                   <!-- <h2>Betancourt <span>Abogados</span></h2> -->
                   <p>Somos un estudio jurídico formado por abogados e ingenieros, todos profesionales altamente calificados que buscan proporcionar soluciones eficientes y efectivas.</p>
                   <a href="#about" class="btn-get-started">Conócenos</a>
@@ -88,9 +88,9 @@ export default {
    z-index: 2;
    }
    @media (max-width: 768px) {
-   .hero .info {
-   padding: 0 50px;
-   }
+      .hero .info {
+         padding: 0 0px;
+      }
    }
    .hero .info h2 {
    color: #fff;
@@ -113,15 +113,15 @@ export default {
    margin: auto;
    }
    @media (max-width: 768px) {
-   .hero .info h2 {
-   font-size: 36px;
-   text-shadow: 
-   rgba(0, 0, 0, .2);
-   }
+      .hero .info h2 {
+      font-size: 36px;
+      text-shadow: 
+      rgba(0, 0, 0, .2);
+      }
    }
    .hero .info p {
    color: rgba(255, 255, 255, 0.8);
-   font-size: 18px;
+   font-size: 13px;
    padding-top: 2rem;
    }
    .hero .info .btn-get-started {
@@ -148,5 +148,19 @@ export default {
   
    .btn-get-started{
    text-decoration: none;
+   }
+   .hero img{
+      width: 350px;
+   }
+   @media(min-width: 500px) {
+      .hero .info{
+         padding: 0;
+      }
+      .hero img{
+         width: 700px;
+      }
+      .hero .info p{
+         font-size: 18px;
+      }
    }
 </style>

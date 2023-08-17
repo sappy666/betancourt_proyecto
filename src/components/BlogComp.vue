@@ -5,21 +5,21 @@
             <h2>Noticias</h2><p>Mantente al día con las últimas noticias, casos destacados y acontecimientos actuales para estar informado</p>
          </div>
          <div class="row gy-5">
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div v-for="p in posts" :key="p.id" class="col-xl-4 col-md-6">
                <div class="post-item position-relative h-100">
                   <div class="post-img position-relative overflow-hidden">
-                     <img src="../assets/1.jpg" class="img-fluid" alt="">
-                     <span class="post-date">Deciembre 12</span>
+                     <img src="'../assets/1.jpg'" class="img-fluid" alt="">
+                     <!-- <span class="post-date">{{p.date}}</span> -->
                   </div>
                   <div class="post-content d-flex flex-column">
-                     <h3 class="post-title">Defensa Proveedores y Contratistas</h3>
+                     <h3 class="post-title">{{p.title}}</h3>
                      <div class="meta d-flex align-items-center">
                         <div class="d-flex align-items-center">
-                           <i class="bi bi-person"></i> <span class="ps-2">Betancourt Abogados</span>
+                           <i class="bi bi-person"></i> <span class="ps-2">{{p.client}}</span>
                         </div>
                         <span class="px-3 text-black-50">/</span>
                         <div class="d-flex align-items-center">
-                           <i class="bi bi-folder2"></i> <span class="ps-2">Contratación Pública</span>
+                           <i class="bi bi-person"></i> <span class="ps-2">{{p.mandante}}</span>
                         </div>
                      </div>
                      <hr>
@@ -28,61 +28,28 @@
                </div>
             </div>
             <!-- End post item -->
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-               <div class="post-item position-relative h-100">
-                  <div class="post-img position-relative overflow-hidden">
-                     <img src="../assets/2.jpg" class="img-fluid" alt="">
-                     <span class="post-date">Julio 17</span>
-                  </div>
-                  <div class="post-content d-flex flex-column">
-                     <h3 class="post-title">Planificación Estratégica</h3>
-                     <div class="meta d-flex align-items-center">
-                        <div class="d-flex align-items-center">
-                           <i class="bi bi-person"></i> <span class="ps-2">Betancourt Abogados</span>
-                        </div>
-                        <span class="px-3 text-black-50">/</span>
-                        <div class="d-flex align-items-center">
-                           <i class="bi bi-folder2"></i> <span class="ps-2">Gestión de Negocios</span>
-                        </div>
-                     </div>
-                     <hr>
-                     <a href="blog-details.html" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!-- End post item -->
-            <div class="col-xl-4 col-md-6">
-               <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-                  <div class="post-img position-relative overflow-hidden">
-                     <img src="../assets/1.jpg" class="img-fluid" alt="">
-                     <span class="post-date">Septiembre 05</span>
-                  </div>
-                  <div class="post-content d-flex flex-column">
-                     <h3 class="post-title">Responsabilidad Civil</h3>
-                     <div class="meta d-flex align-items-center">
-                        <div class="d-flex align-items-center">
-                           <i class="bi bi-person"></i> <span class="ps-2">Betancourt Abogados</span>
-                        </div>
-                        <span class="px-3 text-black-50">/</span>
-                        <div class="d-flex align-items-center">
-                           <i class="bi bi-folder2"></i> <span class="ps-2">Responsabilidad</span>
-                        </div>
-                     </div>
-                     <hr>
-                     <a href="blog-details.html" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!-- End post item -->
+
          </div>
       </div>
    </section>
-   <!-- End Recent Blog Posts Section -->
 </template>
 <script>
    export default {
      name: "BlogComp",
-     }
+     data(){
+      return{
+         posts:[]
+      }
+   },
+   async created(){
+      let promesa = await fetch("https://byvabogados.cl/api/");
+      let postsAux = await promesa.json();
+      for(let i=0; i<3; i++){
+         this.posts.push(postsAux[i]);
+      }
+
+   }
+}
 </script>
 <style scoped>
 

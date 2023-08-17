@@ -25,7 +25,7 @@
                   <p>
                      <strong><i class="bi bi-telephone-fill"></i> Teléfono:</strong> <br> +56 2 2380 0530<br>
                      <strong><i class="bi bi-envelope-fill"></i> Correos:</strong> <br> contacto@betancourtabogados.cl<br>
-                     asesorias@betancourtabogados.cl<br>
+                     <!-- asesorias@betancourtabogados.cl<br> -->
                   </p>
                   <div class="social-links">
                      <a href="https://www.linkedin.com/company/betancourtabogados/?viewAsMember=true" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>

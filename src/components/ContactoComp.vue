@@ -20,7 +20,7 @@
                      <i class="bi bi-envelope"></i>
                      <h3>Email</h3>
                      <p>contacto@betancourtabogados.cl</p>
-                     <p>asesorias@betancourtabogados.cl</p>
+                     <!-- <p>asesorias@betancourtabogados.cl</p> -->
                   </div>
                   <div class="phone">
                      <i class="bi bi-phone"></i>

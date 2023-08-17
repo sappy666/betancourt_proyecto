@@ -9,17 +9,17 @@
                      <router-link class="nav-link active" to="/">Inicio</router-link>
                      <router-link class="nav-link" to="/#about">Quienes somos</router-link>
                      <div class="dropdown">
-                        <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down"></i></a>
+                        <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down d-none d-md-block"></i></a>
                         <div>
-                           <router-link class="nav-link" to="/AreasView#contratacion">Asesoria en Contratación Pública</router-link>
+                           <router-link class="nav-link" to="/AreasView#contratacion">Asesoria en Compras Públicas</router-link>
+                           <router-link class="nav-link" to="/AreasView#reclamacion">Reclamación y defensa de adjudicación</router-link>
+                           <router-link class="nav-link" to="/AreasView#ejecucion">Asesoría en la Ejecución</router-link>
                            <router-link class="nav-link" to="/AreasView#cobranza">Cobranza Administrativa</router-link>
-                           <router-link class="nav-link" to="/AreasView#reclamación">Reclamación y defensa de adjudicación</router-link>
                            <router-link class="nav-link" to="/AreasView#estrategica">Asesoría Estratégica</router-link>
-                           <!-- <router-link class="nav-link" to="/AreasView#adjudicacion">Asesoría en la Adjudicación</router-link> -->
                          
                         </div>
                      </div>
-                     <!-- <router-link class="nav-link" to="/BlogView">Casos destacados</router-link> -->
+                     <router-link class="nav-link" to="/BlogView">Casos destacados</router-link>
                      <router-link class="nav-link" to="/BlogView">Noticias</router-link>
                      <router-link class="nav-link" to="/#contact">Contacto</router-link>
                      <router-link class="nav-link" to="/">EN</router-link>
@@ -40,7 +40,7 @@
          window.addEventListener("scroll", function() {
             if (window.scrollY >= 50) { // Si la página se ha desplazado más de 50px
                   document.getElementById("return-to-top").style.display = "block"; // Mostrar la flecha
-                  // document.getElementById("barra").style.backgroundColor = "#273050"; // Fondo a azul
+                  document.getElementById("barra").style.backgroundColor = "#273050"; // Fondo a azul
                   document.getElementById("barra").style.backgroundColor = "#000000"; // Fondo a negro
                   document.getElementById("barra").style.transform = 'translateY(-41px)';
             } 
@@ -84,12 +84,24 @@
             });
             btnsLink[9].classList.add("active");
          });
-
+         const navbar = document.querySelector("#navbar > div");
+         const navbarToggler = document.querySelector(".mobile-nav-toggle");
+         navbarToggler.addEventListener("click", ()=>{
+            if(navbar.style.display == "none"){
+               navbar.style.display = "block";
+               navbarToggler.classList.remove("bi-list");
+               navbarToggler.classList.add("bi-x");
+            }
+            else{
+               navbar.style.display = "none";
+               navbarToggler.classList.remove("bi-x");
+               navbarToggler.classList.add("bi-list");
+            }
+         });
       }
    }
 </script>
 <style scoped>
-
    a {
       color: #273b60;
       transition: 0.5s;
@@ -214,90 +226,24 @@ transition: all 150ms ease-in;
    * Mobile Navigation 
    */
    .mobile-nav-toggle {
-   color: #fff;
-   font-size: 28px;
-   cursor: pointer;
-   display: none;
-   line-height: 0;
-   transition: 0.5s;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+      line-height: 0;
+      transition: 0.5s;
    }
    @media (max-width: 991px) {
-   .mobile-nav-toggle {
-   display: block;
+      .mobile-nav-toggle {
+      display: block;
    }
-   .navbar > div {
-   display: none;
-   }
-   }
-   .navbar-mobile {
-   position: fixed;
-   overflow: hidden;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
-   background: rgba(26, 26, 26, 0.9);
-   transition: 0.3s;
-   z-index: 999;
-   }
-   .navbar-mobile .mobile-nav-toggle {
-   position: absolute;
-   top: 15px;
-   right: 15px;
-   }
-   .navbar-mobile > div {
-   display: block;
-   position: absolute;
-   top: 55px;
-   right: 15px;
-   bottom: 15px;
-   left: 15px;
-   padding: 10px 0;
-   background-color: #fff;
-   overflow-y: auto;
-   transition: 0.3s;
-   }
-   .navbar-mobile a,
-   .navbar-mobile a:focus {
-   padding: 10px 20px;
-   font-size: 15px;
-   color: #333333;
-   }
-   .navbar-mobile a:hover,
-   .navbar-mobile .active,
-   .navbar-mobile li:hover>a {
-   color: #273b60;
-   }
-   .navbar-mobile .getstarted,
-   .navbar-mobile .getstarted:focus {
-   margin: 15px;
-   }
-   .navbar-mobile .dropdown ul {
-   position: static;
-   display: none;
-   margin: 10px 20px;
-   padding: 10px 0;
-   z-index: 99;
-   opacity: 1;
-   visibility: visible;
-   background: #fff;
-   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-   }
-   .navbar-mobile .dropdown ul li {
-   min-width: 200px;
-   }
-   .navbar-mobile .dropdown ul a {
-   padding: 10px 20px;
-   }
-   .navbar-mobile .dropdown ul a i {
-   font-size: 12px;
-   }
-   .navbar-mobile .dropdown ul a:hover,
-   .navbar-mobile .dropdown ul .active:hover,
-   .navbar-mobile .dropdown ul li:hover>a {
-   color: #273b60;
-   }
-   .navbar-mobile .dropdown>.dropdown-active {
-   display: block;
+      .navbar > div {
+         display: none;
+         position: absolute;
+         top: 60px;
+         left: -500%;
+         background-color: black;
+         padding-right: 1.5rem;
+      }
    }
 </style>

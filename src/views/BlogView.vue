@@ -21,27 +21,29 @@
       <div class="container" data-aos="fade-up">
          <div class="row g-5 justify-content-center">
             <div class="col-lg-10">
-               <div class="row gy-4 posts-list justify-content-center">
+               <div class="row gy-4 posts-list">
                   <div v-for="p in posts" :key="p.id" class="col-lg-6">
                      <article class="d-flex flex-column">
                         <!-- <div class="post-img">
                            <img src="../assets/1.jpg" alt="" class="img-fluid">
                         </div> -->
                         <h2 class="title">
-                           <router-link class="nav-link" to="/BlogdetalleView">{{ p.title }}</router-link>
+                           <!-- <router-link class="nav-link" to="/BlogdetalleView">{{ p.title }}</router-link> -->
+                           {{ p.title }}
                         </h2>
                         <div class="subtitle">
-                           <p v-if="p.client != ''">Cliente: {{p.cliente}}</p>
-                           <p v-if="p.mandante != ''">Mandante: {{p.mandante}}</p>
+                           <p v-if="p.date != '0000-00-00'">{{p.date}}</p>
+                           <p v-if="p.client != ''"><b>Cliente: </b>{{p.client}}</p>
+                           <p v-if="p.mandante != ''"><b>Mandante: </b>{{p.mandante}}</p>
                         </div>
                         <div class="content">
                            <p>
                               {{ p.text }}
                            </p>
                         </div>
-                        <div class="read-more mt-auto align-self-end">
+                        <!-- <div class="read-more mt-auto align-self-end">
                            <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div>
+                        </div> -->
                      </article>
                   </div>
                  
@@ -79,6 +81,7 @@
    };
 </script>
 <style scoped>
+   
    .bg-cover {
       background-size: cover !important;
    }
@@ -242,5 +245,21 @@
    .blog .blog-pagination li.active a,
    .blog .blog-pagination li:hover a {
    color: var(--color-white);
+   }
+
+   /* ========== ULTIMOS ============ */
+   .subtitle{
+      color: #666;
+   }
+   .title{
+      color: var(--color-primary);
+      margin-bottom: .5rem !important;
+   }
+   .subtitle{
+      border-bottom: var(--color-primary) 1px solid;
+      padding-bottom: 1rem;
+   }
+   .subtitle p{
+      margin: 0;
    }
 </style>

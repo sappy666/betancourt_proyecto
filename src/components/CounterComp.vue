@@ -1,7 +1,7 @@
 <template>
- <div class="contador py-5 text-white">
+ <div class="contador py-5 text-white d-none d-md-block">
         <div class="container">
-          <div class="row gy-4">
+          <div class="row gy-4  justify-content-center">
             <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
                 <h6 id="count-casos" class="h1 mb-0">+100</h6>
@@ -14,12 +14,12 @@
                 <p class="ms-3 flex-grow-1 text-uppercase mb-0">Clientes felices </p>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
                 <h6 id="count-nuevos" class="h1 mb-0">+15</h6>
                 <p class="ms-3 flex-grow-1 text-uppercase mb-0">Nuevos clientes cada mes</p>
               </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-md-6">
               <div class="d-flex align-items-center">
                 <h6 id="count-annos" class="h1 mb-0">+12</h6>
@@ -33,10 +33,7 @@
 <script>
   export default {
   name: 'CounterComp',
-  data(){
-    return {
-    }
-  },
+
   mounted() {
     this.initPureCounter();
   },
