@@ -20,6 +20,7 @@
     "remixicon": "^3.3.0",
     "swiper": "^9.4.1",
     "vue": "^3.3.4",
+    "vue-analytics": "^5.22.1",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {

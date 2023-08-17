@@ -104,6 +104,10 @@
 <script>
    export default {
      name: "ServiciosComp",
+     mounted() {
+    // Realiza el seguimiento de la página al montar el componente
+    this.$ga.page('Servicios');
+  },
      }
 </script>
 <style scoped>

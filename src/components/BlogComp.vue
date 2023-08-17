@@ -82,6 +82,10 @@
 <script>
    export default {
      name: "BlogComp",
+     mounted() {
+    // Realiza el seguimiento de la página al montar el componente
+    this.$ga.page('BlogComp');
+  },
      }
 </script>
 <style scoped>
