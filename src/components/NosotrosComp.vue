@@ -19,8 +19,7 @@
                   comunicación cercana y transparente con los clientes</b>, permitiéndonos comprender a
                   fondo sus necesidades y objetivos, para así brindarles asesoramiento legal estratégico
                   orientadas a soluciones innovadoras y adaptadas a sus circunstancias particulares.
-                  Estamos confiados en que podemos ser un partner estratégico para su empresa y
-                  ayudarlo a incrementar sus ingresos.
+                  Estamos confiados en que podemos ser un partner estratégico para su empresa.
                </p>
                <!-- <ul>
                   <li><i class="bi bi-check-circle"></i> Defensa legal óptima en situaciones legales específicas.</li>

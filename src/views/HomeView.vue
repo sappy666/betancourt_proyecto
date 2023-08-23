@@ -3,7 +3,7 @@
       <div class="info d-flex align-items-center">
          <div class="container">
             <div class="row justify-content-center">
-               <div class="col-lg-6 text-center">
+               <div class="col-lg-7 text-center">
                   <img src="../assets/nombre.png" alt="" srcset="">
                   <!-- <h2>Betancourt <span>Abogados</span></h2> -->
                   <p>Somos un estudio jurídico formado por abogados e ingenieros, todos profesionales altamente calificados que buscan proporcionar soluciones eficientes y efectivas.</p>
@@ -43,19 +43,24 @@ export default {
    },
    data() {
       return {
-         heroCarouselIndicators: '',
-         heroCarouselItems: []
       };
    },
+   methods:{
+      scrollToId(){
+         var section=this.$router.currentRoute.value.hash.replace("#", "");
+         if (section){
+            this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+         }
+      }
+   },
+   created(){
+      window.scrollTo({top: 0, behavior: "instant"});
+   },
    updated() {
-      var section=this.$router.currentRoute.value.hash.replace("#", "");
-      if (section)
-      this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+      this.scrollToId();
    },
    mounted(){
-      var section=this.$router.currentRoute.value.hash.replace("#", "");
-      if (section)
-      this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+      this.scrollToId();
    }
 };
 </script>
@@ -123,6 +128,7 @@ export default {
    color: rgba(255, 255, 255, 0.8);
    font-size: 13px;
    padding-top: 2rem;
+   width: 100%;
    }
    .hero .info .btn-get-started {
    font-family: var(--font-primary);

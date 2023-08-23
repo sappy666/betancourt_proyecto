@@ -74,9 +74,13 @@
          }
       },
       async created(){
+         window.scrollTo({top: 0, behavior: "instant"});
          let promesa = await fetch("https://byvabogados.cl/api/");
          let posts = await promesa.json();
          this.posts = posts;
+      },
+      mounted(){
+         //this.$ga.page('BlogView');
       }
    };
 </script>

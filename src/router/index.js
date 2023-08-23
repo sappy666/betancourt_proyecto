@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AreasView from '../views/AreasView.vue'
 import BlogView from '../views/BlogView.vue'
-import BlogdetalleView from '../views/BlogdetalleView.vue'
 import NotFoundView from '../views/NotFoundView'
 const routes = [
 {
@@ -20,13 +19,7 @@ component: AreasView
 path: '/BlogView',
 name: 'BlogView',
 component: BlogView
-},
-{
-path: '/BlogdetalleView',
-name: 'BlogdetalleView',
-component: BlogdetalleView
-},
-    
+}, 
 { 
 path: '/:pathMatch(.*)*',
 name: 'NotFoundView',

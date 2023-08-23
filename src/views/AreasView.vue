@@ -168,15 +168,32 @@ export default {
    components: {
       ContactoComp2,
    },
-   created(){
-      window.scrollTo({top: 0, behavior: "instant"});
+   data(){
+      return{
+         botones:[],
+         servicios:[]
+      }
    },
-   mounted(){
-      // Seleccionar area a mostrar en contenedor
-      const servicios = document.querySelectorAll("div.servicio"); 
-      const btnsMain = document.querySelectorAll(".sidelist.main");
-      // Control de sidebar
-      btnsMain.forEach((e)=>{
+   methods:{
+      // ======================= Seleccionar area a mostrar por navbar ===========================
+      selectAreaNavbar(servicios, btnsMain){
+         let section = this.$router.currentRoute.value.hash.replace("#", "");
+         if (section && section != "servicios-content"){
+            btnsMain.forEach((btn)=>{
+                  btn.classList.remove("active");
+               });
+            servicios.forEach((s)=>{
+                  s.classList.remove("active");
+               });
+
+            document.getElementById(section).classList.add("active");
+            document.getElementById("btn-"+section).classList.add("active");
+            this.$router.push(this.$router.currentRoute.value.path);
+         }
+      },
+      // ======================= Seleccionar area por sidebar =======================
+      selectAreaSidebar(servicios, btnsMain){
+         btnsMain.forEach((e)=>{
          e.addEventListener("click", ()=>{
             btnsMain.forEach((btn)=>{
                btn.classList.remove("active");
@@ -196,39 +213,21 @@ export default {
             document.getElementById(idMostrar).classList.add("active");
          });
       });
-
-      // Seleccion de area por navbar
-      
-      let section = this.$router.currentRoute.value.hash.replace("#", "");
-      if (section && section != "servicios-content"){
-         btnsMain.forEach((btn)=>{
-               btn.classList.remove("active");
-            });
-         servicios.forEach((s)=>{
-               s.classList.remove("active");
-            });
-
-         document.getElementById(section).classList.add("active");
-         document.getElementById("btn-"+section).classList.add("active");
-         this.$router.push(this.$router.currentRoute.value.path);
       }
    },
-   updated(){
-      const servicios = document.querySelectorAll("div.servicio"); 
-      const btnsMain = document.querySelectorAll(".sidelist.main");
-      let section = this.$router.currentRoute.value.hash.replace("#", "");
-      if (section && section != "servicios-content"){
-         btnsMain.forEach((btn)=>{
-               btn.classList.remove("active");
-            });
-         servicios.forEach((s)=>{
-               s.classList.remove("active");
-            });
+   created(){
+      window.scrollTo({top: 0, behavior: "instant"});
+   },
+   mounted(){
+      //this.$ga.page('AreasView');
+      this.servicios = document.querySelectorAll("div.servicio"); 
+      this.botones = document.querySelectorAll(".sidelist.main");
 
-         document.getElementById(section).classList.add("active");
-         document.getElementById("btn-"+section).classList.add("active");
-         this.$router.push(this.$router.currentRoute.value.path);
-      }
+      this.selectAreaSidebar(this.servicios, this.botones);
+      this.selectAreaNavbar(this.servicios, this.botones);
+   },
+   updated(){
+      this.selectAreaNavbar(this.servicios, this.botones)
    }
 }
 </script>

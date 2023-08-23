@@ -1,10 +1,7 @@
 <template>
-   <div class="text-center">
-   <!-- <img src="../assets/404.jpg" alt="" width="500"> -->
+   <div>
+      <h1>Esta pagina no existe</h1>
    </div>
-   <!-- <div class="container">
-   <a href="./HomeView.vue"><button type="button" class=" btnInscribir p-2">Ir a inicio</button></a>
-   </div> -->
 </template>
 <script>
    export default {
@@ -12,5 +9,16 @@
    }
 </script>
 <style scoped>
-   
+   div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-secondary);
+      height: 90vh;
+   }
+   h1{
+      color: #111;
+      text-transform: uppercase;
+      font-weight: 700;
+   }
 </style>
