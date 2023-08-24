@@ -39,7 +39,6 @@
          window.addEventListener("scroll", function() {
             if (window.scrollY >= 50) { // Si la página se ha desplazado más de 50px
                   document.getElementById("return-to-top").style.display = "block"; // Mostrar la flecha
-                  document.getElementById("barra").style.backgroundColor = "#273050"; // Fondo a azul
                   document.getElementById("barra").style.backgroundColor = "#000000"; // Fondo a negro
                   document.getElementById("barra").style.transform = 'translateY(-41px)';
             } 

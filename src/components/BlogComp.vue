@@ -23,7 +23,8 @@
                         </div>
                      </div>
                      <hr>
-                     <a href="blog-details.html" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
+                     <!-- <div class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></div> -->
+                     <a href="" class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></a>
                   </div>
                </div>
             </div>

@@ -86,12 +86,11 @@
    }
    #footer {
       background: #000;
-      padding: 0 0 30px 0;
       color: #959595;
       font-size: 14px;  
     }
    #footer .footer-top {
-   background: #111;
+   background: #000;
    padding: 60px 0 30px 0;
    }
    #footer .footer-top .footer-info {

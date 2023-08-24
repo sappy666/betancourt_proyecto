@@ -156,14 +156,14 @@ export default {
    text-decoration: none;
    }
    .hero img{
-      width: 350px;
+      width: 300px;
    }
    @media(min-width: 500px) {
       .hero .info{
          padding: 0;
       }
       .hero img{
-         width: 700px;
+         width: 600px;
       }
       .hero .info p{
          font-size: 18px;
