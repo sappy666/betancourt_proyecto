@@ -11,12 +11,12 @@ component:HomeView
 },
 
 {
-path: '/AreasView',
+path: '/areas-practica',
 name: 'AreasView',
 component: AreasView
 },
 {
-path: '/BlogView',
+path: '/casos-destacados',
 name: 'BlogView',
 component: BlogView
 }, 

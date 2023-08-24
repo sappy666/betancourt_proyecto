@@ -3,23 +3,23 @@
       <div id="barra" class="container-fluid">
          <div class="row justify-content-center align-items-center">
             <div class="col-xl-11 d-flex align-items-center justify-content-between">
-               <a href="index.html" class="logo"><img src="../assets/logo1.png" alt="" class="img-fluid"></a>
+               <router-link to="/" class="logo"><img src="../assets/logo1.png" alt="" class="img-fluid"></router-link>
                <nav id="navbar" class="navbar">
                   <div>
                      <router-link class="nav-link active" to="/">Inicio</router-link>
                      <router-link class="nav-link" to="/#about">Quienes somos</router-link>
                      <div class="dropdown">
-                        <a href="#services"><span>Áreas de práctica</span> <i class="bi bi-chevron-down d-none d-md-block"></i></a>
+                        <router-link to="/areas-practica"><span>Áreas de práctica</span> <i class="bi bi-chevron-down d-none d-md-block"></i></router-link>
                         <div>
-                           <router-link class="nav-link" to="/AreasView#contratacion">Asesoria en Compras Públicas</router-link>
-                           <router-link class="nav-link" to="/AreasView#reclamacion">Reclamación y defensa de adjudicación</router-link>
-                           <router-link class="nav-link" to="/AreasView#ejecucion">Asesoría en la Ejecución</router-link>
-                           <router-link class="nav-link" to="/AreasView#cobranza">Cobranza Administrativa</router-link>
-                           <router-link class="nav-link" to="/AreasView#estrategica">Asesoría Estratégica</router-link>
+                           <router-link class="nav-link" to="/areas-practica#contratacion">Asesoria en Compras Públicas</router-link>
+                           <router-link class="nav-link" to="/areas-practica#reclamacion">Reclamación y defensa de adjudicación</router-link>
+                           <router-link class="nav-link" to="/areas-practica#ejecucion">Asesoría en la Ejecución</router-link>
+                           <router-link class="nav-link" to="/areas-practica#cobranza">Cobranza Administrativa</router-link>
+                           <router-link class="nav-link" to="/areas-practica#estrategica">Asesoría Estratégica</router-link>
                          
                         </div>
                      </div>
-                     <router-link class="nav-link" to="/BlogView">Casos destacados</router-link>
+                     <router-link class="nav-link" to="/casos-destacados">Casos destacados</router-link>
                      <router-link class="nav-link" to="/#contact">Contacto</router-link>
                      <router-link class="nav-link" to="/">EN</router-link>
                   </div>
@@ -35,53 +35,45 @@
    export default {
       name: 'NavBar',
       mounted(){
-         // Modificar navbar hacer scroll
+         // ============== MODIFICACION NAVBAR AL SCROLL =====================
          window.addEventListener("scroll", function() {
-            if (window.scrollY >= 50) { // Si la página se ha desplazado más de 50px
-                  document.getElementById("return-to-top").style.display = "block"; // Mostrar la flecha
-                  document.getElementById("barra").style.backgroundColor = "#000000"; // Fondo a negro
+            if (window.scrollY >= 50) { 
+                  document.getElementById("return-to-top").style.display = "block"; 
+                  document.getElementById("barra").style.backgroundColor = "#000000"; 
                   document.getElementById("barra").style.transform = 'translateY(-41px)';
             } 
             else {
-                  document.getElementById("return-to-top").style.display = "none"; // Ocultar la flecha
-                  document.getElementById("barra").style.backgroundColor = "transparent"; // Fondo transparente
+                  document.getElementById("return-to-top").style.display = "none"; 
+                  document.getElementById("barra").style.backgroundColor = "transparent";
                   document.getElementById("barra").style.transform = 'translateY(0)';
             }
          });
-         // Seleccionar link activo
+         // ============= MARCADO DE SECCION EN LINKS NAVBAR ==============
          const btnsLink = document.querySelectorAll("a");
-        
+         // Inicio
          btnsLink[3].addEventListener("click", ()=>{
             btnsLink.forEach((e)=>{
                e.classList.remove("active");
             });
             btnsLink[3].classList.add("active");
          });
-
-         btnsLink[6].addEventListener("click",()=>{
+         // Areas practica
+         for(let i=5; i <= 10; i++){
+            btnsLink[i].addEventListener('click', ()=>{
+               btnsLink.forEach((e)=>{
+                  e.classList.remove("active");
+               });
+               btnsLink[5].classList.add("active");
+            });
+         }
+         // Casos destacados
+         btnsLink[11].addEventListener('click', ()=>{
             btnsLink.forEach((e)=>{
                e.classList.remove("active");
             });
-            btnsLink[5].classList.add("active");
+            btnsLink[11].classList.add("active");
          });
-         btnsLink[7].addEventListener("click",()=>{
-            btnsLink.forEach((e)=>{
-               e.classList.remove("active");
-            });
-            btnsLink[5].classList.add("active");
-         });
-         btnsLink[8].addEventListener("click",()=>{
-            btnsLink.forEach((e)=>{
-               e.classList.remove("active");
-            });
-            btnsLink[5].classList.add("active");
-         });
-         btnsLink[9].addEventListener("click",()=>{
-            btnsLink.forEach((e)=>{
-               e.classList.remove("active");
-            });
-            btnsLink[9].classList.add("active");
-         });
+         // =================== RESPONSIVIDAD NAVBAR =================
          const navbar = document.querySelector("#navbar > div");
          const navbarToggler = document.querySelector(".mobile-nav-toggle");
          navbarToggler.addEventListener("click", ()=>{
@@ -187,6 +179,10 @@ transition: all 150ms ease-in;
    padding: 10px 20px;
    text-transform: none;
    color: #666666;
+   
+   }
+   .navbar .dropdown > div :nth-child(n):hover{
+      transform: translateX(10px);
    }
    .navbar .dropdown div a i {
    font-size: 12px;
@@ -242,6 +238,7 @@ transition: all 150ms ease-in;
          left: -500%;
          background-color: black;
          padding-right: 1.5rem;
+         height: 100vh;
       }
    }
 </style>
