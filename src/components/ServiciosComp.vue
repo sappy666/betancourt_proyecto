@@ -39,7 +39,7 @@
                      <p>Maximizamos tus posibilidades de acceder de nuevos negocios con nuestra asesoría para la participación en Mercado Público, convirtiéndonos en un recurso humano altamente calificado más de tu empresa.</p>
                   </div>
                   <div class="">
-                     <router-link class="readmore" to="/areas-practica#contratacion">Leer más</router-link>
+                     <router-link class="readmore" to="/areas-practica#contratacion" @click="comprasPublicasEvent">Leer más</router-link>
                   </div>
                </div>
             </div>
@@ -54,7 +54,7 @@
                      minuciosamente el proceso de evaluación y adjudicación para
                      detectar cualquier ilegalidad y/o arbitrariedad que pueda ser impugnada. Así como también, defendemos la adjudicación de nuestros clientes en caso de que ésta pretenda ser revocada o invalidada por un tercero.</p>
                   <div class="">
-                     <router-link class="readmore" to="/areas-practica#reclamacion">Leer más</router-link>
+                     <router-link class="readmore" to="/areas-practica#reclamacion" @click="reclamacionEvent">Leer más</router-link>
                   </div>
                </div>
             </div>
@@ -67,7 +67,7 @@
                   <h2>Asesoría en la ejecución</h2>
                   <p>Te asesoramos durante la ejecución del contrato, defendiéndote en la aplicación de multas, cumplimientos de estados de pago, término anticipado de contrato y cualquier otra eventualidad que se pueda traducir en un menoscabo económico para la empresa.</p>
                   <div class="">
-                     <router-link class="readmore" to="/areas-practica#ejecucion">Leer más</router-link>
+                     <router-link class="readmore" to="/areas-practica#ejecucion" @click="ejecucionEvent">Leer más</router-link>
                   </div>
                </div>
             </div>
@@ -80,7 +80,7 @@
                   <h2>Cobranza Administrativa</h2>
                   <p>Facilitamos la recuperación de capital e intereses adeudados por los mandantes públicos a nuestros clientes sin la necesidad de judicializar los procesos de cobranza mediante un método eficiente y eficaz.</p>
                   <div class="">
-                     <router-link class="readmore" to="/areas-practica#cobranza">Leer más</router-link>
+                     <router-link class="readmore" to="/areas-practica#cobranza" @click="cobranzaEvent">Leer más</router-link>
                   </div>
                </div>
             </div>
@@ -94,7 +94,7 @@
                   <h2>Asesoría Estratégica</h2>
                   <p>Nos adaptamos a tus necesidades.Cuéntanos tu problema y juntos buscaremos las mejores opciones para solucionarlo.</p>
                   <div class="">
-                     <router-link class="readmore" to="/areas-practica#estrategica">Leer más</router-link>
+                     <router-link class="readmore" to="/areas-practica#estrategica" @click="estrategicaEvent">Leer más</router-link>
                   </div>
                </div>
             </div>
@@ -105,9 +105,46 @@
    <!-- End Services Section -->
 </template>
 <script>
-   export default {
-     name: "ServiciosComp",
-     }
+export default {
+   name: "ServiciosComp",
+   methods:{
+         comprasPublicasEvent(){
+            this.$gtag.event('compras_publicas_visit', {
+               'event_category': 'documentation',
+               'event_label': 'Consulta en asesoria compras publicas',
+               'value': 1
+            });
+         },
+         reclamacionEvent(){
+            this.$gtag.event('reclamacion_adjudicacion_visit', {
+               'event_category': 'documentation',
+               'event_label': 'Consulta en reclamacion y defensa de adjudicacion',
+               'value': 1
+            });
+         },
+         ejecucionEvent(){
+            this.$gtag.event('asesoria_ejecucion_visit', {
+               'event_category': 'documentation',
+               'event_label': 'Consulta en asesoria de ejecucion',
+               'value': 1
+            });
+         },
+         cobranzaEvent(){
+            this.$gtag.event('cobranza_administrativa_visit', {
+               'event_category': 'documentation',
+               'event_label': 'Consulta en cobranza administratica',
+               'value': 1
+            });
+         },
+         estrategicaEvent(){
+            this.$gtag.event('asesoria_estrategica_visit', {
+               'event_category': 'documentation',
+               'event_label': 'Consulta en asesoria estrategica',
+               'value': 1
+            });
+         }
+   }
+}
 </script>
 <style scoped>
    #services{

@@ -39,7 +39,7 @@
                </div>
             </div>
             <div class="col-lg-8 mt-5 mt-lg-0">
-               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+               <form action="correo.php" method="post" role="form" class="php-email-form">
                   <div class="row">
                      <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
@@ -49,7 +49,7 @@
                      </div>
                   </div>
                   <div class="form-group mt-3">
-                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Nombre de la empresa" required>
+                     <input type="text" class="form-control" name="company" id="company" placeholder="Nombre de la empresa">
                   </div>
                   <div class="form-group mt-3">
                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Motivo de consulta" required>
@@ -62,7 +62,7 @@
                      <div class="error-message"></div>
                      <div class="sent-message">Tu mensaje fue enviado, nos comunicaremos contigo!</div>
                   </div>
-                  <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+                  <div class="text-center"><button type="submit" @click="envioFormularioEvent">Enviar mensaje</button></div>
                </form>
             </div>
          </div>
@@ -73,6 +73,15 @@
 <script>
    export default {
    name: 'ContactoComp',
+   methods:{
+      envioFormularioEvent(){
+            this.$gtag.event('envio_formulario', {
+               'event_category': 'documentation',
+               'event_label': 'Usuario envia formulario',
+               'value': 1
+            });
+      },
+   }
    }
 </script>
 <style scoped>

@@ -15,19 +15,19 @@
             <div class="col col-lg-3">
                <ul class="sidenav">
                   <li class="sidelist main active" id="btn-contratacion">
-                     <a href="#servicios-content">Asesoría en compras públicas</a>
+                     <a href="#servicios-content" @click="comprasPublicasEvent">Asesoría en compras públicas</a>
                   </li>
                   <li class="sidelist main" id="btn-reclamacion">
-                     <a href="#servicios-content">Reclamación y defensa de adjudicación</a>
+                     <a href="#servicios-content" @click="reclamacionEvent">Reclamación y defensa de adjudicación</a>
                   </li>
                   <li class="sidelist main" id="btn-ejecucion">
-                     <a href="#servicios-content">Asesoría en la ejecución</a>
+                     <a href="#servicios-content" @click="ejecucionEvent">Asesoría en la ejecución</a>
                   </li>
                   <li class="sidelist main" id="btn-cobranza">
-                     <a href="#servicios-content">Cobranza Administrativa</a>
+                     <a href="#servicios-content" @click="cobranzaEvent">Cobranza Administrativa</a>
                   </li>
                   <li class="sidelist main" id="btn-estrategica">
-                     <a href="#servicios-content">Asesoría Estratégica</a>
+                     <a href="#servicios-content" @click="estrategicaEvent">Asesoría Estratégica</a>
                   </li>
                </ul>
             </div>
@@ -213,6 +213,42 @@ export default {
             document.getElementById(idMostrar).classList.add("active");
          });
       });
+      },
+      // =========================== Eventos enviados a GA ======================
+      comprasPublicasEvent(){
+            this.$gtag.event('compras_publicas_visit', {
+               'event_category': 'documentation',
+               'event_label': 'Consulta en asesoria compras publicas',
+               'value': 1
+            });
+      },
+      reclamacionEvent(){
+         this.$gtag.event('reclamacion_adjudicacion_visit', {
+            'event_category': 'documentation',
+            'event_label': 'Consulta en reclamacion y defensa de adjudicacion',
+            'value': 1
+         });
+      },
+      ejecucionEvent(){
+         this.$gtag.event('asesoria_ejecucion_visit', {
+            'event_category': 'documentation',
+            'event_label': 'Consulta en asesoria de ejecucion',
+            'value': 1
+         });
+      },
+      cobranzaEvent(){
+         this.$gtag.event('cobranza_administrativa_visit', {
+            'event_category': 'documentation',
+            'event_label': 'Consulta en cobranza administratica',
+            'value': 1
+         });
+      },
+      estrategicaEvent(){
+         this.$gtag.event('asesoria_estrategica_visit', {
+            'event_category': 'documentation',
+            'event_label': 'Consulta en asesoria estrategica',
+            'value': 1
+         });
       }
    },
    created(){

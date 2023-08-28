@@ -38,19 +38,28 @@
                <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Newsletter</h4>
             <p>Recibe en tu correo todas las actualizaciones sobre casos destacados y publicaciones.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribir">
+            <form action="newsletter.php" method="POST">
+              <input type="email" name="email" required>
+              <input type="submit" value="Subscribir" @click="envioFormularioEvent">
             </form>
           </div>
             </div>
          </div>
       </div>
    </footer>
-   <!-- End Footer -->
 </template>
 <script>
    export default {
    name: 'FooterComp',
+   methods:{
+      envioFormularioEvent(){
+            this.$gtag.event('suscripcion_newsletter', {
+               'event_category': 'documentation',
+               'event_label': 'Usuario suscribe a newsletter',
+               'value': 1
+            });
+      },
+   }
    }
 </script>
 <style scoped>
