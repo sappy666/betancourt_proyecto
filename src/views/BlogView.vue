@@ -102,7 +102,7 @@
       font-family: 'Raleway', sans-serif;
    }
    .hero.bg-cover{
-   background: url(../assets/fondobanner4.jpg);
+   background: url(../assets/fondobanner.jpg);
    }
    .breadcrumb {
    padding: 0 0;

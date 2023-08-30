@@ -6,8 +6,8 @@
       </div>
       <div class="container" data-aos="fade-up">
          <div class="row">
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-               <img src="../assets/2.jpg" class="img-fluid" alt="" width="500px">
+            <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
+               <img src="../assets/nosotros.jpg" class="" alt="" width="500">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
                <p class="texto-nosotros">
@@ -38,7 +38,10 @@
    }
 </script>
 <style scoped>
-
+   #about img{
+      width: 500px;
+      object-fit: cover;
+   }
    a {
    color: #26547C;
    transition: 0.5s;

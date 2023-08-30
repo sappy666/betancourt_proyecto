@@ -72,7 +72,7 @@ export default {
    
    .hero {
    overflow-x: hidden;
-   background-image: url("../assets/fondobanner4.jpg");
+   background-image: url("../assets/fondobanner.jpg");
    background-size: cover;
    }
    .hero .info{
