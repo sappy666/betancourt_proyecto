@@ -11,16 +11,11 @@ $header .= "X-Mailer: PHP/" . phpversion();
 $mail = @mail($destino, $asunto, $msg, $header);
 
 if($mail){
-  echo "<h1>EXITO</h1>";
-  echo $remitente;
-  echo $destino;
-  echo $asunto;
-  echo $msg;
-  
-  header("Location: https://www.betancourtabogados.cl/");
+  echo "<script>alert('Mensaje enviado con exito');</script>";
+  echo '<script>window.location.href = "www.betancourtabogados.cl";</script>';
 }
 else{
-  echo "NO EXITO";
-  header("Location: https://www.betancourtabogados.cl/");
+  echo "<script>alert('Error al enviar el mensaje');</script>";
+  echo '<script>window.location.href = "www.betancourtabogados.cl";</script>';
 }
 ?>

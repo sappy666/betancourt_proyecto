@@ -43,12 +43,8 @@
       }
    },
    async created(){
-      let promesa = await fetch("https://byvabogados.cl/api/");
-      let postsAux = await promesa.json();
-      for(let i=0; i<3; i++){
-         this.posts.push(postsAux[i]);
-      }
-
+      let promesa = await fetch("https://byvabogados.cl/api/index.php?limit=3");
+      this.posts = await promesa.json();
    }
 }
 </script>
