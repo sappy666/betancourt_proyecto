@@ -8,34 +8,33 @@
 </template>
 
 <script>
-import PreNavbar from "@/components/PreNavbar.vue"
-import NavBar from "@/components/NavBar.vue"
-import Whatsapp from "@/components/Whatsapp.vue"
-import TopArrow from "@/components/TopArrow.vue"
-import FooterComp from "@/components/FooterComp.vue"
+import PreNavbar from "@/components/PreNavbar.vue";
+import NavBar from "@/components/NavBar.vue";
+import Whatsapp from "@/components/Whatsapp.vue";
+import TopArrow from "@/components/TopArrow.vue";
+import FooterComp from "@/components/FooterComp.vue";
 // import router from "./router"
 // import HomeView from "@/views/HomeView.vue"
 
-  
 export default {
-  name: 'App',
+  name: "App",
   components: {
     PreNavbar,
     NavBar,
     Whatsapp,
     TopArrow,
-    FooterComp
+    FooterComp,
   },
-  mounted(){
-    window.addEventListener('scroll',()=>{
+  mounted() {
+    window.addEventListener("scroll", () => {
       this.$router.push(this.$router.currentRoute.value.path);
     });
-  }
-}
+  },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --animate-duration: 1s;
@@ -46,9 +45,9 @@ export default {
   --color-primary: #273b60;
   --color-secondary: #52565e;
 
-  --font-default:  'Raleway', sans-serif;
-  --font-primary:'Raleway', sans-serif;
-  --font-secondary: 'Raleway', sans-serif;
+  --font-default: "Raleway", sans-serif;
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -79,7 +78,7 @@ h6 {
   font-family: var(--font-primary);
 }
 
-p{
+p {
   font-weight: 300;
   font-size: medium;
 }
