@@ -13,8 +13,6 @@ import NavBar from "@/components/NavBar.vue";
 import Whatsapp from "@/components/Whatsapp.vue";
 import TopArrow from "@/components/TopArrow.vue";
 import FooterComp from "@/components/FooterComp.vue";
-// import router from "./router"
-// import HomeView from "@/views/HomeView.vue"
 
 export default {
   name: "App",

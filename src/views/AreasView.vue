@@ -5,7 +5,7 @@
     class="d-none d-lg-flex justify-content-center align-items-center"
   >
     <div class="container">
-      <h1>Conoce nuestras<br />Áreas de práctica</h1>
+      <h2>Conoce nuestras<br />Áreas de práctica</h2>
       <!-- <h2>Conoce nuestras áreas de trabajo</h2> -->
       <a href="#contact" class="btn-get-started">Contáctanos</a>
     </div>

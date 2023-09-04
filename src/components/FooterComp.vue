@@ -66,12 +66,13 @@
               Recibe en tu correo todas las actualizaciones sobre casos
               destacados y publicaciones.
             </p>
-            <form action="newsletter.php" method="POST">
-              <input type="email" name="email" required />
+            <form action="" method="POST">
+              <input type="email" name="email" id="emailNewsletter" required />
               <input
-                type="submit"
+                class="btn_newsletter"
+                type=""
                 value="Subscribir"
-                @click="envioFormularioEvent"
+                @click="subscribeNewsletter"
               />
             </form>
           </div>
@@ -84,12 +85,32 @@
 export default {
   name: "FooterComp",
   methods: {
-    envioFormularioEvent() {
-      this.$gtag.event("suscripcion_newsletter", {
-        event_category: "documentation",
-        event_label: "Usuario suscribe a newsletter",
-        value: 1,
-      });
+    async subscribeNewsletter() {
+      let mailNewsletter = document.getElementById("emailNewsletter").value;
+      const options = {
+        method: "POST",
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+          "api-key":
+            "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",
+        },
+        body: JSON.stringify({
+          updateEnabled: false,
+          listIds: [205],
+          email: mailNewsletter,
+        }),
+      };
+      fetch("https://api.brevo.com/v3/contacts", options)
+        .then((response) => response.json())
+        .then(() =>
+          this.$gtag.event("suscripcion_newsletter", {
+            event_category: "documentation",
+            event_label: "Usuario suscribe a newsletter",
+            value: 1,
+          })
+        )
+        .catch((err) => console.error(err));
     },
   },
 };
@@ -224,7 +245,7 @@ h6 {
   padding: 6px 8px;
   width: 65%;
 }
-#footer .footer-top .footer-newsletter input[type="submit"] {
+#footer .footer-top .footer-newsletter .btn_newsletter {
   background: #26547c;
   border: 0;
   width: 35%;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Esta pagina no existe</h1>
+    <h3>Esta pagina no existe</h3>
   </div>
 </template>
 <script>
@@ -16,9 +16,10 @@ div {
   background-color: var(--color-secondary);
   height: 90vh;
 }
-h1 {
+h3 {
   color: #111;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 </style>

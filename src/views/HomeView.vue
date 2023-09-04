@@ -4,8 +4,12 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
-            <img src="../assets/nombre.png" alt="" srcset="" />
-            <!-- <h2>Betancourt <span>Abogados</span></h2> -->
+            <img
+              src="../assets/nombre.png"
+              alt="Betancourt Abogados"
+              srcset=""
+            />
+            <h1>Betancourt Abogados</h1>
             <p>
               Somos un estudio jurídico formado por abogados e ingenieros, todos
               profesionales altamente calificados que buscan proporcionar
@@ -89,7 +93,10 @@ p {
   margin: 0px;
   position: relative;
 }
-
+.hero h1 {
+  height: 0;
+  visibility: hidden;
+}
 .hero .info {
   position: absolute;
   inset: 0;
