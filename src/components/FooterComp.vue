@@ -92,7 +92,8 @@ export default {
         headers: {
           accept: "application/json",
           "content-type": "application/json",
-          "api-key": "",
+          "api-key":
+            "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",
         },
         body: JSON.stringify({
           updateEnabled: false,

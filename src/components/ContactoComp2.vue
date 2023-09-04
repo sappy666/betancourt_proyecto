@@ -93,7 +93,7 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="submit" @click="envioFormularioEvent">
+              <button type="submit" @click="envioFormularioEvent" disabled>
                 Enviar mensaje
               </button>
             </div>
