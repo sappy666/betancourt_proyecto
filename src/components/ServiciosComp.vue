@@ -8,7 +8,35 @@
       <div class="container contratacion">
         <div class="row justify-content-center">
           <h3 class="text-center">Contratación pública</h3>
-          <p class="">
+          <p class="mt-4">
+            <strong>La contratación pública en Chile</strong> es el proceso
+            mediante el cual el Estado adquiere bienes y servicios para sus
+            necesidades. Esto involucra cuatro modalidades:
+            <strong
+              >Licitaciones públicas, Convenio Marco, Trato Directo y
+              Licitaciones Privadas</strong
+            >, todas reguladas por leyes específicas. Este proceso se lleva a
+            cabo en <strong>Mercado Público</strong>, una plataforma bajo
+            <strong>ChileCompra</strong>, donde
+            <strong
+              >abogados especializados en derecho público y mercado
+              público</strong
+            >
+            facilitan transacciones.
+          </p>
+          <p>
+            En <strong>2022</strong>, se realizaron
+            <strong>1.809.592</strong> operaciones por
+            <strong>$15.023 millones USD</strong>. Inversionistas, tanto
+            nacionales como extranjeros, participan en licitaciones públicas y
+            otras modalidades con el apoyo de estos abogados. El sistema se basa
+            en principios de igualdad, competencia y transparencia para fomentar
+            la participación de empresas nacionales e internacionales. Aunque
+            mejorable, el sistema funciona y el Estado de Chile cumple con los
+            pagos en este contexto.
+          </p>
+          <!-- <p class="">
+            MANDARON ELLOS - SIN SEO
             La contratación pública es el proceso mediante la cual el Estado de
             Chile adquiere los bienes y servicios que requiere para su
             funcionamiento y la satisfacción de sus necesidades, planes y
@@ -31,7 +59,7 @@
             Añadir que el sistema de mercado público es perfectible, sin embargo
             funciona, y a nuestro juicio y experiencia, funciona cada vez mejor.
             <b>El Estado de Chile cumple y paga.</b>
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="row gy-4">

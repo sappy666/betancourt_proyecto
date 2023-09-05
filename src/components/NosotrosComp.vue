@@ -10,7 +10,33 @@
           <img src="../assets/nosotros.jpg" class="" alt="" width="500" />
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-          <p class="texto-nosotros">
+          <p>
+            Somos un bufete de <strong>abogados</strong> especializado en el
+            ámbito de la <strong>contratación pública</strong>, con una sólida
+            trayectoria de más de 13 años en el mercado. Nuestro equipo está
+            conformado por <strong>abogados expertos en abogacía</strong> y
+            <strong>asesoría legal</strong>, comprometidos con la excelencia
+            legal y la modernidad. En <strong>Betancourt abogados</strong>,
+            valoramos la confianza que nuestros clientes depositan en nuestros
+            servicios legales, y nos esforzamos por construir relaciones sólidas
+            y duraderas.
+          </p>
+
+          <p>
+            Nuestra firma de <strong>abogados</strong> se distingue por ofrecer
+            soluciones jurídicas integrales y personalizadas en el
+            <strong>mercado público</strong>. Nuestro enfoque se basa en una
+            comunicación cercana y transparente con nuestros clientes,
+            permitiéndonos comprender a fondo sus necesidades y objetivos en
+            <strong>mercado público</strong>. De esta manera, estamos en
+            posición de brindarles asesoramiento legal estratégico orientado a
+            soluciones innovadoras y adaptadas a sus circunstancias
+            particulares. Estamos seguros de que podemos ser su partner
+            estratégico en el ámbito de la
+            <strong>contratación pública</strong>.
+          </p>
+          <!-- <p class="texto-nosotros">
+            ESTE MANDARON ELLOS - SIN SEO
             Somos un estudio jurídico especializado en contratación pública
             fundado hace <b>más de 13 años</b> conformado por abogados
             especialistas, donde la excelencia legal se encuentra con la
@@ -26,12 +52,7 @@
             soluciones innovadoras y adaptadas a sus circunstancias
             particulares. Estamos confiados en que podemos ser un partner
             estratégico para su empresa.
-          </p>
-          <!-- <ul>
-                  <li><i class="bi bi-check-circle"></i> Defensa legal óptima en situaciones legales específicas.</li>
-                  <li><i class="bi bi-check-circle"></i> Soluciones justas y acordes a tus intereses.</li>
-                  <li><i class="bi bi-check-circle"></i> Comunicación cercana y permanente con nuestros clientes, manteniéndolos informados de los avances en sus casos.</li>
-                  </ul> -->
+          </p> -->
         </div>
       </div>
     </div>

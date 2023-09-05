@@ -4,9 +4,9 @@ $remitente = $_POST["email"];
 $destino = "codasoluciones@gmail.com";
 $asunto = $_POST["subject"];
 
-$header = array(
+// $header = array(
   //'From' => $remitente,
-  'Reply-To' => $remitente
+  // 'Reply-To' => $remitente
   // "X-Mailer:" =>  "PHP/".phpversion()
 // );
 
