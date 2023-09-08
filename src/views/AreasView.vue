@@ -96,7 +96,7 @@
           </ul>
         </div>
 
-        <div id="servicios-content" class="col col-lg-8">
+        <div id="servicios-content" class="col col-lg-8 d-flex flex-column">
           <!-- --------------------Contratacion------------------------------>
           <div class="px-lg-5 px-4 servicio active" id="contratacion">
             <div class="row mb-4">
@@ -528,15 +528,14 @@ export default {
 .row.servicios {
   margin-top: 2rem;
 }
-#servicios-content {
-  scroll-margin: 9rem;
-}
-.servicio {
+
+.servicio{
   opacity: 0;
-  transition: 1s opacity;
+  transition: opacity .4s ease;
   height: 0;
-}
-.servicio.active {
+  overflow-y: hidden;
+  }
+  .servicio.active {
   opacity: 1;
   height: auto;
 }
@@ -545,6 +544,7 @@ export default {
   border-right: 1px solid #e2e2e2;
   padding-right: 20px;
   min-height: 350px;
+  height: 350px;
 }
 .sidenav ul {
   padding-left: 10px;
@@ -687,6 +687,9 @@ a:focus {
   #hero {
     background-attachment: fixed;
   }
+  #servicios-content {
+  scroll-margin: 9rem;
+}
 }
 @media (max-width: 768px) {
   #hero {
@@ -700,6 +703,10 @@ a:focus {
     font-size: 18px;
     line-height: 24px;
   }
+  #servicios-content {
+  scroll-margin: 110px;
+}
+  
 }
 li {
   font-family: var(--font-primary);
