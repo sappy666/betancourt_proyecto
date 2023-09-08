@@ -382,7 +382,6 @@ export default {
   data() {
     return {
       lang: document.documentElement.lang,
-      imagenes: [],
     };
   },
   created() {
@@ -396,7 +395,6 @@ export default {
         this.lang = document.documentElement.lang;
       }
     });
-    console.log(this.imagenes);
   },
 };
 </script>

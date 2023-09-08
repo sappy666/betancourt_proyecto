@@ -119,6 +119,7 @@ export default {
   data() {
     return {
       lang: document.documentElement.lang,
+      errorNewletter: false,
     };
   },
   methods: {
@@ -140,14 +141,18 @@ export default {
       };
       fetch("https://api.brevo.com/v3/contacts", options)
         .then((response) => response.json())
-        .then(() =>
+        .then(() =>{
           this.$gtag.event("suscripcion_newsletter", {
             event_category: "documentation",
             event_label: "Usuario suscribe a newsletter",
             value: 1,
-          })
+          });
+        }
         )
-        .catch((err) => console.error(err));
+        .catch((err) => {
+          alert("Error al subscribir");
+          console.error(err);
+        });
     },
   },
   created() {
