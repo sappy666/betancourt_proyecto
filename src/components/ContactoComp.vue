@@ -2,9 +2,10 @@
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="section-header">
-      <h2>Contacto</h2>
+      <h2 v-if="this.lang == 'es'">Contacto</h2>
+      <h2 v-if="this.lang == 'en'">Contact us</h2>
     </div>
-    <div data-aos="fade-up">
+    <div v-if="this.showMap">
       <iframe
         style="border: 0; width: 100%; height: 350px"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.4396618893584!2d-70.65089072426429!3d-33.437850196867096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a2531247a7%3A0xc79a8238c44e4e85!2sSan%20Antonio%20427%2C%20oficina%20711%2C%208320121%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1686601682340!5m2!1ses!2scl"
@@ -13,13 +14,14 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <div class="container" data-aos="fade-up">
+    <div class="container">
       <div class="row mt-5">
         <div class="col-lg-4">
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h3>Ubicación</h3>
+              <h3 v-if="this.lang == 'es'">Ubicación</h3>
+              <h3 v-if="this.lang == 'en'">Location</h3>
               <p>San Antonio 427 oficina 711</p>
             </div>
             <div class="email">
@@ -30,7 +32,8 @@
             </div>
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h3>Teléfonos</h3>
+              <h3 v-if="this.lang == 'es'">Teléfonos</h3>
+              <h3 v-if="this.lang == 'en'">Phone numbers</h3>
               <p>+56 2 2380 0530</p>
               <p>+56 2 2633 7482</p>
               <p>+56 2 2633 1851</p>
@@ -55,8 +58,10 @@
             class="php-email-form"
           >
             <div class="row">
+              <!-- NAME INPUT -->
               <div class="col-md-6 form-group">
                 <input
+                  v-if="this.lang == 'es'"
                   type="text"
                   name="name"
                   class="form-control"
@@ -64,9 +69,20 @@
                   placeholder="Tu nombre"
                   required
                 />
+                <input
+                  v-if="this.lang == 'en'"
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
               </div>
+              <!-- MAIL INPUT  -->
               <div class="col-md-6 form-group mt-3 mt-md-0">
                 <input
+                  v-if="this.lang == 'es'"
                   type="email"
                   class="form-control"
                   name="email"
@@ -74,19 +90,40 @@
                   placeholder="Tu Email"
                   required
                 />
+                <input
+                  v-if="this.lang == 'en'"
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
               </div>
             </div>
+            <!-- COMPANY INPUT -->
             <div class="form-group mt-3">
               <input
+                v-if="this.lang == 'es'"
                 type="text"
                 class="form-control"
                 name="company"
                 id="company"
                 placeholder="Nombre de la empresa"
               />
+              <input
+                v-if="this.lang == 'en'"
+                type="text"
+                class="form-control"
+                name="company"
+                id="company"
+                placeholder="Company Name"
+              />
             </div>
+            <!-- MOTIVO CONSULTA INPUT -->
             <div class="form-group mt-3">
               <input
+                v-if="this.lang == 'es'"
                 type="text"
                 class="form-control"
                 name="subject"
@@ -94,26 +131,51 @@
                 placeholder="Motivo de consulta"
                 required
               />
+              <input
+                v-if="this.lang == 'en'"
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+                placeholder="Reason for Consultation"
+                required
+              />
             </div>
+            <!-- MENSAJE INPUT -->
             <div class="form-group mt-3">
               <textarea
+                v-if="this.lang == 'es'"
                 class="form-control"
                 name="message"
                 rows="5"
                 placeholder="Mensaje"
                 required
               ></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Tu mensaje fue enviado, nos comunicaremos contigo!
-              </div>
+              <textarea
+                v-if="this.lang == 'en'"
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+              ></textarea>
             </div>
             <div class="text-center">
-              <button type="submit" @click="envioFormularioEvent" disabled>
+              <button
+                v-if="this.lang == 'es'"
+                type="submit"
+                @click="envioFormularioEvent"
+                disabled
+              >
                 Enviar mensaje
+              </button>
+              <button
+                v-if="this.lang == 'en'"
+                type="submit"
+                @click="envioFormularioEvent"
+                disabled
+              >
+                Send
               </button>
             </div>
           </form>
@@ -126,6 +188,29 @@
 <script>
 export default {
   name: "ContactoComp",
+  data() {
+    return {
+      lang: document.documentElement.lang,
+      showMap: true,
+    };
+  },
+  created() {
+    if (this.lang == "") {
+      this.lang = "es";
+    }
+    if (window.location.pathname === "/areas-practica") {
+      this.showMap = false;
+    } else {
+      this.showMap = true;
+    }
+  },
+  mounted() {
+    window.addEventListener("click", (e) => {
+      if (e.target.id == "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
+  },
   methods: {
     envioFormularioEvent() {
       this.$gtag.event("envio_formulario", {

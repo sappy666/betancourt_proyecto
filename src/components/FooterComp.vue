@@ -2,42 +2,59 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-around">
           <div class="col-lg-3 col-md-6 footer-info">
             <router-link to="/" class="logo"
               ><img src="../assets/logo2.png" alt="" class=""
             /></router-link>
-            <!-- <a href="index.html" class="logo"><img src="../assets/logo2.png" alt="" class=""></a> -->
           </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Sitio</h4>
+          <div class="col-lg-3 col-md-6 footer-links d-none d-md-block">
+            <h4 v-if="this.lang == 'es'">Sitio</h4>
+            <h4 v-if="this.lang == 'en'">Site</h4>
             <ul>
               <li>
-                <i class="bi bi-chevron-right"></i
-                ><router-link to="/">Inicio</router-link>
+                <i class="bi bi-chevron-right"></i>
+                <router-link v-if="this.lang == 'es'" to="/"
+                  >Inicio</router-link
+                >
+                <router-link v-if="this.lang == 'en'" to="/">Home</router-link>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i
-                ><router-link to="/#about">Sobre Nosotros</router-link>
+                ><router-link v-if="this.lang == 'es'" to="/#about"
+                  >Sobre Nosotros</router-link
+                >
+                <router-link v-if="this.lang == 'en'" to="/#about"
+                  >About us</router-link
+                >
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i
-                ><router-link to="/#services">Servicios</router-link>
+                ><router-link v-if="this.lang == 'es'" to="/#services"
+                  >Servicios</router-link
+                >
+                <router-link v-if="this.lang == 'en'" to="/#services"
+                  >Services</router-link
+                >
               </li>
             </ul>
             <br />
-            <!-- <h4>Ayuda</h4>
-                  <ul>
-                     <li><i class="bi bi-chevron-right"></i> <a href="#">Contáctanos</a></li>
-                  </ul> -->
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contactános</h4>
+            <h4 v-if="this.lang == 'es'">Contáctanos</h4>
+            <h4 v-if="this.lang == 'en'">Contact us</h4>
             <p>
-              <strong><i class="bi bi-telephone-fill"></i> Teléfono:</strong>
+              <strong v-if="this.lang == 'es'"
+                ><i class="bi bi-telephone-fill"></i> Teléfono:</strong
+              >
+              <strong v-if="this.lang == 'en'"
+                ><i class="bi bi-telephone-fill"></i> Phone numbers:</strong
+              >
               <br />
               +56 2 2380 0530<br />
-              <strong><i class="bi bi-envelope-fill"></i> Correos:</strong>
+              +56 2 2633 7482<br />
+              +56 2 2633 1851<br />
+              <strong><i class="bi bi-envelope-fill"></i> Emails:</strong>
               <br />
               contacto@betancourtabogados.cl<br />
               <!-- asesorias@betancourtabogados.cl<br> -->
@@ -55,23 +72,38 @@
                 class="whatsapp"
                 ><i class="bi bi-whatsapp"></i
               ></a>
-              <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
             </div>
           </div>
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Newsletter</h4>
-            <p>
+            <p v-if="this.lang == 'es'">
               Recibe en tu correo todas las actualizaciones sobre casos
               destacados y publicaciones.
             </p>
+            <p v-if="this.lang == 'en'">
+              Receive all updates on notable cases and publications in your
+              email.
+            </p>
             <form action="" method="POST">
-              <input type="email" name="email" id="emailNewsletter" required />
               <input
+                type="email"
+                name="email"
+                id="emailNewsletter"
+                placeholder="Email"
+                required
+              />
+              <input
+                v-if="this.lang == 'es'"
                 class="btn_newsletter"
                 type=""
                 value="Subscribir"
+                @click="subscribeNewsletter"
+              />
+              <input
+                v-if="this.lang == 'en'"
+                class="btn_newsletter"
+                type=""
+                value="Subscribe"
                 @click="subscribeNewsletter"
               />
             </form>
@@ -84,6 +116,11 @@
 <script>
 export default {
   name: "FooterComp",
+  data() {
+    return {
+      lang: document.documentElement.lang,
+    };
+  },
   methods: {
     async subscribeNewsletter() {
       let mailNewsletter = document.getElementById("emailNewsletter").value;
@@ -112,6 +149,18 @@ export default {
         )
         .catch((err) => console.error(err));
     },
+  },
+  created() {
+    if (this.lang == "") {
+      this.lang = "es";
+    }
+  },
+  mounted() {
+    window.addEventListener("click", (e) => {
+      if (e.target.id == "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
   },
 };
 </script>

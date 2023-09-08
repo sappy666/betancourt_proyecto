@@ -2,10 +2,15 @@
   <section id="recent-blog-posts" class="recent-blog-posts">
     <div class="container" data-aos="fade-up">
       <div class="section-header">
-        <h2>Noticias</h2>
-        <p>
+        <h2 v-if="this.lang == 'es'">Noticias</h2>
+        <h2 v-if="this.lang == 'en'">News</h2>
+        <p v-if="this.lang == 'es'">
           Mantente al día con las últimas noticias, casos destacados y
           acontecimientos actuales para estar informado
+        </p>
+        <p v-if="this.lang == 'en'">
+          Stay up to date with the latest news, notable cases, and current
+          events to stay informed.
         </p>
       </div>
       <div class="row gy-5">
@@ -47,11 +52,28 @@ export default {
   data() {
     return {
       posts: [],
+      lang: document.documentElement.lang,
     };
   },
   async created() {
-    let promesa = await fetch("https://byvabogados.cl/api/index.php?limit=3");
+    if (this.lang == "") {
+      this.lang = "es";
+    }
+    let promesa = null;
+    if (this.lang == "es") {
+      promesa = await fetch("https://byvabogados.cl/api/index.php?limit=3");
+    }
+    if (this.lang == "en") {
+      promesa = await fetch("https://byvabogados.cl/api/index.php?limit=3");
+    }
     this.posts = await promesa.json();
+  },
+  mounted() {
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
   },
 };
 </script>

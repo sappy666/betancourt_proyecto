@@ -2,11 +2,12 @@
   <section id="services" class="services section-bg">
     <div class="container" data-aos="fade-up">
       <div class="section-header row justify-content-center pb-3">
-        <h2>QUÉ HACEMOS</h2>
+        <h2 v-if="this.lang == 'es'">Que hacemos</h2>
+        <h2 v-if="this.lang == 'en'">What we do</h2>
         <!-- <p>Revisa nuestra lista de servicios, selecciona el que mas se acomode a tu necesidad</p> -->
       </div>
       <div class="container contratacion">
-        <div class="row justify-content-center">
+        <div v-if="this.lang == 'es'" class="row justify-content-center">
           <h3 class="text-center">Contratación pública</h3>
           <p class="mt-4">
             <strong>La contratación pública en Chile</strong> es el proceso
@@ -61,28 +62,98 @@
             <b>El Estado de Chile cumple y paga.</b>
           </p> -->
         </div>
+        <div v-if="this.lang == 'en'" class="row justify-content-center">
+          <h3 class="text-center">Public Procurement</h3>
+          <p class="mt-4">
+            <strong> Public procurement in Chile</strong> is the process through
+            which the government acquires goods and services for its needs. This
+            involves four modalities:
+            <strong
+              >Public Tenders, Framework Agreements, Direct Negotiation, and
+              Private Tenders</strong
+            >, all regulated by specific laws. This process takes place on
+            <strong>the Public Market platform</strong>, operated under
+            <strong>ChileCompra</strong>, where
+            <strong
+              >legal experts specializing in public and market law
+            </strong>
+            facilitate transactions.
+          </p>
+          <p>
+            In <strong>2022</strong>, there were
+            <strong>1.809.592</strong> operations amounting to
+            <strong>$15.023 billion USD</strong>. Both national and foreign
+            investors participate in public tenders and other modalities with
+            the support of these lawyers. The system is based on principles of
+            equality, competition, and transparency to encourage the
+            participation of national and international companies. Although
+            there is room for improvement, the system functions, and the Chilean
+            government fulfills its payments within this context.
+          </p>
+          <!-- <p class="">
+            MANDARON ELLOS - SIN SEO
+            La contratación pública es el proceso mediante la cual el Estado de
+            Chile adquiere los bienes y servicios que requiere para su
+            funcionamiento y la satisfacción de sus necesidades, planes y
+            programas. El Estado es el comprador y los privados los vendedores.
+            Esta labor, la desarrolla a través de 4 modalidades: Licitaciones
+            públicas, Convenio Marco, Trato Directo y Licitaciones Privadas.<br /><br />
+            El lugar de encuentro de esta oferta y demanda es Mercado Público.
+            Ecosistema que se desarrolla en una plataforma digital que es, hoy
+            por hoy, el lugar donde más transacciones comerciales -tanto en
+            cantidad o volumen de operaciones, como en cuantía- se realizan en
+            el mercado nacional. En el año 2022 se llevaron a cabo 1.809.592
+            operaciones por $15.023 millones USD.<br /><br />
+            Día a día, tanto inversionistas nacionales como extranjeros,
+            concurren a Mercado Público a ofrecer servicios y productos. El
+            sistema se sustenta en principios de derecho público que buscan
+            resguardar la igualdad de los oferentes, la libre competencia, la
+            transparencia, como ejes fundamentales del mercado, con el objeto de
+            promover una mayor participación de personas jurídicas nacionales y
+            extranjeras en este mercado.<br /><br />
+            Añadir que el sistema de mercado público es perfectible, sin embargo
+            funciona, y a nuestro juicio y experiencia, funciona cada vez mejor.
+            <b>El Estado de Chile cumple y paga.</b>
+          </p> -->
+        </div>
       </div>
+
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="service-item position-relative">
             <div class="icon">
               <img src="../assets/iconos/library.png" alt="" srcset="" />
             </div>
-            <h2>Asesoría en Compras públicas</h2>
+            <h2 v-if="this.lang == 'es'">Asesoría en Compras públicas</h2>
+            <h2 v-if="this.lang == 'en'">Public Procurement Advisory</h2>
             <div>
-              <p>
+              <p v-if="this.lang == 'es'">
                 Maximizamos tus posibilidades de acceder de nuevos negocios con
                 nuestra asesoría para la participación en Mercado Público,
                 convirtiéndonos en un recurso humano altamente calificado más de
                 tu empresa.
               </p>
+              <p v-if="this.lang == 'en'">
+                We maximize your chances of accessing new business opportunities
+                with our advisory services for participation in the Public
+                Market, becoming a highly qualified human resource addition to
+                your company.
+              </p>
             </div>
             <div class="">
               <router-link
+                v-if="this.lang == 'es'"
                 class="readmore"
                 to="/areas-practica#contratacion"
                 @click="comprasPublicasEvent"
                 >Leer más</router-link
+              >
+              <router-link
+                v-if="this.lang == 'en'"
+                class="readmore"
+                to="/areas-practica#contratacion"
+                @click="comprasPublicasEvent"
+                >Read more</router-link
               >
             </div>
           </div>
@@ -93,27 +164,45 @@
             <div class="icon">
               <img src="../assets/iconos/gavel.png" alt="" srcset="" />
             </div>
-            <h2>Reclamación y defensa de adjudicación</h2>
-            <p>
+            <h2 v-if="this.lang == 'es'">
+              Reclamación y defensa de adjudicación
+            </h2>
+            <h2 v-if="this.lang == 'en'">Adjudication Claim and Defense</h2>
+            <p v-if="this.lang == 'es'">
               Analizamos minuciosamente el proceso de evaluación y adjudicación
               para detectar cualquier ilegalidad y/o arbitrariedad que pueda ser
               impugnada. Así como también, defendemos la adjudicación de
               nuestros clientes en caso de que ésta pretenda ser revocada o
               invalidada por un tercero.
             </p>
+            <p v-if="this.lang == 'en'">
+              We meticulously analyze the evaluation and adjudication process to
+              detect any illegality and/or arbitrariness that can be challenged.
+              Additionally, we provide defense for our clients' adjudication in
+              the event it is sought to be revoked or invalidated by a third
+              party.
+            </p>
             <div class="">
               <router-link
+                v-if="this.lang == 'es'"
                 class="readmore"
                 to="/areas-practica#reclamacion"
                 @click="reclamacionEvent"
                 >Leer más</router-link
+              >
+              <router-link
+                v-if="this.lang == 'en'"
+                class="readmore"
+                to="/areas-practica#reclamacion"
+                @click="reclamacionEvent"
+                >Read more</router-link
               >
             </div>
           </div>
         </div>
         <!-- End Service Item -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-item position-relative">
+          <div v-if="this.lang == 'es'" class="service-item position-relative">
             <div class="icon">
               <img src="../assets/iconos/gavel.png" alt="" srcset="" />
             </div>
@@ -133,10 +222,31 @@
               >
             </div>
           </div>
+          <div v-if="this.lang == 'en'" class="service-item position-relative">
+            <div class="icon">
+              <img src="../assets/iconos/gavel.png" alt="" srcset="" />
+            </div>
+            <h2>Execution Advisory</h2>
+            <p>
+              We provide guidance during the contract execution, offering
+              defense in cases of penalty application, payment status
+              compliance, early contract termination, and any other
+              circumstances that may result in financial detriment to the
+              company.
+            </p>
+            <div class="">
+              <router-link
+                class="readmore"
+                to="/areas-practica#ejecucion"
+                @click="ejecucionEvent"
+                >Read more</router-link
+              >
+            </div>
+          </div>
         </div>
         <!-- End Service Item -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-item position-relative">
+          <div v-if="this.lang == 'es'" class="service-item position-relative">
             <div class="icon">
               <img src="../assets/iconos/law.png" alt="" srcset="" />
             </div>
@@ -156,11 +266,30 @@
               >
             </div>
           </div>
+          <div v-if="this.lang == 'en'" class="service-item position-relative">
+            <div class="icon">
+              <img src="../assets/iconos/law.png" alt="" srcset="" />
+            </div>
+            <h2>Administrative Debt Collection</h2>
+            <p>
+              We facilitate the recovery of capital and outstanding interest
+              owed by public entities to our clients without the need for
+              litigation through an efficient and effective method.
+            </p>
+            <div class="">
+              <router-link
+                class="readmore"
+                to="/areas-practica#cobranza"
+                @click="cobranzaEvent"
+                >Read more</router-link
+              >
+            </div>
+          </div>
         </div>
         <!-- End Service Item -->
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-          <div class="service-item position-relative">
+          <div v-if="this.lang == 'es'" class="service-item position-relative">
             <div class="icon">
               <img src="../assets/iconos/diagram.png" alt="" srcset="" />
             </div>
@@ -178,6 +307,25 @@
               >
             </div>
           </div>
+          <div v-if="this.lang == 'en'" class="service-item position-relative">
+            <div class="icon">
+              <img src="../assets/iconos/diagram.png" alt="" srcset="" />
+            </div>
+            <h2>Strategic Advisory</h2>
+            <p>
+              We tailor our services to meet your needs. Tell us about your
+              issue, and together, we will explore the best options for
+              resolving it.
+            </p>
+            <div class="">
+              <router-link
+                class="readmore"
+                to="/areas-practica#estrategica"
+                @click="estrategicaEvent"
+                >Read more</router-link
+              >
+            </div>
+          </div>
         </div>
         <!-- End Service Item -->
       </div>
@@ -188,6 +336,11 @@
 <script>
 export default {
   name: "ServiciosComp",
+  data() {
+    return {
+      lang: document.documentElement.lang,
+    };
+  },
   methods: {
     comprasPublicasEvent() {
       this.$gtag.event("compras_publicas_visit", {
@@ -224,6 +377,18 @@ export default {
         value: 1,
       });
     },
+  },
+  created() {
+    if (this.lang === "") {
+      this.lang = "es";
+    }
+  },
+  mounted() {
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
   },
 };
 </script>

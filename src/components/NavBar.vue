@@ -22,7 +22,7 @@
                   ><span>Áreas de práctica</span>
                   <i class="bi bi-chevron-down d-none d-md-block"></i
                 ></router-link>
-                <div>
+                <div class="d-none d-md-block">
                   <router-link
                     class="nav-link"
                     to="/areas-practica#contratacion"
@@ -48,7 +48,7 @@
               <router-link class="nav-link" to="/#contact"
                 >Contacto</router-link
               >
-              <router-link class="nav-link" to="/">EN</router-link>
+              <div class="nav-link" to="/" id="btn-lang">EN</div>
             </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
@@ -61,6 +61,14 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      lang: "",
+    };
+  },
+  created() {
+    this.lang = document.documentElement.lang;
+  },
   mounted() {
     // ============== MODIFICACION NAVBAR AL SCROLL =====================
     window.addEventListener("scroll", function () {
@@ -70,8 +78,10 @@ export default {
         document.getElementById("barra").style.transform = "translateY(-41px)";
       } else {
         document.getElementById("return-to-top").style.display = "none";
-        document.getElementById("barra").style.backgroundColor = "transparent";
-        document.getElementById("barra").style.transform = "translateY(0)";
+        if(this.window.screen.width > 991){
+          document.getElementById("barra").style.backgroundColor = "transparent";
+          document.getElementById("barra").style.transform = "translateY(0)";
+        }
       }
     });
     // ============= MARCADO DE SECCION EN LINKS NAVBAR ==============
@@ -113,19 +123,57 @@ export default {
         navbarToggler.classList.add("bi-list");
       }
     });
+    // ================= CAMBIO IDIOMA =====================
+    const btnLang = document.getElementById("btn-lang");
+    btnLang.addEventListener("click", () => {
+      // Pasar a ingles
+      if (this.lang === "es") {
+        btnLang.innerText = "ES";
+        document.documentElement.lang = "en";
+        this.lang = "en";
+        btnsLink[3].innerText = "HOME";
+        btnsLink[4].innerText = "ABOUT US";
+        btnsLink[5].innerHTML =
+          '<span>Areas of Practice</span><i class="bi bi-chevron-down d-none d-md-block"></i>';
+        btnsLink[6].innerText = "Public Procurement Advisory";
+        btnsLink[7].innerText = "Adjudication Claim and Defense";
+        btnsLink[8].innerText = "Execution Advisory";
+        btnsLink[9].innerText = "Administrative Debt Collection";
+        btnsLink[10].innerText = "Strategic Advisory";
+        btnsLink[11].innerText = "Notable cases";
+        btnsLink[12].innerText = "Contact Us";
+      }
+      // Pasar a espanol
+      else if (this.lang === "en") {
+        btnLang.innerText = "EN";
+        document.documentElement.lang = "es";
+        this.lang = "es";
+        btnsLink[3].innerText = "Inicio";
+        btnsLink[4].innerText = "quienes somos";
+        btnsLink[5].innerHTML =
+          '<span>Áreas de práctica</span><i class="bi bi-chevron-down d-none d-md-block"></i>';
+        btnsLink[6].innerText = "Asesoria en Compras Públicas";
+        btnsLink[7].innerText = "Reclamación y defensa de adjudicación";
+        btnsLink[8].innerText = "Asesoría en la Ejecución";
+        btnsLink[9].innerText = "Cobranza Administrativa";
+        btnsLink[10].innerText = "Asesoría Estratégica";
+        btnsLink[11].innerText = "Casos destacados";
+        btnsLink[12].innerText = "contacto";
+      }
+    });
   },
 };
 </script>
 <style scoped>
 a {
-  color: #273b60;
+  color: var(--color-primary);
   transition: 0.5s;
   text-decoration: none;
 }
 a:hover,
 a:active,
 a:focus {
-  color: #273b60;
+  color: var(--color-primary);
   outline: none;
   text-decoration: none;
 }
@@ -139,6 +187,24 @@ p {
 }
 #barra {
   transition: all 150ms ease-in;
+  z-index: 2;
+}
+#btn-lang {
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  /* border: solid red 1px; */
+  padding: 8px 0 10px 20px;
+  /* margin-left: 0.5rem; */
+  user-select: none;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+#btn-lang:hover {
+  cursor: pointer;
+  color: var(--color-primary);
 }
 .logo img {
   height: 100px;
@@ -179,7 +245,7 @@ p {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #273b60;
+  color: var(--color-primary);
   font-weight: 600;
 }
 .navbar .dropdown div {
@@ -213,7 +279,7 @@ p {
 .navbar .dropdown > div a:hover,
 .navbar .dropdown > div .active:hover,
 .navbar .dropdown > div :nth-child(n):hover > a {
-  color: #273b60;
+  color: var(--color-primary);
 }
 .navbar .dropdown:hover > div {
   opacity: 1;
@@ -251,6 +317,7 @@ p {
   transition: 0.5s;
 }
 @media (max-width: 991px) {
+
   .mobile-nav-toggle {
     display: block;
   }
@@ -262,6 +329,13 @@ p {
     background-color: black;
     padding-right: 1.5rem;
     height: 100vh;
+  }
+  #barra{
+    background-color: #000;
+    transform: translateY(-41px);
+  }
+  #btn-lang{
+    padding-left: 1.8rem;
   }
 }
 </style>

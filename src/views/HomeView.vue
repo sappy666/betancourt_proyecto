@@ -5,23 +5,39 @@
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
             <img
+              v-if="true"
               src="../assets/nombre.png"
               alt="Betancourt Abogados"
               srcset=""
             />
+            <!-- <img
+              v-if="this.lang == 'en'"
+              src="../assets/nombre-ingles.png"
+              alt="Betancourt Abogados"
+              srcset=""
+            /> -->
             <h1>Betancourt Abogados</h1>
-            <p>
+            <p v-if="this.lang == 'es'">
               Somos un estudio jurídico formado por abogados e ingenieros, todos
               profesionales altamente calificados que buscan proporcionar
               soluciones eficientes y efectivas.
             </p>
-            <a href="#about" class="btn-get-started">Conócenos</a>
+            <p v-if="this.lang == 'en'">
+              We are a legal firm composed of lawyers and engineers, all highly
+              qualified professionals dedicated to delivering efficient and
+              effective solutions.
+            </p>
+            <a v-if="this.lang == 'es'" href="#about" class="btn-get-started"
+              >Conócenos</a
+            >
+            <a v-if="this.lang == 'en'" href="#about" class="btn-get-started"
+              >Get to Know Us</a
+            >
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Hero Section -->
   <CounterComp />
   <NosotrosComp />
   <ServiciosComp />
@@ -48,7 +64,9 @@ export default {
     ContactoComp,
   },
   data() {
-    return {};
+    return {
+      lang: document.documentElement.lang,
+    };
   },
   methods: {
     scrollToId() {
@@ -62,12 +80,20 @@ export default {
   },
   created() {
     window.scrollTo({ top: 0, behavior: "instant" });
+    if (this.lang === "") {
+      this.lang = "es";
+    }
   },
   updated() {
     this.scrollToId();
   },
   mounted() {
     this.scrollToId();
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
   },
 };
 </script>

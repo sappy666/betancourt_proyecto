@@ -2,14 +2,18 @@
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
     <div class="section-header">
-      <h2>Nosotros</h2>
+      <h2 v-if="this.lang == 'es'">Nosotros</h2>
+      <h2 v-if="this.lang == 'en'">About us</h2>
     </div>
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
           <img src="../assets/nosotros.jpg" class="" alt="" width="500" />
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+        <div
+          v-if="this.lang == 'es'"
+          class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+        >
           <p>
             Somos un bufete de <strong>abogados</strong> especializado en el
             ámbito de la <strong>contratación pública</strong>, con una sólida
@@ -27,13 +31,57 @@
             soluciones jurídicas integrales y personalizadas en el
             <strong>mercado público</strong>. Nuestro enfoque se basa en una
             comunicación cercana y transparente con nuestros clientes,
-            permitiéndonos comprender a fondo sus necesidades y objetivos en
-            <strong>mercado público</strong>. De esta manera, estamos en
-            posición de brindarles asesoramiento legal estratégico orientado a
-            soluciones innovadoras y adaptadas a sus circunstancias
-            particulares. Estamos seguros de que podemos ser su partner
-            estratégico en el ámbito de la
+            permitiéndonos comprender a fondo sus necesidades y objetivos. De
+            esta manera, estamos en posición de brindarles asesoramiento legal
+            estratégico orientado a soluciones innovadoras y adaptadas a sus
+            circunstancias particulares. Estamos seguros de que podemos ser su
+            partner estratégico en el ámbito de la
             <strong>contratación pública</strong>.
+          </p>
+          <!-- <p class="texto-nosotros">
+            ESTE MANDARON ELLOS - SIN SEO
+            Somos un estudio jurídico especializado en contratación pública
+            fundado hace <b>más de 13 años</b> conformado por abogados
+            especialistas, donde la excelencia legal se encuentra con la
+            modernidad y el compromiso con nuestros clientes, brindando
+            soluciones jurídicas integrales y personalizadas. Valoramos y
+            honramos la confianza que depositan en nuestros servicios legales,
+            construyendo relaciones sólidas y duraderas.
+            <b>
+              Nuestro enfoque se basa en una comunicación cercana y transparente
+              con los clientes</b
+            >, permitiéndonos comprender a fondo sus necesidades y objetivos,
+            para así brindarles asesoramiento legal estratégico orientadas a
+            soluciones innovadoras y adaptadas a sus circunstancias
+            particulares. Estamos confiados en que podemos ser un partner
+            estratégico para su empresa.
+          </p> -->
+        </div>
+        <div
+          v-if="this.lang == 'en'"
+          class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+        >
+          <p>
+            We are a <strong>law firm </strong>specialized in the field of
+            <strong>public procurement</strong>, with a solid track record of
+            over 13 years in the market. Our team is composed of
+            <strong>expert attorneys in advocacy</strong> and
+            <strong>legal counsel</strong>, committed to legal excellence and
+            modernity. At <strong>Betancourt Attorneys</strong>, we highly value
+            the trust our clients place in our legal services, and we strive to
+            build strong and lasting relationships.
+          </p>
+
+          <p>
+            Our <strong>law firm</strong> stands out for offering comprehensive
+            and customized legal solutions in the
+            <strong>public market</strong>. Our approach is based on close and
+            transparent communication with our clients, allowing us to
+            thoroughly understand their needs and objectives. In this way, we
+            are positioned to provide strategic legal advice focused on
+            innovative solutions tailored to their specific circumstances. We
+            are confident that we can be your strategic partner in the field of
+            <strong>public procurement</strong>.
           </p>
           <!-- <p class="texto-nosotros">
             ESTE MANDARON ELLOS - SIN SEO
@@ -62,6 +110,23 @@
 <script>
 export default {
   name: "NosotrosComp",
+  data() {
+    return {
+      lang: document.documentElement.lang,
+    };
+  },
+  created() {
+    if (this.lang === "") {
+      this.lang = "es";
+    }
+  },
+  mounted() {
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
+  },
 };
 </script>
 <style scoped>

@@ -5,9 +5,15 @@
     class="d-none d-lg-flex justify-content-center align-items-center"
   >
     <div class="container">
-      <h2>Conoce nuestras<br />Áreas de práctica</h2>
+      <h2 v-if="this.lang == 'es'">Nuestras areas de práctica</h2>
+      <h2 v-if="this.lang == 'en'">Our practice areas</h2>
       <!-- <h2>Conoce nuestras áreas de trabajo</h2> -->
-      <a href="#contact" class="btn-get-started">Contáctanos</a>
+      <a v-if="this.lang == 'es'" href="#contact" class="btn-get-started"
+        >Contáctanos</a
+      >
+      <a v-if="this.lang == 'en'" href="#contact" class="btn-get-started"
+        >Contact us</a
+      >
     </div>
   </section>
   <!-- End Hero -->
@@ -18,28 +24,73 @@
         <div class="col col-lg-3">
           <ul class="sidenav">
             <li class="sidelist main active" id="btn-contratacion">
-              <a href="#servicios-content" @click="comprasPublicasEvent"
+              <a
+                v-if="this.lang == 'es'"
+                href="#servicios-content"
+                @click="comprasPublicasEvent"
                 >Asesoría en compras públicas</a
+              >
+              <a
+                v-if="this.lang == 'en'"
+                href="#servicios-content"
+                @click="comprasPublicasEvent"
+                >Public Procurement Advisory</a
               >
             </li>
             <li class="sidelist main" id="btn-reclamacion">
-              <a href="#servicios-content" @click="reclamacionEvent"
+              <a
+                v-if="this.lang == 'es'"
+                href="#servicios-content"
+                @click="reclamacionEvent"
                 >Reclamación y defensa de adjudicación</a
+              >
+              <a
+                v-if="this.lang == 'en'"
+                href="#servicios-content"
+                @click="reclamacionEvent"
+                >Adjudication Claim and Defense</a
               >
             </li>
             <li class="sidelist main" id="btn-ejecucion">
-              <a href="#servicios-content" @click="ejecucionEvent"
+              <a
+                v-if="this.lang == 'es'"
+                href="#servicios-content"
+                @click="ejecucionEvent"
                 >Asesoría en la ejecución</a
+              >
+              <a
+                v-if="this.lang == 'en'"
+                href="#servicios-content"
+                @click="ejecucionEvent"
+                >Execution Advisory</a
               >
             </li>
             <li class="sidelist main" id="btn-cobranza">
-              <a href="#servicios-content" @click="cobranzaEvent"
+              <a
+                v-if="this.lang == 'es'"
+                href="#servicios-content"
+                @click="cobranzaEvent"
                 >Cobranza Administrativa</a
+              >
+              <a
+                v-if="this.lang == 'en'"
+                href="#servicios-content"
+                @click="cobranzaEvent"
+                >Administrative Debt Collection</a
               >
             </li>
             <li class="sidelist main" id="btn-estrategica">
-              <a href="#servicios-content" @click="estrategicaEvent"
+              <a
+                v-if="this.lang == 'es'"
+                href="#servicios-content"
+                @click="estrategicaEvent"
                 >Asesoría Estratégica</a
+              >
+              <a
+                v-if="this.lang == 'en'"
+                href="#servicios-content"
+                @click="estrategicaEvent"
+                >Strategic Advisory</a
               >
             </li>
           </ul>
@@ -50,12 +101,13 @@
           <div class="px-lg-5 px-4 servicio active" id="contratacion">
             <div class="row mb-4">
               <div class="col">
-                <h2>Asesoría en compras públicas</h2>
+                <h2 v-if="this.lang == 'es'">Asesoría en compras públicas</h2>
+                <h2 v-if="this.lang == 'en'">Public Procurement Advisory</h2>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <p class="text-muted">
+                <p v-if="this.lang == 'es'" class="text-muted">
                   Buscamos activamente nuevas oportunidades de negocios según
                   los parámetros indicados por nuestros clientes.<br /><br />
                   Realizamos un exhaustivo análisis de las bases para detectar
@@ -66,8 +118,27 @@
                   propuestas tendientes a incrementar sus opciones de
                   adjudicación.
                 </p>
-                <a class="nav-link py-3" href="/#Contact"
+                <p v-if="this.lang == 'en'" class="text-muted">
+                  We actively seek new business opportunities based on our
+                  clients' parameters.<br /><br />
+                  We conduct a thorough analysis of the tender documents to
+                  detect any illegal or arbitrary requirements and challenge
+                  them promptly. <br /><br />
+                  We provide guidance to our clients in the tender application
+                  process, working together to craft proposals that enhance
+                  their chances of winning.
+                </p>
+                <a
+                  v-if="this.lang == 'es'"
+                  class="nav-link py-3"
+                  href="/#contact"
                   ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
+                >
+                <a
+                  v-if="this.lang == 'en'"
+                  class="nav-link py-3"
+                  href="/#contact"
+                  ><i class="bi bi-envelope-check"></i> Schedule a meeting</a
                 >
               </div>
             </div>
@@ -75,12 +146,15 @@
           <!-- --------------------Reclamación y defensa----------------------------->
           <div class="px-lg-5 px-4 servicio" id="reclamacion">
             <div class="row mb-4">
-              <div class="col-md-7">
-                <h2>Reclamación y defensa de adjudicación</h2>
+              <div class="col-md-8">
+                <h2 v-if="this.lang == 'es'">
+                  Reclamación y defensa de adjudicación
+                </h2>
+                <h2 v-if="this.lang == 'en'">Adjudication Claim and Defense</h2>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div v-if="this.lang == 'es'" class="col">
                 <p class="text-muted">
                   Una vez dictado el acto adjudicatorio, y según sea el caso
                   podemos:
@@ -104,8 +178,35 @@
                     de nuestro cliente.
                   </li>
                 </ul>
-                <a class="nav-link py-3" href="/#Contact"
+                <a class="nav-link py-3" href="/#contact"
                   ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
+                >
+              </div>
+              <div v-if="this.lang == 'en'" class="col">
+                <p class="text-muted">
+                  Once the adjudication decision has been made, and as the case
+                  may be, we can:
+                </p>
+                <ul class="">
+                  <li class="mb-3">
+                    Challenge the adjudication decision due to irregularities in
+                    the evaluation process.
+                  </li>
+                  <li class="mb-3">
+                    File an appeal before the Public Procurement Tribunal when
+                    there are illegalities and/or arbitrariness that violate the
+                    principles underlying our legislation
+                  </li>
+                  <li class="mb-3">
+                    It may happen that our client is awarded the contract, and
+                    another bidder challenges this award, initiating an
+                    invalidation procedure. We participate in the pre-hearing
+                    stage with the aim of having these claims dismissed and
+                    thereby consolidating our client's award.
+                  </li>
+                </ul>
+                <a class="nav-link py-3" href="/#contact"
+                  ><i class="bi bi-envelope-check"></i>Schedule a meeting</a
                 >
               </div>
             </div>
@@ -114,11 +215,12 @@
           <div class="px-lg-5 px-4 servicio" id="ejecucion">
             <div class="row mb-4">
               <div class="col-md-7">
-                <h2>Asesoría en la ejecución</h2>
+                <h2 v-if="this.lang == 'es'">Asesoría en la ejecución</h2>
+                <h2 v-if="this.lang == 'en'">Execution Advisory</h2>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div v-if="this.lang == 'es'" class="col">
                 <p class="text-muted">
                   Sabemos que tener la capacidad de responder oportunamente a
                   cualquier eventualidad que se suscite durante la ejecución del
@@ -128,8 +230,22 @@
                   mandante, defensa de multas, término anticipado de contrato,
                   aumento o disminución de obra, etc.
                 </p>
-                <a class="nav-link py-3" href="/#Contact"
+                <a class="nav-link py-3" href="/#contact"
                   ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
+                >
+              </div>
+              <div v-if="this.lang == 'en'" class="col">
+                <p class="text-muted">
+                  We understand that having the ability to respond promptly to
+                  any contingency that arises during the contract execution is
+                  crucial to minimize the negative repercussions that can affect
+                  your company. That's why we assist our clients in various
+                  aspects, including negotiations with the contracting
+                  authority, penalty defense, early contract termination,
+                  changes in scope of work, and more.
+                </p>
+                <a class="nav-link py-3" href="/#contact"
+                  ><i class="bi bi-envelope-check"></i> Schedule a meeting</a
                 >
               </div>
             </div>
@@ -137,11 +253,12 @@
           <!-- -----------------------Cobranza Administrativa-------------------------------->
           <div class="px-lg-5 px-4 servicio" id="cobranza">
             <div class="row mb-4">
-              <div class="col-md-7">
-                <h2>Cobranza Administrativa</h2>
+              <div class="col-md-8">
+                <h2 v-if="this.lang == 'es'">Cobranza Administrativa</h2>
+                <h2 v-if="this.lang == 'en'">Administrative Debt Collection</h2>
               </div>
             </div>
-            <div class="row">
+            <div v-if="this.lang == 'es'" class="row">
               <div class="col-md-6">
                 <p class="text-muted">
                   Si bien es cierto que Mercado Público otorga una plataforma de
@@ -175,9 +292,46 @@
                   mercado, con el objeto de promover una mayor participación de
                   personas jurídicas nacionales y extranjeras en este mercado.
                 </p>
-                <router-link class="nav-link py-3" to="/AreasView#ContactoComp2"
-                  ><i class="bi bi-envelope-check"></i> Agenda una
-                  reunión</router-link
+                <a class="nav-link py-3" href="/#contact"
+                  ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
+                >
+              </div>
+            </div>
+            <div v-if="this.lang == 'en'" class="row">
+              <div class="col-md-6">
+                <p class="text-muted">
+                  While it is true that Mercado Público provides an efficient
+                  platform for conducting business with the Chilean government,
+                  ensuring a secure and streamlined access for suppliers to
+                  offer goods and services, and that the Chilean government
+                  fulfills its obligations, it is also true that, on occasion,
+                  due to budget adjustments, bureaucracy, or other reasons,
+                  there may be delays in fulfilling these obligations.
+                </p>
+                <p class="text-muted">
+                  This is why our firm has developed a specialized, effective,
+                  and expedited procedure for addressing outstanding payments.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-muted">
+                  In cases of payment delays, the provisions of Law No. 21.131,
+                  the "Prompt Payment Law," should be applied. This entails
+                  addressing both the principal amount and the accrued interest,
+                  along with a special commission stipulated by law for any
+                  delay or default that the Chilean government may have
+                  incurred.
+                </p>
+                <p class="text-muted">
+                  The system is grounded in principles of public law aimed at
+                  safeguarding equal opportunity for bidders, promoting fair
+                  competition, and ensuring transparency as fundamental pillars
+                  of the market. Its objective is to encourage greater
+                  participation of both national and foreign legal entities in
+                  this market.
+                </p>
+                <a class="nav-link py-3" href="/#contact"
+                  ><i class="bi bi-envelope-check"></i>Schedule a meeting</a
                 >
               </div>
             </div>
@@ -186,11 +340,12 @@
           <div class="px-lg-5 px-4 servicio" id="estrategica">
             <div class="row mb-4">
               <div class="col-md-7">
-                <h2>Asesoría Estratégica</h2>
+                <h2 v-if="this.lang == 'es'">Asesoría Estratégica</h2>
+                <h2 v-if="this.lang == 'en'">Strategic Advisory</h2>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div v-if="this.lang == 'es'" class="col">
                 <p class="text-muted">
                   Nuestro objetivo es proporcionar a nuestros clientes
                   soluciones que se ajusten a sus necesidades concretas, por lo
@@ -218,34 +373,62 @@
                   ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
                 >
               </div>
+              <div v-if="this.lang == 'en'" class="col">
+                <p class="text-muted">
+                  Our goal is to provide our clients with solutions tailored to
+                  their specific needs. In addition to the above, we offer:
+                </p>
+                <ul>
+                  <li class="mb-2">
+                    Market analysis in terms of industry and competitors.
+                  </li>
+                  <li class="mb-2">
+                    Partnerships with other companies to expand participation in
+                    <strong>Public Procurement.</strong>
+                  </li>
+                  <li class="mb-2">Assistance in obtaining guarantees.</li>
+                  <li class="mb-2">
+                    Development of strategic growth planning in
+                    <strong>Public Procurement.</strong>
+                  </li>
+                  <li class="mb-2">
+                    Formation of joint ventures with other clients/companies.
+                  </li>
+                  <li>Etc.</li>
+                </ul>
+                <a class="nav-link py-3" href="/#Contact"
+                  ><i class="bi bi-envelope-check"></i> Schedule a meeting</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <ContactoComp2 />
+  <ContactoComp />
 </template>
 <script>
 // import QuoteComp from "@/components/QuoteComp.vue"
-import ContactoComp2 from "@/components/ContactoComp2.vue";
+import ContactoComp from "@/components/ContactoComp.vue";
 
 export default {
   name: "AreasView",
   components: {
-    ContactoComp2,
+    ContactoComp,
   },
   data() {
     return {
       botones: [],
       servicios: [],
+      lang: document.documentElement.lang,
     };
   },
   methods: {
     // ======================= Seleccionar area a mostrar por navbar ===========================
     selectAreaNavbar(servicios, btnsMain) {
       let section = this.$router.currentRoute.value.hash.replace("#", "");
-      if (section && section != "servicios-content") {
+      if (section && section != "servicios-content" && section != "contact") {
         btnsMain.forEach((btn) => {
           btn.classList.remove("active");
         });
@@ -320,9 +503,16 @@ export default {
   },
   created() {
     window.scrollTo({ top: 0, behavior: "instant" });
+    if (this.lang == "") {
+      this.lang = "es";
+    }
   },
   mounted() {
-    //this.$ga.page('AreasView');
+    window.addEventListener("click", (e) => {
+      if (e.target.id == "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
     this.servicios = document.querySelectorAll("div.servicio");
     this.botones = document.querySelectorAll(".sidelist.main");
 

@@ -6,9 +6,11 @@
           <div
             class="col-lg-4 py-2 text-center text-lg-start d-none d-lg-flex align-items-center"
           >
-            <p class="mb-0 text-sm">
-              <i class="fas fa-clock me-2"></i>Horario de atención: Lun - Vie
-              9:00 - 18:00
+            <p v-if="this.lang == 'es'" class="mb-0 text-sm">
+              Horario de atención: Lun - Vie 9:00 - 18:00
+            </p>
+            <p v-if="this.lang == 'en'" class="mb-0 text-sm">
+              Opening Hours: Mon - Fri 9:00 AM - 6:00 PM
             </p>
           </div>
           <div class="col-lg-8 text-end py-2 text-center text-lg-end">
@@ -35,6 +37,26 @@
 <script>
 export default {
   name: "PreNavbar",
+  data() {
+    return {
+      lang: document.documentElement.lang,
+    };
+  },
+  beforeCreate() {
+    document.documentElement.lang = "es";
+  },
+  created() {
+    if (this.lang === "") {
+      this.lang = "es";
+    }
+  },
+  mounted() {
+    window.addEventListener("click", (e) => {
+      if (e.target.id === "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
+  },
 };
 </script>
 <style scoped>

@@ -105,22 +105,24 @@ section {
   position: relative;
   color: #2e3135;
 }
-
-.section-header h2:before,
-.section-header h2:after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: var(--color-primary);
-  display: inline-block;
-}
-
-.section-header h2:before {
-  margin: 0 15px 10px 0;
-}
-
-.section-header h2:after {
-  margin: 0 0 10px 15px;
+@media (min-width: 991px) {
+  .section-header h2:before,
+  .section-header h2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--color-primary);
+    display: inline-block;
+  }
+  
+  .section-header h2:before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-header h2:after {
+    margin: 0 0 10px 15px;
+  }
+  
 }
 
 .section-header p {

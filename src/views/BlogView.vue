@@ -2,16 +2,25 @@
   <!-- ======= Breadcrumbs ======= -->
   <section class="hero bg-cover bg-position py-4">
     <div class="banner container py-5 index-forward text-white">
-      <h1>Noticias</h1>
+      <h1 v-if="this.lang == 'es'">Noticias</h1>
+      <h1 v-if="this.lang == 'en'">News</h1>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-none mb-0 p-0">
           <li class="breadcrumb-item ps-0">
-            <router-link to="/">
+            <router-link v-if="this.lang == 'es'" to="/">
               <i class="bi bi-house-door"></i> Inicio</router-link
+            >
+            <router-link v-if="this.lang == 'en'" to="/">
+              <i class="bi bi-house-door"></i> Home</router-link
             >
           </li>
           <li class="breadcrumb-item active">
-            <router-link to="/BlogView">Noticias</router-link>
+            <router-link v-if="this.lang == 'es'" to="/BlogView"
+              >Noticias</router-link
+            >
+            <router-link v-if="this.lang == 'en'" to="/BlogView"
+              >News</router-link
+            >
           </li>
         </ol>
       </nav>
@@ -52,13 +61,13 @@
             </div>
           </div>
           <!-- End blog posts list -->
-          <div class="blog-pagination">
+          <!-- <div class="blog-pagination">
             <ul class="justify-content-center">
               <li class="active"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
             </ul>
-          </div>
+          </div> -->
           <!-- End blog pagination -->
         </div>
       </div>
@@ -73,16 +82,24 @@ export default {
   data() {
     return {
       posts: [],
+      lang: document.documentElement.lang,
     };
   },
   async created() {
     window.scrollTo({ top: 0, behavior: "instant" });
-    let promesa = await fetch("https://byvabogados.cl/api/");
+    if (this.lang == "") {
+      this.lang = "es";
+    }
+    let promesa = await fetch("https://byvabogados.cl/api/index.php");
     let posts = await promesa.json();
     this.posts = posts;
   },
   mounted() {
-    //this.$ga.page('BlogView');
+    window.addEventListener("click", (e) => {
+      if (e.target.id == "btn-lang") {
+        this.lang = document.documentElement.lang;
+      }
+    });
   },
 };
 </script>
