@@ -69,7 +69,6 @@ export default {
     if (this.lang === "") {
       this.lang = "es";
     }
-    console.log();
   },
   mounted() {
     window.addEventListener("click", (e) => {

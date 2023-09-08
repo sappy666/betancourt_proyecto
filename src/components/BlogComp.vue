@@ -21,7 +21,8 @@
               <!-- <span class="post-date">{{p.date}}</span> -->
             </div>
             <div class="post-content d-flex flex-column">
-              <h3 class="post-title">{{ p.title }}</h3>
+              <h3 v-if="this.lang == 'es'" class="post-title">{{ p.title }}</h3>
+              <h3 v-if="this.lang == 'en'" class="post-title">{{ p.title_ingles }}</h3>
               <div class="meta d-flex align-items-center">
                 <div class="d-flex align-items-center">
                   <i class="bi bi-person"></i>
@@ -33,15 +34,12 @@
                   <span class="ps-2">{{ p.mandante }}</span>
                 </div>
               </div>
-              <hr />
-              <!-- <div class="readmore stretched-link"><span>Leer más</span><i class="bi bi-arrow-right"></i></div> -->
-              <a href="" class="readmore stretched-link"
-                ><span>Leer más</span><i class="bi bi-arrow-right"></i
-              ></a>
+              <hr />              
             </div>
           </div>
         </div>
         <!-- End post item -->
+        <router-link to="/casos-destacados" class="readmore stretched-link">Leer más</router-link>
       </div>
     </div>
   </section>
@@ -61,9 +59,6 @@ export default {
     }
     let promesa = null;
     if (this.lang == "es") {
-      promesa = await fetch("https://byvabogados.cl/api/index.php?limit=3");
-    }
-    if (this.lang == "en") {
       promesa = await fetch("https://byvabogados.cl/api/index.php?limit=3");
     }
     this.posts = await promesa.json();
@@ -118,15 +113,14 @@ export default {
   color: #888;
   margin: 20px 0;
 }
-.recent-blog-posts .post-item .readmore {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  line-height: 1;
+.readmore {
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: 500;
+  /* line-height: 1; */
   transition: 0.3s;
-  color: #838893;
 }
-.recent-blog-posts .post-item .readmore i {
+.readmore i {
   line-height: 0;
   margin-left: 6px;
   font-size: 16px;

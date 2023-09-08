@@ -35,28 +35,43 @@
           <div class="row gy-4 posts-list">
             <div v-for="p in posts" :key="p.id" class="col-lg-6">
               <article class="d-flex flex-column">
-                <!-- <div class="post-img">
-                           <img src="../assets/1.jpg" alt="" class="img-fluid">
-                        </div> -->
-                <h2 class="title">
-                  <!-- <router-link class="nav-link" to="/BlogdetalleView">{{ p.title }}</router-link> -->
+                <h2 v-if="this.lang=='es'" class="title">
                   {{ p.title }}
                 </h2>
-                <div class="subtitle">
+                <h2 v-if="this.lang=='en'" class="title">
+                  {{ p.title_ingles }}
+                </h2>
+                <div v-if="this.lang=='es'" class="subtitle">
                   <p v-if="p.date != '0000-00-00'">{{ p.date }}</p>
                   <p v-if="p.client != ''"><b>Cliente: </b>{{ p.client }}</p>
                   <p v-if="p.mandante != ''">
                     <b>Mandante: </b>{{ p.mandante }}
                   </p>
+                  <p v-if="p.subtitle != ''">
+                    {{ p.subtitle }}
+                  </p>
                 </div>
-                <div class="content">
+                <div v-if="this.lang=='en'" class="subtitle">
+                  <p v-if="p.date != '0000-00-00'">{{ p.date }}</p>
+                  <p v-if="p.client != ''"><b>Cliente: </b>{{ p.client }}</p>
+                  <p v-if="p.mandante != ''">
+                    <b>Mandante: </b>{{ p.mandante }}
+                  </p>
+                  <p v-if="p.subtitle_ingles != ''">
+                    {{ p.subtitle_ingles }}
+                  </p>
+                </div>
+                <div v-if="this.lang=='es'" class="content">
                   <p>
                     {{ p.text }}
                   </p>
                 </div>
-                <!-- <div class="read-more mt-auto align-self-end">
-                           <router-link class="nav-link" to="/BlogdetalleView">Leer más</router-link>
-                        </div> -->
+                <div v-if="this.lang=='en'" class="content">
+                  <p>
+                    {{ p.text_ingles }}
+                  </p>
+                </div>
+
               </article>
             </div>
           </div>
@@ -73,8 +88,7 @@
       </div>
     </div>
   </section>
-  <!-- End Blog Section -->
-  <!-- End Hero -->
+
 </template>
 <script>
 export default {
@@ -90,9 +104,14 @@ export default {
     if (this.lang == "") {
       this.lang = "es";
     }
-    let promesa = await fetch("https://byvabogados.cl/api/index.php");
-    let posts = await promesa.json();
-    this.posts = posts;
+    try{
+      let promesa = await fetch("https://byvabogados.cl/api/index.php");
+      let posts = await promesa.json();
+      this.posts = posts;
+    }
+    catch(error){
+      console.log(error)
+    }
   },
   mounted() {
     window.addEventListener("click", (e) => {
