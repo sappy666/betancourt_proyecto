@@ -111,6 +111,10 @@
         </div>
       </div>
     </div>
+    <div id="coda">
+      © All rights reserved. Designed by <br>
+<a href="https://bio.site/coda.latam" target="_blank">Coda Latam</a>
+    </div> 
   </footer>
 </template>
 <script>
@@ -320,5 +324,14 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+#coda{
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+#coda a{
+  color: var(--color-primary);
+  font-weight: 600;
 }
 </style>

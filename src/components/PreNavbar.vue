@@ -6,7 +6,7 @@
           <div
             class="col-lg-4 py-2 text-center text-lg-start d-none d-lg-flex align-items-center"
           >
-            <p v-if="this.lang == 'es'" class="mb-0 text-sm">
+            <p v-if="this.lang == 'es'" class="mb-0">
               Horario de atención: Lun - Vie 9:00 - 18:00
             </p>
             <p v-if="this.lang == 'en'" class="mb-0 text-sm">
@@ -15,15 +15,14 @@
           </div>
           <div class="col-lg-8 text-end py-2 text-center text-lg-end">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="fw-normal text-sm reset-anchor" href="#!"
-                  ><i class="fas fa-mobile me-2"></i>+56 2 2380 0530</a
-                >
-              </li>
+              <li class="list-inline-item">+56 2 2380 0530</li>
+              <li class="list-inline-item">|</li>
+              <li class="fw-normal list-inline-item">+56 2 2633 7482 </li>
+              <li class="list-inline-item">|</li>
+              <li class="fw-normal list-inline-item">+56 2 2633 1851</li>
               <li class="list-inline-item">|</li>
               <li class="list-inline-item">
-                <a class="fw-normal text-sm reset-anchor" href="#!"
-                  ><i class="fas fa-envelope me-2"></i
+                <a class="fw-normal text-sm" href="mailto:contacto@betancourtabogados.cl"
                   >contacto@betancourtabogados.cl</a
                 >
               </li>
@@ -60,6 +59,10 @@ export default {
 };
 </script>
 <style scoped>
+.list-inline-item{
+  color: #647087;
+}
+
 .top-bar {
   color: #afb6c3;
 }

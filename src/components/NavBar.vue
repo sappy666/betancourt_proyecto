@@ -131,34 +131,34 @@ export default {
         btnLang.innerText = "ES";
         document.documentElement.lang = "en";
         this.lang = "en";
-        btnsLink[3].innerText = "HOME";
-        btnsLink[4].innerText = "ABOUT US";
-        btnsLink[5].innerHTML =
+        btnsLink[2].innerText = "HOME";
+        btnsLink[3].innerText = "ABOUT US";
+        btnsLink[4].innerHTML =
           '<span>Areas of Practice</span><i class="bi bi-chevron-down d-none d-md-block"></i>';
-        btnsLink[6].innerText = "Public Procurement Advisory";
-        btnsLink[7].innerText = "Adjudication Claim and Defense";
-        btnsLink[8].innerText = "Execution Advisory";
-        btnsLink[9].innerText = "Administrative Debt Collection";
-        btnsLink[10].innerText = "Strategic Advisory";
-        btnsLink[11].innerText = "Notable cases";
-        btnsLink[12].innerText = "Contact Us";
+        btnsLink[5].innerText = "Public Procurement Advisory";
+        btnsLink[6].innerText = "Adjudication Claim and Defense";
+        btnsLink[7].innerText = "Execution Advisory";
+        btnsLink[8].innerText = "Administrative Debt Collection";
+        btnsLink[9].innerText = "Strategic Advisory";
+        btnsLink[10].innerText = "Notable cases";
+        btnsLink[11].innerText = "Contact Us";
       }
       // Pasar a espanol
       else if (this.lang === "en") {
         btnLang.innerText = "EN";
         document.documentElement.lang = "es";
         this.lang = "es";
-        btnsLink[3].innerText = "Inicio";
-        btnsLink[4].innerText = "quienes somos";
-        btnsLink[5].innerHTML =
+        btnsLink[2].innerText = "Inicio";
+        btnsLink[3].innerText = "quienes somos";
+        btnsLink[4].innerHTML =
           '<span>Áreas de práctica</span><i class="bi bi-chevron-down d-none d-md-block"></i>';
-        btnsLink[6].innerText = "Asesoria en Compras Públicas";
-        btnsLink[7].innerText = "Reclamación y defensa de adjudicación";
-        btnsLink[8].innerText = "Asesoría en la Ejecución";
-        btnsLink[9].innerText = "Cobranza Administrativa";
-        btnsLink[10].innerText = "Asesoría Estratégica";
-        btnsLink[11].innerText = "Casos destacados";
-        btnsLink[12].innerText = "contacto";
+        btnsLink[5].innerText = "Asesoria en Compras Públicas";
+        btnsLink[6].innerText = "Reclamación y defensa de adjudicación";
+        btnsLink[7].innerText = "Asesoría en la Ejecución";
+        btnsLink[8].innerText = "Cobranza Administrativa";
+        btnsLink[9].innerText = "Asesoría Estratégica";
+        btnsLink[10].innerText = "Casos destacados";
+        btnsLink[11].innerText = "contacto";
       }
     });
   },
