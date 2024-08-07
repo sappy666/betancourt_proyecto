@@ -233,7 +233,7 @@ export default {
   top: 70px;
   left: 70px;
   position: absolute;
-  background-image: url(https://360imagem.com/google/images/wpp-icon.png);
+  background-image: url("../assets/iconos/whatsapp-128.png");
   background-size: 40px 40px;
   background-color: rgba(30, 30, 30, 0.1);
   background-position: center center;
