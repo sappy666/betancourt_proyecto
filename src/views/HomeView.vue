@@ -40,6 +40,7 @@
   </section>
   <CounterComp />
   <NosotrosComp />
+  <VisionMisionComp />
   <ServiciosComp />
   <ClientesComp />
   <BlogComp />
@@ -52,6 +53,7 @@ import ServiciosComp from "@/components/ServiciosComp.vue";
 import ClientesComp from "@/components/ClientesComp.vue";
 import BlogComp from "@/components/BlogComp.vue";
 import ContactoComp from "@/components/ContactoComp.vue";
+import VisionMisionComp from "@/components/VisionMisionComp.vue";
 
 export default {
   name: "HomeView",
@@ -62,6 +64,7 @@ export default {
     ClientesComp,
     BlogComp,
     ContactoComp,
+    VisionMisionComp,
   },
   data() {
     return {

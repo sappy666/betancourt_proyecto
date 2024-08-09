@@ -105,7 +105,7 @@ export default {
   }
 }
 .fadeOutRight {
-  -webkit-animation-name: fadeOutRight;
+ -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
 }
 .cbh-phone.cbh-static1 {
@@ -234,14 +234,14 @@ export default {
   left: 70px;
   position: absolute;
   background-image: url("../assets/iconos/whatsapp-128.png");
-  background-size: 40px 40px;
+  background-size: 30px 30px;
   background-color: rgba(30, 30, 30, 0.1);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  border: 2px solid transparent;
+  border: 5px solid transparent;
   opacity: 1;
   -webkit-animation: cbh-circle-img-anim 1s infinite ease-in-out;
   -moz-animation: cbh-circle-img-anim 1s infinite ease-in-out;
