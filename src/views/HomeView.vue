@@ -102,6 +102,7 @@ p {
 
 .hero {
   overflow-x: hidden;
+  background-color: #222;
   background-image: url("../assets/fondobanner.jpg");
   background-size: cover;
 }
