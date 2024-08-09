@@ -57,7 +57,6 @@
               <strong><i class="bi bi-envelope-fill"></i> Emails:</strong>
               <br />
               contacto@betancourtabogados.cl<br />
-              <!-- asesorias@betancourtabogados.cl<br> -->
             </p>
             <div class="social-links">
               <a

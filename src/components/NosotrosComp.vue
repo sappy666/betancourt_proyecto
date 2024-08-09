@@ -38,25 +38,7 @@
             partner estratégico en el ámbito de la
             <strong>contratación pública</strong>.
           </p>
-          <!-- <p class="texto-nosotros">
-            ESTE MANDARON ELLOS - SIN SEO
-            Somos un estudio jurídico especializado en contratación pública
-            fundado hace <b>más de 13 años</b> conformado por abogados
-            especialistas, donde la excelencia legal se encuentra con la
-            modernidad y el compromiso con nuestros clientes, brindando
-            soluciones jurídicas integrales y personalizadas. Valoramos y
-            honramos la confianza que depositan en nuestros servicios legales,
-            construyendo relaciones sólidas y duraderas.
-            <b>
-              Nuestro enfoque se basa en una comunicación cercana y transparente
-              con los clientes</b
-            >, permitiéndonos comprender a fondo sus necesidades y objetivos,
-            para así brindarles asesoramiento legal estratégico orientadas a
-            soluciones innovadoras y adaptadas a sus circunstancias
-            particulares. Estamos confiados en que podemos ser un partner
-            estratégico para su empresa.
-          </p> -->
-        </div>
+       </div>
         <div
           v-if="this.lang == 'en'"
           class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
@@ -83,25 +65,7 @@
             are confident that we can be your strategic partner in the field of
             <strong>public procurement</strong>.
           </p>
-          <!-- <p class="texto-nosotros">
-            ESTE MANDARON ELLOS - SIN SEO
-            Somos un estudio jurídico especializado en contratación pública
-            fundado hace <b>más de 13 años</b> conformado por abogados
-            especialistas, donde la excelencia legal se encuentra con la
-            modernidad y el compromiso con nuestros clientes, brindando
-            soluciones jurídicas integrales y personalizadas. Valoramos y
-            honramos la confianza que depositan en nuestros servicios legales,
-            construyendo relaciones sólidas y duraderas.
-            <b>
-              Nuestro enfoque se basa en una comunicación cercana y transparente
-              con los clientes</b
-            >, permitiéndonos comprender a fondo sus necesidades y objetivos,
-            para así brindarles asesoramiento legal estratégico orientadas a
-            soluciones innovadoras y adaptadas a sus circunstancias
-            particulares. Estamos confiados en que podemos ser un partner
-            estratégico para su empresa.
-          </p> -->
-        </div>
+       </div>
       </div>
     </div>
   </section>

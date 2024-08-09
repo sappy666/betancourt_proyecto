@@ -194,9 +194,7 @@ p {
   color: #fff;
   font-size: 13px;
   font-weight: 600;
-  /* border: solid red 1px; */
   padding: 8px 0 10px 20px;
-  /* margin-left: 0.5rem; */
   user-select: none;
   transition: 0.3s;
   display: flex;

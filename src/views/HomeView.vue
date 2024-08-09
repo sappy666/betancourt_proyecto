@@ -10,13 +10,7 @@
               alt="Betancourt Abogados"
               srcset=""
             />
-            <!-- <img
-              v-if="this.lang == 'en'"
-              src="../assets/nombre-ingles.png"
-              alt="Betancourt Abogados"
-              srcset=""
-            /> -->
-            <h1>Betancourt Abogados</h1>
+           <h1>Betancourt Abogados</h1>
             <p v-if="this.lang == 'es'">
               Somos un estudio jurídico formado por abogados e ingenieros, todos
               profesionales altamente calificados que buscan proporcionar
