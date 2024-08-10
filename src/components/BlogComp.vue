@@ -17,8 +17,6 @@
         <div v-for="p in posts" :key="p.id" class="col-xl-4 col-md-6">
           <div class="post-item position-relative h-100">
             <div class="post-img position-relative overflow-hidden">
-              <img src="'../assets/1.jpg'" class="img-fluid" alt="" />
-              <!-- <span class="post-date">{{p.date}}</span> -->
             </div>
             <div class="post-content d-flex flex-column">
               <h3 v-if="this.lang == 'es'" class="post-title">{{ p.title }}</h3>

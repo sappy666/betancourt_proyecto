@@ -5,10 +5,8 @@
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
             <img
-              v-if="true"
               src="../assets/nombre.png"
               alt="Betancourt Abogados"
-              srcset=""
             />
            <h1>Betancourt Abogados</h1>
             <p v-if="this.lang == 'es'">
@@ -99,23 +97,16 @@ h2,
 p {
   font-family: var(--font-primary);
 }
-
 .hero {
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
   overflow-x: hidden;
   background-color: #222;
   background-image: url("../assets/fondobanner.jpg");
   background-size: cover;
-}
-.hero .info {
-  /* backdrop-filter: blur(5px); */
-  margin-top: 2.5rem;
-}
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  padding: 0px 0;
-  margin: 0px;
-  position: relative;
+
 }
 .hero h1 {
   height: 0;
@@ -125,11 +116,7 @@ p {
   position: absolute;
   inset: 0;
   z-index: 2;
-}
-@media (max-width: 768px) {
-  .hero .info {
-    padding: 0 0px;
-  }
+  margin-top: 2.5rem;
 }
 .hero .info h2 {
   color: #fff;
@@ -156,6 +143,9 @@ p {
     font-size: 36px;
     text-shadow: rgba(0, 0, 0, 0.2);
   }
+  .hero .info {
+    padding: 0 0px;
+  }
 }
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
@@ -179,15 +169,13 @@ p {
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
     rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .hero .info .btn-get-started:hover {
   background: #26547c;
   border: 2px solid #26547c;
 }
 
-.btn-get-started {
-  text-decoration: none;
-}
 .hero img {
   width: 300px;
 }
