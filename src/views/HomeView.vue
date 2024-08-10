@@ -3,7 +3,7 @@
     <div class="info d-flex align-items-center p-0">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-7 text-center">
+          <div class="col text-center">
             <img
               src="../assets/nombre.png"
               alt="Betancourt Abogados"
@@ -109,7 +109,8 @@ p {
 }
 .hero h1 {
   height: 0;
-  visibility: hidden;
+  width: 0;
+  color: transparent;
 }
 .hero .info {
   position: absolute;
