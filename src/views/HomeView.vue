@@ -1,6 +1,6 @@
 <template>
   <section id="hero" class="hero">
-    <div class="info d-flex align-items-center">
+    <div class="info d-flex align-items-center p-0">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
@@ -93,7 +93,6 @@ export default {
 };
 </script>
 <style scoped>
-h2,
 p {
   font-family: var(--font-primary);
 }
@@ -118,35 +117,7 @@ p {
   z-index: 2;
   margin-top: 2.5rem;
 }
-.hero .info h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  font-size: 56px;
-  font-weight: 700;
-  position: relative;
-}
-.hero .info h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: var(--color-primary);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-@media (max-width: 768px) {
-  .hero .info h2 {
-    font-size: 36px;
-    text-shadow: rgba(0, 0, 0, 0.2);
-  }
-  .hero .info {
-    padding: 0 0px;
-  }
-}
+
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 13px;
@@ -180,9 +151,6 @@ p {
   width: 300px;
 }
 @media (min-width: 500px) {
-  .hero .info {
-    padding: 0;
-  }
   .hero img {
     width: 600px;
   }
