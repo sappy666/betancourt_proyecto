@@ -990,8 +990,26 @@ export default {
   overflow: hidden;
   white-space: nowrap;
   padding: 0;
+  position: relative;
 }
 
+.logos:before,
+.logos:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 2;
+}
+.logos:before{
+  background: linear-gradient(90deg, #ffffff, transparent);
+  left: 0;
+}
+.logos:after{
+  background: linear-gradient(270deg, #ffffff, transparent);
+  right: 0;
+}
 .logos:hover .logos-slide{
   animation-play-state: paused;
 }
