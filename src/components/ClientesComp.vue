@@ -1,119 +1,105 @@
 <template>
-  <section id="clients" class="clients">
-    <section class="">
-      <div class="section-header">
+  <section id="clients" class="clients pt-5">
+      <div class="section-header | mt-5">
         <h2 v-if="this.lang == 'es'">Han confiado en nosotros</h2>
         <h2 v-if="this.lang == 'en'">They have trusted us</h2>
         <p v-if="this.lang == 'es'">Conoce algunos de nuestros clientes</p>
         <p v-if="this.lang == 'en'">Get to know some of our clients</p>
       </div>
-      <div class="container">
-        <ul class="row align-items-center justify-content-center">
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+      <div class="container-fluid logos">
+        <ul class="logos-slide">
+          <li class="">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/1.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/2.jpg"
               height="60"
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
-              class="d-block mx-auto "
+             
+              class="d-block mx-auto"
               src="../assets/clientes/3.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/4.jpg"
               height="60"
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/5.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/6.jpg"
               height="60"
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/7.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/8.jpg"
               height="60"
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/9.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/10.jpg"
               height="60"
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/11.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/12.jpg"
               height="60"
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
-              class="d-block mx-auto "
+              class="d-block mx-auto"
               src="../assets/clientes/13.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/14.jpg"
@@ -121,15 +107,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/15.jpg"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/16.jpg"
@@ -137,15 +121,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/17.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/18.png"
@@ -153,15 +135,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/19.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/20.png"
@@ -169,16 +149,13 @@
               loading="lazy"
             />
           </li>
-
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/22.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/23.png"
@@ -186,15 +163,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/24.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/25.png"
@@ -202,15 +177,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/26.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/27.png"
@@ -218,15 +191,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/28.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/29.png"
@@ -234,15 +205,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/30.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/31.png"
@@ -250,15 +219,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/32.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/33.png"
@@ -266,15 +233,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/34.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/35.png"
@@ -282,15 +247,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/36.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/37.png"
@@ -298,15 +261,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/38.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/39.png"
@@ -314,15 +275,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/40.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/41.png"
@@ -330,15 +289,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/42.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/43.png"
@@ -346,15 +303,13 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/44.png"
               height="60"
               loading="lazy"
             />
-          </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/45.png"
@@ -362,7 +317,7 @@
               loading="lazy"
             />
           </li>
-          <li class="col-lg-2 col-md-3 col-6 py-2 py-lg-0">
+          <li class="">
             <img
               class="d-block mx-auto "
               src="../assets/clientes/46.png"
@@ -372,7 +327,6 @@
           </li>
         </ul>
       </div>
-    </section>
   </section>
 </template>
 <script>
@@ -398,9 +352,6 @@ export default {
 };
 </script>
 <style scoped>
-ul{
-  list-style: none;
-}
 .clients {
   padding-top: 20px;
 }
@@ -412,11 +363,40 @@ ul{
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
-  /* padding-top: 10px; */
+  &:nth-child(2n+1){
+    margin-bottom: 40px;
+  }
 }
 
 .clients img:hover {
   filter: none;
   opacity: 1;
+}
+.logos{
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  .logos-slide{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    animation: 20s slide infinite linear;
+    animation-play-state: running;
+    &:hover{
+      animation-play-state: paused
+    }
+    li{
+      margin-inline: 20px;
+      display: inline-block;
+    }
+  }
+}
+@keyframes slide{
+  0%{
+    transform: translateX(0); 
+  }
+  100%{
+    transform: translateX(-100%); 
+  }
 }
 </style>
