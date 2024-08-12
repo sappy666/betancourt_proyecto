@@ -39,6 +39,7 @@
   <ContactoComp />
 </template>
 <script>
+
 import CounterComp from "@/components/CounterComp.vue";
 import NosotrosComp from "@/components/NosotrosComp.vue";
 import ServiciosComp from "@/components/ServiciosComp.vue";
