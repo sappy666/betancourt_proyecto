@@ -363,34 +363,39 @@ export default {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
-  &:nth-child(2n+1){
-    margin-bottom: 40px;
-  }
+}
+
+.clients img:nth-child(2n+1){
+  margin-bottom: 40px;
 }
 
 .clients img:hover {
   filter: none;
   opacity: 1;
 }
+
 .logos{
   overflow: hidden;
   white-space: nowrap;
   padding: 0;
-  .logos-slide{
+}
+.logos .logos-slide{
     padding: 0;
     list-style: none;
     margin: 0;
     animation: 20s slide infinite linear;
     animation-play-state: running;
-    &:hover{
+
+      }
+.logos .logos-slide:hover{
       animation-play-state: paused
-    }
-    li{
-      margin-inline: 20px;
-      display: inline-block;
-    }
-  }
 }
+
+li{
+  margin-inline: 20px;
+  display: inline-block;
+}
+
 @keyframes slide{
   0%{
     transform: translateX(0); 
