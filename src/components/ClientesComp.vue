@@ -991,17 +991,18 @@ export default {
   white-space: nowrap;
   padding: 0;
 }
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
 .logos-slide{
     padding: 0;
     list-style: none;
     margin: 0;
-    animation: 50s slide infinite linear;
-    /* animation-play-state: running; */
+    animation: 60s slide infinite linear;
+    animation-play-state: running;
     display: inline-block;
  }
-.logos-slide:hover{
-      /* animation-play-state: paused */
-}
 
 li{
   margin-inline: 20px;
