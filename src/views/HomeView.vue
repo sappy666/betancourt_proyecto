@@ -31,10 +31,10 @@
     </div>
   </section>
   <CounterComp />
+  <ClientesComp />
   <NosotrosComp />
   <VisionMisionComp />
   <ServiciosComp />
-  <ClientesComp />
   <BlogComp />
   <ContactoComp />
 </template>
