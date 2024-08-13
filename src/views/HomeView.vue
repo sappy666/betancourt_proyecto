@@ -4,11 +4,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col text-center">
-            <img
-              src="../assets/nombre.png"
-              alt="Betancourt Abogados"
-            />
-           <h1>Betancourt Abogados</h1>
+            <img src="../assets/nombre.png" alt="Betancourt Abogados" />
+            <h1>Betancourt Abogados</h1>
             <p v-if="this.lang == 'es'">
               Somos un estudio jurídico formado por abogados e ingenieros, todos
               profesionales altamente calificados que buscan proporcionar
@@ -39,7 +36,6 @@
   <ContactoComp />
 </template>
 <script>
-
 import CounterComp from "@/components/CounterComp.vue";
 import NosotrosComp from "@/components/NosotrosComp.vue";
 import ServiciosComp from "@/components/ServiciosComp.vue";
@@ -106,7 +102,6 @@ p {
   background-color: #222;
   background-image: url("../assets/fondobanner.jpg");
   background-size: cover;
-
 }
 .hero h1 {
   height: 0;
