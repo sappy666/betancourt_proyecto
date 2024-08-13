@@ -153,7 +153,7 @@
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
           <div v-if="this.lang == 'es'" class="service-item position-relative">
             <div class="icon">
-              <img src="../assets/iconos/gavel.png" alt="" srcset="" />
+              <img src="../assets/iconos/consulta.png" alt="" srcset="" />
             </div>
             <h2>Asesoría en la ejecución</h2>
             <p>
@@ -173,7 +173,7 @@
           </div>
           <div v-if="this.lang == 'en'" class="service-item position-relative">
             <div class="icon">
-              <img src="../assets/iconos/gavel.png" alt="" srcset="" />
+              <img src="../assets/iconos/consulta.png" alt="" srcset="" />
             </div>
             <h2>Execution Advisory</h2>
             <p>
