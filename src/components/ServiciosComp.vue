@@ -150,50 +150,6 @@
           </div>
         </div>
         <!-- End Service Item -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div v-if="this.lang == 'es'" class="service-item position-relative">
-            <div class="icon">
-              <img src="../assets/iconos/consulta.png" alt="" srcset="" />
-            </div>
-            <h2>Asesoría en la ejecución</h2>
-            <p>
-              Te asesoramos durante la ejecución del contrato, defendiéndote en
-              la aplicación de multas, cumplimientos de estados de pago, término
-              anticipado de contrato y cualquier otra eventualidad que se pueda
-              traducir en un menoscabo económico para la empresa.
-            </p>
-            <div class="">
-              <router-link
-                class="readmore"
-                to="/areas-practica#ejecucion"
-                @click="ejecucionEvent"
-                >Leer más</router-link
-              >
-            </div>
-          </div>
-          <div v-if="this.lang == 'en'" class="service-item position-relative">
-            <div class="icon">
-              <img src="../assets/iconos/consulta.png" alt="" srcset="" />
-            </div>
-            <h2>Execution Advisory</h2>
-            <p>
-              We provide guidance during the contract execution, offering
-              defense in cases of penalty application, payment status
-              compliance, early contract termination, and any other
-              circumstances that may result in financial detriment to the
-              company.
-            </p>
-            <div class="">
-              <router-link
-                class="readmore"
-                to="/areas-practica#ejecucion"
-                @click="ejecucionEvent"
-                >Read more</router-link
-              >
-            </div>
-          </div>
-        </div>
-        <!-- End Service Item -->
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div v-if="this.lang == 'es'" class="service-item position-relative">
             <div class="icon">
@@ -271,6 +227,50 @@
                 class="readmore"
                 to="/areas-practica#estrategica"
                 @click="estrategicaEvent"
+                >Read more</router-link
+              >
+            </div>
+          </div>
+        </div>
+        <!-- End Service Item -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div v-if="this.lang == 'es'" class="service-item position-relative">
+            <div class="icon">
+              <img src="../assets/iconos/consulta.png" alt="" srcset="" />
+            </div>
+            <h2>Asesoría en la ejecución</h2>
+            <p>
+              Te asesoramos durante la ejecución del contrato, defendiéndote en
+              la aplicación de multas, cumplimientos de estados de pago, término
+              anticipado de contrato y cualquier otra eventualidad que se pueda
+              traducir en un menoscabo económico para la empresa.
+            </p>
+            <div class="">
+              <router-link
+                class="readmore"
+                to="/areas-practica#ejecucion"
+                @click="ejecucionEvent"
+                >Leer más</router-link
+              >
+            </div>
+          </div>
+          <div v-if="this.lang == 'en'" class="service-item position-relative">
+            <div class="icon">
+              <img src="../assets/iconos/consulta.png" alt="" srcset="" />
+            </div>
+            <h2>Execution Advisory</h2>
+            <p>
+              We provide guidance during the contract execution, offering
+              defense in cases of penalty application, payment status
+              compliance, early contract termination, and any other
+              circumstances that may result in financial detriment to the
+              company.
+            </p>
+            <div class="">
+              <router-link
+                class="readmore"
+                to="/areas-practica#ejecucion"
+                @click="ejecucionEvent"
                 >Read more</router-link
               >
             </div>
