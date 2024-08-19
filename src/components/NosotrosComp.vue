@@ -6,13 +6,13 @@
       <h2 v-if="this.lang == 'en'">About us</h2>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
-          <img src="../assets/nosotros.jpg" class="" alt="" width="500" />
+      <div class="row | justify-content-around">
+        <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
+          <img src="../assets/nosotros.jpg" class="" alt="" />
         </div>
         <div
           v-if="this.lang == 'es'"
-          class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+          class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
         >
           <p>
             Somos un bufete de <strong>abogados</strong> especializado en el
@@ -41,7 +41,7 @@
        </div>
         <div
           v-if="this.lang == 'en'"
-          class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+          class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
         >
           <p>
             We are a <strong>law firm </strong>specialized in the field of
@@ -95,7 +95,7 @@ export default {
 </script>
 <style scoped>
 #about img {
-  width: 500px;
+  width: 100%;
   object-fit: cover;
 }
 a {
@@ -154,4 +154,5 @@ p {
   text-align: justify;
   margin: 0 1.5rem;
 }
+
 </style>
