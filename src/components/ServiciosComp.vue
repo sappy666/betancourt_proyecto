@@ -393,6 +393,7 @@ export default {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  text-align: justify;
 }
 .services .service-item .readmore {
   margin-top: 15px;
