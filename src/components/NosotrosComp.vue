@@ -5,7 +5,7 @@
       <h2 v-if="this.lang == 'es'">Nosotros</h2>
       <h2 v-if="this.lang == 'en'">About us</h2>
     </div>
-    <div class="container" data-aos="fade-up">
+    <div class="container">
       <div class="row">
         <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
           <img src="../assets/nosotros.jpg" class="" alt="" width="500" />
@@ -113,6 +113,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  text-align: justify;
 }
 #about {
   scroll-margin: 20px;
