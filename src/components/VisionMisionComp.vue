@@ -2,7 +2,7 @@
   <section id="vision-mision">
     <div class="container">
       <div v-if="this.lang == 'es'" class="row | justify-content-around">
-        <div class="col-12 col-lg-5">
+        <div class="col-11 col-lg-5 | mb-5 mb-lg-0">
           <h3>Misión</h3>
           <p>
             Nuestra misión es resguardar y potenciar las competencias e
@@ -17,7 +17,7 @@
             experiencia y clientes como también, nuestros resultados nos avalan.
           </p>
         </div>
-        <div class="col-12 col-lg-5">
+        <div class="col-11 col-lg-5">
           <h3>Visión</h3>
           <p>
             Aspiramos a transformar el panorama de la contratación pública en
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div v-if="this.lang == 'en'" class="row | justify-content-around">
-        <div class="col-12 col-lg-5">
+        <div class="col-11 col-lg-5">
           <h3>Mission</h3>
           <p>
             Our mission is to safeguard and enhance our clients' competencies
@@ -45,7 +45,7 @@
             clients, and results speak for themselves.
           </p>
         </div>
-        <div class="col-12 col-lg-5">
+        <div class="col-11 col-lg-5">
           <h3>Vision</h3>
           <p>
             We aspire to transform the landscape of public contracting in Chile

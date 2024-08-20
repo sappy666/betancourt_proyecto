@@ -9,12 +9,12 @@
     </div>
     <div class="container">
       <div class="row | justify-content-around">
-        <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
+        <div class="col-11 col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
           <img src="../assets/nosotros.jpg" class="" alt="" />
         </div>
         <div
           v-if="this.lang == 'es'"
-          class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
+          class="col-11 col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
         >
           <p>
             Somos un bufete de <strong>abogados</strong> especializado en el
@@ -43,7 +43,7 @@
         </div>
         <div
           v-if="this.lang == 'en'"
-          class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
+          class="col-11 col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
         >
           <p>
             We are a <strong>law firm </strong>specialized in the field of
