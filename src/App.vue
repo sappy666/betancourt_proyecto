@@ -106,6 +106,7 @@ section {
   font-weight: 700;
   position: relative;
   color: #2e3135;
+  color: #2f3f5f;
 }
 @media (min-width: 991px) {
   
