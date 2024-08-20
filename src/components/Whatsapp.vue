@@ -159,7 +159,7 @@ export default {
   opacity: 0.5;
 }
 .cbh-phone.cbh-green .cbh-ph-circle {
-  border-color: rgba(0, 175, 242, 1);
+  border-color: #273050;
   opacity: 0.5;
 }
 .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle {
@@ -208,25 +208,16 @@ export default {
   opacity: 0 !important;
 }
 .cbh-phone.cbh-hover .cbh-ph-circle-fill {
-  background-color: rgba(0, 175, 242, 0.5);
   opacity: 0.75 !important;
 }
 .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle-fill {
-  background-color: rgba(83, 80, 235, 0.5);
   opacity: 0.75 !important;
 }
 .cbh-phone.cbh-green .cbh-ph-circle-fill {
-  background-color: rgba(0, 175, 242, 0.5);
   opacity: 0.75 !important;
 }
-.cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle-fill {
-  background-color: rgba(204, 204, 204, 0.5);
-  opacity: 0.75 !important;
-}
-.cbh-phone.cbh-gray .cbh-ph-circle-fill {
-  background-color: rgba(90, 80, 235, 0.5);
-  opacity: 1 !important;
-}
+
+
 .cbh-ph-img-circle1 {
   width: 50px;
   height: 50px;
@@ -235,7 +226,6 @@ export default {
   position: absolute;
   background-image: url("../assets/iconos/whatsapp-128.png");
   background-size: 30px 30px;
-  background-color: rgba(30, 30, 30, 0.1);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-border-radius: 100%;
@@ -263,24 +253,7 @@ export default {
   -o-animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
   animation: cbh-circle-img-anim 0s infinite ease-in-out !important;
 }
-.cbh-phone.cbh-hover .cbh-ph-img-circle1 {
-  background-color: rgba(0, 175, 242, 1);
-}
-.cbh-phone.cbh-green.cbh-hover .cbh-ph-img-circle1:hover {
-  background-color: rgb(80, 93, 235);
-}
-.cbh-phone.cbh-green .cbh-ph-img-circle1 {
-  background-color: rgba(0, 175, 242, 1);
-}
-.cbh-phone.cbh-green .cbh-ph-img-circle1 {
-  background-color: rgba(0, 175, 242, 1);
-}
-.cbh-phone.cbh-gray.cbh-hover .cbh-ph-img-circle1 {
-  background-color: rgba(204, 204, 204, 1);
-}
-.cbh-phone.cbh-gray .cbh-ph-img-circle1 {
-  background-color: rgb(80, 88, 235);
-}
+
 @-moz-keyframes cbh-circle-anim {
   0% {
     -moz-transform: rotate(0deg) scale(0.5) skew(1deg);
@@ -486,16 +459,15 @@ export default {
     -o-transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
-.cbh-ph-img-circle1 {
-}
 .cbh-phone.cbh-green .cbh-ph-circle {
-  border-color: rgb(49, 65, 186);
+  background-color: #2a3a5a55;
 }
 .cbh-phone.cbh-green .cbh-ph-circle-fill {
-  background-color: rgb(49, 65, 186);
+  background-color: #2a3a5a99;
+  background-color: #2c3f5faa;
 }
 .cbh-phone.cbh-green .cbh-ph-img-circle1 {
-  background-color: rgb(49, 65, 186);
+  background-color: #2a3a5a;
 }
 .kmacb__manager-border {
   position: absolute;
@@ -516,7 +488,6 @@ export default {
   transform-origin: center;
 }
 .kmacb__manager-fill {
-  background: #52aff7 center bottom no-repeat;
   position: absolute;
   width: 75px;
   height: 75px;
@@ -534,7 +505,6 @@ export default {
   transform-origin: center;
 }
 .kmacb__manager-circle {
-  background: #52aff7;
   position: absolute;
   width: 120px;
   height: 120px;
