@@ -86,28 +86,29 @@ export default {
     });
     // ============= MARCADO DE SECCION EN LINKS NAVBAR ==============
     const btnsLink = document.querySelectorAll("a");
+    console.log(btnsLink);
     // Inicio
-    btnsLink[3].addEventListener("click", () => {
+    btnsLink[2].addEventListener("click", () => {
       btnsLink.forEach((e) => {
         e.classList.remove("active");
       });
-      btnsLink[3].classList.add("active");
+      btnsLink[2].classList.add("active");
     });
     // Areas practica
-    for (let i = 5; i <= 10; i++) {
+    for (let i = 4; i < 10; i++) {
       btnsLink[i].addEventListener("click", () => {
         btnsLink.forEach((e) => {
           e.classList.remove("active");
         });
-        btnsLink[5].classList.add("active");
+        btnsLink[4].classList.add("active");
       });
     }
     // Casos destacados
-    btnsLink[11].addEventListener("click", () => {
+    btnsLink[10].addEventListener("click", () => {
       btnsLink.forEach((e) => {
         e.classList.remove("active");
       });
-      btnsLink[11].classList.add("active");
+      btnsLink[10].classList.add("active");
     });
     // =================== RESPONSIVIDAD NAVBAR =================
     const navbar = document.querySelector("#navbar > div");
