@@ -112,7 +112,7 @@
     </div>
     <div id="coda">
       © All rights reserved. Designed by <br>
-<a href="https://bio.site/coda.latam" target="_blank">Coda Latam</a>
+<a href="https://www.instagram.com/codadiseno/" target="_blank">Coda Latam</a>
     </div> 
   </footer>
 </template>
