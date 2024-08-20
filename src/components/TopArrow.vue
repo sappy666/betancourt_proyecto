@@ -48,7 +48,9 @@ export default {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 9999;
 }
+
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -69,17 +71,5 @@ export default {
   color: #fff;
   top: 5px;
 }
-/* Extra Things */
-body {
-  background: #eee;
-}
-h3 {
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 50px;
-}
-h3 i {
-  color: #444;
-}
+
 </style>
