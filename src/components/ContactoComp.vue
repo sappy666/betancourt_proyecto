@@ -252,7 +252,7 @@ a:focus {
   float: left;
   width: 44px;
   height: 44px;
-  background: #ecf9f0;
+  background: #f0f1f2;
   display: flex;
   justify-content: center;
   align-items: center;
