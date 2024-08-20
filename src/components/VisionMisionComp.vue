@@ -57,15 +57,16 @@ export default {
 <style scoped>
 #vision-mision{
   background-color: #273050;
-  color: #fff;
 }
 p{
   text-align: justify;
   font-size: 0.9rem;
   margin-bottom: 0;
+  color: #ffffff88;
 }
 h3{
   font-weight: 700;
   margin-bottom: 1.5rem;
+  color: #ffffffbb;
 }
 </style>

@@ -4,6 +4,8 @@
     <div class="section-header">
       <h2 v-if="this.lang == 'es'">Contacto</h2>
       <h2 v-if="this.lang == 'en'">Contact us</h2>
+      <p v-if="this.lang == 'es'">Deja tu mensaje y te atenderemos a la brevedad</p>
+      <p v-if="this.lang == 'en'">Leave your message, and we’ll get back to you promptly</p>
     </div>
     <div v-if="this.showMap">
       <iframe

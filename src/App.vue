@@ -33,6 +33,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --animate-duration: 1s;
@@ -96,24 +97,20 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 4rem;
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
   font-weight: 700;
   position: relative;
   color: #2e3135;
+  text-transform: uppercase;
+  letter-spacing: 0rem;
 }
 @media (min-width: 991px) {
-  .section-header h2:before,
-  .section-header h2:after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    background: var(--color-primary);
-    display: inline-block;
-  }
+  
   
   .section-header h2:before {
     margin: 0 15px 10px 0;

@@ -5,12 +5,11 @@
         <h2 v-if="this.lang == 'es'">Noticias</h2>
         <h2 v-if="this.lang == 'en'">News</h2>
         <p v-if="this.lang == 'es'">
-          Mantente al día con las últimas noticias, casos destacados y
-          acontecimientos actuales para estar informado
+          Mantente al día con las últimas noticias y casos destacados
+
         </p>
         <p v-if="this.lang == 'en'">
-          Stay up to date with the latest news, notable cases, and current
-          events to stay informed.
+          Stay up to date with the latest news and notable cases
         </p>
       </div>
       <div class="row gy-5">

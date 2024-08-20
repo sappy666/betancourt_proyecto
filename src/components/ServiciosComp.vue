@@ -1,12 +1,16 @@
 <template>
   <section id="services" class="services section-bg">
-    <div class="container" data-aos="fade-up">
-      <div class="section-header row justify-content-center pb-3">
+    <div class="container">
+      <div class="section-header row justify-content-center">
         <h2 v-if="this.lang == 'es'">Que hacemos</h2>
         <h2 v-if="this.lang == 'en'">What we do</h2>
+        <p v-if="this.lang == 'es'"> Te acompañamos en cada parte del proceso</p>
+        <p v-if="this.lang == 'en'">We support you throughout every step of the process</p>
      </div>
       <div class="container contratacion">
+          <!-- 
         <div v-if="this.lang == 'es'" class="row justify-content-center">
+
           <h3 class="text-center">Contratación pública</h3>
           <p class="mt-4">
             <strong>La contratación pública en Chile</strong> es el proceso
@@ -34,7 +38,7 @@
             la participación de empresas nacionales e internacionales. Aunque
             mejorable, el sistema funciona y el Estado de Chile cumple con los
             pagos en este contexto.
-          </p>
+</p> 
        </div>
         <div v-if="this.lang == 'en'" class="row justify-content-center">
           <h3 class="text-center">Public Procurement</h3>
@@ -65,6 +69,7 @@
             government fulfills its payments within this context.
           </p>
        </div>
+-->
       </div>
 
       <div class="row gy-4">
@@ -407,6 +412,6 @@ export default {
   border-color: var(--color-primary);
 }
 .contratacion {
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
 }
 </style>

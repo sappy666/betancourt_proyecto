@@ -1,6 +1,6 @@
 <template>
   <section id="clients" class="clients pt-5">
-      <div class="section-header | mt-5">
+      <div class="section-header | mt-5 ">
         <h2 v-if="this.lang == 'es'">Han confiado en nosotros</h2>
         <h2 v-if="this.lang == 'en'">They have trusted us</h2>
         <p v-if="this.lang == 'es'">Conoce algunos de nuestros clientes</p>

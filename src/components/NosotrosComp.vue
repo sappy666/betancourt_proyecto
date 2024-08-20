@@ -2,8 +2,10 @@
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
     <div class="section-header">
-      <h2 v-if="this.lang == 'es'">Nosotros</h2>
+      <h2 v-if="this.lang == 'es'">Quienes somos</h2>
       <h2 v-if="this.lang == 'en'">About us</h2>
+      <p v-if="this.lang == 'es'">Abogados especialistas en Mercado Público</p>
+      <p v-if="this.lang == 'en'">Get to know some of our clients</p>
     </div>
     <div class="container">
       <div class="row | justify-content-around">
@@ -38,7 +40,7 @@
             partner estratégico en el ámbito de la
             <strong>contratación pública</strong>.
           </p>
-       </div>
+        </div>
         <div
           v-if="this.lang == 'en'"
           class="col-lg-5 pt-4 pt-lg-0 order-2 order-lg-1 content"
@@ -65,7 +67,7 @@
             are confident that we can be your strategic partner in the field of
             <strong>public procurement</strong>.
           </p>
-       </div>
+        </div>
       </div>
     </div>
   </section>
@@ -97,6 +99,7 @@ export default {
 #about img {
   width: 100%;
   object-fit: cover;
+  filter: grayscale(1);
 }
 a {
   color: #26547c;
@@ -110,7 +113,7 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-p {
+.container p {
   padding: 0;
   margin: 0 0 30px 0;
   text-align: justify;
@@ -154,5 +157,4 @@ p {
   text-align: justify;
   margin: 0 1.5rem;
 }
-
 </style>
