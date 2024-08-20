@@ -1,7 +1,7 @@
 <template>
   <section id="vision-mision">
     <div class="container">
-      <div class="row | justify-content-around">
+      <div v-if="this.lang == 'es'" class="row | justify-content-around">
         <div class="col-12 col-lg-5">
           <h3>Misión</h3>
           <p>
@@ -26,6 +26,34 @@
             referente en el desarrollo de soluciones legales innovadoras que no
             sólo resuelvan los desafíos actuales, y que permita a nuestros
             clientes prosperar en un mercado público competitivo y equitativo.
+          </p>
+        </div>
+      </div>
+      <div v-if="this.lang == 'en'" class="row | justify-content-around">
+        <div class="col-12 col-lg-5">
+          <h3>Mission</h3>
+          <p>
+            Our mission is to safeguard and enhance our clients' competencies
+            and interests in the field of public contracting by providing
+            specialized legal advice that is accessible and delivered with the
+            highest level of commitment and confidentiality. We strive to be a
+            reliable partner, deeply involved in our clients' business, and
+            dedicated to excellence, ethics, and innovation. Our goal is to
+            ensure that our clients achieve their objectives with the confidence
+            that they are supported by a legal team that understands their needs
+            and defends their rights every step of the way. Our experience,
+            clients, and results speak for themselves.
+          </p>
+        </div>
+        <div class="col-12 col-lg-5">
+          <h3>Vision</h3>
+          <p>
+            We aspire to transform the landscape of public contracting in Chile
+            and Latin America by setting new standards of excellence and trust
+            in legal advisory services. We envision becoming a benchmark in the
+            development of innovative legal solutions that not only address
+            current challenges but also empower our clients to thrive in a
+            competitive and fair public market.
           </p>
         </div>
       </div>
@@ -55,16 +83,16 @@ export default {
 };
 </script>
 <style scoped>
-#vision-mision{
+#vision-mision {
   background-color: #273050;
 }
-p{
+p {
   text-align: justify;
   font-size: 0.9rem;
   margin-bottom: 0;
   color: #ffffff88;
 }
-h3{
+h3 {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #ffffffbb;
