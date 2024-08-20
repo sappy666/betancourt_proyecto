@@ -102,12 +102,10 @@ section {
 
 .section-header h2 {
   font-family: Georgia, serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   position: relative;
   color: #2e3135;
-  text-transform: uppercase;
-  letter-spacing: 0rem;
 }
 @media (min-width: 991px) {
   

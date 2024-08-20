@@ -68,5 +68,6 @@ h3{
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #ffffffbb;
+  font-family: Georgia, serif;
 }
 </style>
