@@ -51,7 +51,7 @@
             over 13 years in the market. Our team is composed of
             <strong>expert attorneys in advocacy</strong> and
             <strong>legal counsel</strong>, committed to legal excellence and
-            modernity. At <strong>Betancourt Attorneys</strong>, we highly value
+            m odernity. At <strong>Betancourt Attorneys</strong>, we highly value
             the trust our clients place in our legal services, and we strive to
             build strong and lasting relationships.
           </p>

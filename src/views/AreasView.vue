@@ -21,7 +21,7 @@
     <div class="container shadow section-sm rounded pt-5">
       <div class="row servicios">
         <!-- sidebar -->
-        <div class="col col-lg-3">
+        <div class="col col-lg-3 pe-0">
           <ul class="sidenav">
             <li class="sidelist main active" id="btn-contratacion">
               <a
@@ -96,7 +96,7 @@
           </ul>
         </div>
 
-        <div id="servicios-content" class="col col-lg-8 d-flex flex-column">
+        <div id="servicios-content" class="col col-lg-8 d-flex flex-column pb-5 ps-0">
           <!-- --------------------Contratacion------------------------------>
           <div class="px-lg-5 px-4 servicio active" id="contratacion">
             <div class="row mb-4">
@@ -107,7 +107,7 @@
             </div>
             <div class="row">
               <div class="col">
-                <p v-if="this.lang == 'es'" class="text-muted">
+                <p v-if="this.lang == 'es'" class="">
                   Buscamos activamente nuevas oportunidades de negocios según
                   los parámetros indicados por nuestros clientes.<br /><br />
                   Realizamos un exhaustivo análisis de las bases para detectar
@@ -118,7 +118,7 @@
                   propuestas tendientes a incrementar sus opciones de
                   adjudicación.
                 </p>
-                <p v-if="this.lang == 'en'" class="text-muted">
+                <p v-if="this.lang == 'en'" class="">
                   We actively seek new business opportunities based on our
                   clients' parameters.<br /><br />
                   We conduct a thorough analysis of the tender documents to
@@ -128,18 +128,7 @@
                   process, working together to craft proposals that enhance
                   their chances of winning.
                 </p>
-                <a
-                  v-if="this.lang == 'es'"
-                  class="nav-link py-3"
-                  href="/#contact"
-                  ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
-                >
-                <a
-                  v-if="this.lang == 'en'"
-                  class="nav-link py-3"
-                  href="/#contact"
-                  ><i class="bi bi-envelope-check"></i> Schedule a meeting</a
-                >
+
               </div>
             </div>
           </div>
@@ -155,7 +144,7 @@
             </div>
             <div class="row">
               <div v-if="this.lang == 'es'" class="col">
-                <p class="text-muted">
+                <p class="">
                   Una vez dictado el acto adjudicatorio, y según sea el caso
                   podemos:
                 </p>
@@ -178,12 +167,9 @@
                     de nuestro cliente.
                   </li>
                 </ul>
-                <a class="nav-link py-3" href="/#contact"
-                  ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
-                >
               </div>
               <div v-if="this.lang == 'en'" class="col">
-                <p class="text-muted">
+                <p class="">
                   Once the adjudication decision has been made, and as the case
                   may be, we can:
                 </p>
@@ -205,9 +191,6 @@
                     thereby consolidating our client's award.
                   </li>
                 </ul>
-                <a class="nav-link py-3" href="/#contact"
-                  ><i class="bi bi-envelope-check"></i>Schedule a meeting</a
-                >
               </div>
             </div>
           </div>
@@ -221,7 +204,7 @@
             </div>
             <div class="row">
               <div v-if="this.lang == 'es'" class="col">
-                <p class="text-muted">
+                <p class="">
                   Sabemos que tener la capacidad de responder oportunamente a
                   cualquier eventualidad que se suscite durante la ejecución del
                   contrato es trascendental para minimizar las repercusiones
@@ -230,12 +213,9 @@
                   mandante, defensa de multas, término anticipado de contrato,
                   aumento o disminución de obra, etc.
                 </p>
-                <a class="nav-link py-3" href="/#contact"
-                  ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
-                >
               </div>
               <div v-if="this.lang == 'en'" class="col">
-                <p class="text-muted">
+                <p class="">
                   We understand that having the ability to respond promptly to
                   any contingency that arises during the contract execution is
                   crucial to minimize the negative repercussions that can affect
@@ -244,9 +224,6 @@
                   authority, penalty defense, early contract termination,
                   changes in scope of work, and more.
                 </p>
-                <a class="nav-link py-3" href="/#contact"
-                  ><i class="bi bi-envelope-check"></i> Schedule a meeting</a
-                >
               </div>
             </div>
           </div>
@@ -260,7 +237,7 @@
             </div>
             <div v-if="this.lang == 'es'" class="row">
               <div class="col-md-6">
-                <p class="text-muted">
+                <p class="">
                   Si bien es cierto que Mercado Público otorga una plataforma de
                   gestión de negocios con el Estado de Chile que funciona de
                   buena manera permitiendo un seguro y ágil acceso a los
@@ -270,14 +247,14 @@
                   presupuestarios, burocracia u otros motivos, pueden existir
                   retardos en el pago de las obligaciones contraídas.
                 </p>
-                <p class="text-muted">
+                <p class="">
                   Motivo por el cual en nuestro estudio hemos desarrollado un
                   procedimiento especializado, efectivo y de rápida tramitación
                   para regularizar los pagos pendientes.
                 </p>
               </div>
               <div class="col-md-6">
-                <p class="text-muted">
+                <p class="">
                   Si ha habido retardos en los pagos, lo que corresponde es que
                   se aplique lo prescrito por la Ley N°21.131 “Ley de Pago
                   Oportuno”, debiendo solucionarse el capital como también los
@@ -285,21 +262,18 @@
                   la ley por la mora o simple retardo en que el Estado de Chile
                   pudiere haber incurrido.
                 </p>
-                <p class="text-muted">
+                <p class="">
                   El sistema se sustenta en principios de derecho público que
                   buscan resguardar la igualdad de los oferentes, la libre
                   competencia, la transparencia, como ejes fundamentales del
                   mercado, con el objeto de promover una mayor participación de
                   personas jurídicas nacionales y extranjeras en este mercado.
                 </p>
-                <a class="nav-link py-3" href="/#contact"
-                  ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
-                >
               </div>
             </div>
             <div v-if="this.lang == 'en'" class="row">
               <div class="col-md-6">
-                <p class="text-muted">
+                <p class="">
                   While it is true that Mercado Público provides an efficient
                   platform for conducting business with the Chilean government,
                   ensuring a secure and streamlined access for suppliers to
@@ -308,13 +282,13 @@
                   due to budget adjustments, bureaucracy, or other reasons,
                   there may be delays in fulfilling these obligations.
                 </p>
-                <p class="text-muted">
+                <p class="">
                   This is why our firm has developed a specialized, effective,
                   and expedited procedure for addressing outstanding payments.
                 </p>
               </div>
               <div class="col-md-6">
-                <p class="text-muted">
+                <p class="">
                   In cases of payment delays, the provisions of Law No. 21.131,
                   the "Prompt Payment Law," should be applied. This entails
                   addressing both the principal amount and the accrued interest,
@@ -322,7 +296,7 @@
                   delay or default that the Chilean government may have
                   incurred.
                 </p>
-                <p class="text-muted">
+                <p class="">
                   The system is grounded in principles of public law aimed at
                   safeguarding equal opportunity for bidders, promoting fair
                   competition, and ensuring transparency as fundamental pillars
@@ -330,9 +304,6 @@
                   participation of both national and foreign legal entities in
                   this market.
                 </p>
-                <a class="nav-link py-3" href="/#contact"
-                  ><i class="bi bi-envelope-check"></i>Schedule a meeting</a
-                >
               </div>
             </div>
           </div>
@@ -346,7 +317,7 @@
             </div>
             <div class="row">
               <div v-if="this.lang == 'es'" class="col">
-                <p class="text-muted">
+                <p class="">
                   Nuestro objetivo es proporcionar a nuestros clientes
                   soluciones que se ajusten a sus necesidades concretas, por lo
                   cual, sumado a lo anterior, ofrecemos:
@@ -369,12 +340,9 @@
                   </li>
                   <li>Etc.</li>
                 </ul>
-                <a class="nav-link py-3" href="/#Contact"
-                  ><i class="bi bi-envelope-check"></i> Agenda una reunión</a
-                >
               </div>
               <div v-if="this.lang == 'en'" class="col">
-                <p class="text-muted">
+                <p class="">
                   Our goal is to provide our clients with solutions tailored to
                   their specific needs. In addition to the above, we offer:
                 </p>
@@ -396,9 +364,6 @@
                   </li>
                   <li>Etc.</li>
                 </ul>
-                <a class="nav-link py-3" href="/#Contact"
-                  ><i class="bi bi-envelope-check"></i> Schedule a meeting</a
-                >
               </div>
             </div>
           </div>
@@ -529,25 +494,35 @@ export default {
   margin-top: 2rem;
 }
 
-.servicio{
+.servicio {
   opacity: 0;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
   height: 0;
   overflow-y: hidden;
-  }
-  .servicio.active {
+}
+.servicio.active {
   opacity: 1;
   height: auto;
+  box-shadow: -1px 0 0 0px #e2e2e2;
 }
+.servicios h2 {
+  font-family: Georgia, serif;
+}
+#servicios-content ul {
+  list-style: square;
+}
+#servicios-content li {
+  font-family: var(--font-primary);
+  font-weight: 300;
+}
+
 /* sidenav */
 .sidenav {
-  border-right: 1px solid #e2e2e2;
   padding-right: 20px;
   min-height: 350px;
   height: 350px;
-}
-.sidenav ul {
-  padding-left: 10px;
+  list-style: none;
+  border-right: 1px solid #e2e2e2;
 }
 .sidenav > li a {
   padding: 20px 0;
@@ -559,9 +534,7 @@ export default {
 .sidenav > li:not(:last-child) {
   border-bottom: 1px solid #e2e2e2;
 }
-.sidenav .sidelist ul {
-  display: none;
-}
+
 .sidelist.active a {
   color: var(--color-primary) !important;
 }
@@ -582,30 +555,19 @@ a:focus {
    --------------------------------------------------------------*/
 #hero {
   height: 50vh;
-  background: url("../assets/1.jpg") top center;
+  background: url("../assets/fondobanner.jpg") top center;
   background-size: cover;
   position: relative;
 }
 #hero .container {
   padding-top: 72px;
 }
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 62px;
-  }
-}
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
+
 #hero h2 {
-  color: #eee;
+  color: #fff;
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 2rem;
+  font-family: Georgia, serif;
 }
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
@@ -624,92 +586,30 @@ a:focus {
   background: #26547c;
   border: 2px solid #26547c;
 }
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+  #servicios-content {
+    scroll-margin: 9rem;
   }
 }
 @media (max-width: 768px) {
   #hero {
     height: 100vh;
   }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
   }
-}
-
-#hero .container {
-  padding-top: 72px;
+  #servicios-content {
+    scroll-margin: 110px;
+  }
 }
 @media (max-width: 992px) {
   #hero .container {
     padding-top: 62px;
   }
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-family: var(--font-primary);
-}
-#hero h2 {
-  color: #fff;
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 35px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin-top: 30px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-#hero .btn-get-started:hover {
-  background: #26547c;
-  border: 2px solid #26547c;
-}
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-  #servicios-content {
-  scroll-margin: 9rem;
-}
-}
-@media (max-width: 768px) {
-  #hero {
-    height: 100vh;
-  }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  #servicios-content {
-  scroll-margin: 110px;
-}
-  
-}
-li {
-  font-family: var(--font-primary);
-  font-weight: 300;
 }
 </style>
