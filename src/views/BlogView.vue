@@ -30,62 +30,70 @@
   <!-- ======= Blog Section ======= -->
   <section id="blog" class="blog">
     <div class="container" data-aos="fade-up">
+      
       <div class="row g-5 justify-content-center">
-        <div class="col-lg-10">
-          <div class="row gy-4 posts-list">
-            <div v-for="p in posts" :key="p.id" class="col-lg-6">
-              <article class="d-flex flex-column">
-                <h2 v-if="this.lang=='es'" class="title">
-                  {{ p.title }}
-                </h2>
-                <h2 v-if="this.lang=='en'" class="title">
-                  {{ p.title_ingles }}
-                </h2>
-                <div v-if="this.lang=='es'" class="subtitle">
-                  <p v-if="p.date != '0000-00-00'">{{ p.date }}</p>
-                  <p v-if="p.client != ''"><b>Cliente: </b>{{ p.client }}</p>
-                  <p v-if="p.mandante != ''">
-                    <b>Mandante: </b>{{ p.mandante }}
-                  </p>
-                  <p v-if="p.subtitle != ''">
-                    {{ p.subtitle }}
-                  </p>
-                </div>
-                <div v-if="this.lang=='en'" class="subtitle">
-                  <p v-if="p.date != '0000-00-00'">{{ p.date }}</p>
-                  <p v-if="p.client != ''"><b>Cliente: </b>{{ p.client }}</p>
-                  <p v-if="p.mandante != ''">
-                    <b>Mandante: </b>{{ p.mandante }}
-                  </p>
-                  <p v-if="p.subtitle_ingles != ''">
-                    {{ p.subtitle_ingles }}
-                  </p>
-                </div>
-                <div v-if="this.lang=='es'" class="content">
-                  <p>
-                    {{ p.text }}
-                  </p>
-                </div>
-                <div v-if="this.lang=='en'" class="content">
-                  <p>
-                    {{ p.text_ingles }}
-                  </p>
-                </div>
+  <div class="col-lg-10">
+    <div class="row gy-4 posts-list">
+      <div v-for="p in posts" :key="p.id" class="col-lg-6">
+        <article class="d-flex flex-column">
+          <h2 v-if="lang == 'es'" class="title">
+            {{ p.title }}
+          </h2>
+          <h2 v-if="lang == 'en'" class="title">
+            {{ p.title_ingles }}
+          </h2>
 
-              </article>
-            </div>
+          <div v-if="lang == 'es'" class="subtitle">
+            <p v-if="p.date != '0000-00-00'">{{ p.date }}</p>
+            <p v-if="p.client != ''">
+              <b>Cliente: </b>{{ p.client }}
+            </p>
+            <p v-if="p.mandante != ''">
+              <b>Mandante: </b>{{ p.mandante }}
+            </p>
+            <p v-if="p.subtitle != ''">
+              {{ p.subtitle }}
+            </p>
           </div>
-          <!-- End blog posts list -->
-          <!-- <div class="blog-pagination">
-            <ul class="justify-content-center">
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-          </div> -->
-          <!-- End blog pagination -->
-        </div>
+          <div v-if="lang == 'en'" class="subtitle">
+            <p v-if="p.date != '0000-00-00'">{{ p.date }}</p>
+            <p v-if="p.client != ''">
+              <b>Client: </b>{{ p.client }}
+            </p>
+            <p v-if="p.mandante != ''">
+              <b>Principal: </b>{{ p.mandante }}
+            </p>
+            <p v-if="p.subtitle_ingles != ''">
+              {{ p.subtitle_ingles }}
+            </p>
+          </div>
+
+          <div v-if="lang == 'es'" class="content">
+            <p>
+              {{ p.text }}
+            </p>
+          </div>
+          <div v-if="lang == 'en'" class="content">
+            <p>
+              {{ p.text_ingles }}
+            </p>
+          </div>
+        </article>
       </div>
+    </div>
+    <!-- End blog posts list -->
+    <!-- <div class="blog-pagination">
+      <ul class="justify-content-center">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+      </ul>
+    </div> -->
+    <!-- End blog pagination -->
+   </div>
+  </div>
+
+
     </div>
   </section>
 
